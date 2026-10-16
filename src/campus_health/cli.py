@@ -88,6 +88,10 @@ def doctor(settings: dict, network: bool) -> dict:
 
 
 def main() -> None:
+    # Windows重定向输出可能默认cp1252；帮助/中文日志也必须可执行。
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(description="大学生日常健康知识：真实运行、版本化评估")
     parser.add_argument("--config", type=Path)
     commands = parser.add_subparsers(dest="command", required=True)

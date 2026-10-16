@@ -1,5 +1,9 @@
 """边界/计分/协议检查；所有夹具仅用于测试，不充当实验数据。"""
 
+import os
+import subprocess
+import sys
+
 import pytest
 
 from campus_health.data import canonical_units, normalize, parse_article
@@ -123,3 +127,15 @@ def test_question_checks_unknown_evidence_and_cross_split_family():
     errors = validate_questions(rows, [{"units": [{"id": "present"}]}])
     assert any("不存在" in e for e in errors)
     assert any("跨开发/测试" in e for e in errors)
+
+
+def test_cli_help_works_when_redirected_with_windows_legacy_encoding():
+    env = {**os.environ, "PYTHONIOENCODING": "cp1252"}
+    completed = subprocess.run(
+        [sys.executable, "-m", "campus_health.cli", "--help"],
+        env=env,
+        capture_output=True,
+        check=False,
+    )
+    assert completed.returncode == 0, completed.stderr.decode("utf-8", errors="replace")
+    assert "大学生日常健康知识" in completed.stdout.decode("utf-8")
