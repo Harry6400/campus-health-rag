@@ -1,0 +1,18 @@
+{
+  "version": "data-v0.1.0-dev",
+  "status": "development_not_final_submission",
+  "url": "https://github.com/Harry6400/campus-health-rag/releases/download/data-v0.1.0-dev/data-v0.1.0-dev.tar.gz",
+  "sha256": "c943b1a0df8848271ced3913a05489579b12e139afe11bf4a81d0868e1118c78",
+  "files": [
+    "corpus.jsonl",
+    "corpus-manifest.json",
+    "questions.draft.jsonl",
+    "license-data.json"
+  ],
+  "file_sha256": {
+    "corpus.jsonl": "481fed36687503978bcf8a1bfb5a2c96fbaa542f5d29e3be72e0e520e1ef4f8e",
+    "corpus-manifest.json": "89510eef10f00337f20a81982e29db62c167e527645e085d9d01a5c4ada0538f",
+    "questions.draft.jsonl": "26561bfbb9cc3f6e01ad3d2b4ae62ae00b5047373392917c782fe85e98e13093",
+    "license-data.json": "d6be03e72c44bd561e2edf54e45d281a9eb3180b279722b51ed89294aee478f5"
+  }
+}

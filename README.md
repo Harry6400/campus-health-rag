@@ -48,6 +48,14 @@ uv run --locked campus-health evaluate --exploratory --split dev --limit 3
 
 这里的题目为AI草稿，分数为探索结果，不是报告的正式测试成绩。
 
+单因素参数比较（默认完整开发集；`--limit 12` 为三主题/四题型的平衡小批量功能验证）：
+
+```sh
+uv run --locked campus-health sweep --limit 12
+```
+
+正式参数结论应在核验后的30道开发题上取得，不能把小批量验证冒充完整实验。
+
 仅重算已保存输出（不重新调用API）：
 
 ```sh
@@ -84,6 +92,14 @@ uv run --locked campus-health export-review runs/<实际运行目录>
 - [DeepSeek官方接口](https://api-docs.deepseek.com/zh-cn/)
 
 原始材料不能因公开可读就视为开放许可，特殊或第三方授权材料排除。原创代码MIT许可不覆盖资料、模型与依赖。课程官方三份文件保留在本地，不随公开仓库重新分发。
+
+当前开发数据：[data-v0.1.0-dev](https://github.com/Harry6400/campus-health-rag/releases/tag/data-v0.1.0-dev)。它包括资料与120题AI初稿，尚未小组冻结。
+
+## 真实界面证据
+
+以下截图来自本机实际R3问答及DeepSeek调用，非效果图、非正式评估成绩：
+
+![真实回答、耗时和引用](evidence/ui-answer-timing-citations.png)
 
 ## 安全与故障
 

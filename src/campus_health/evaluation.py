@@ -325,7 +325,7 @@ def run_evaluation(
             raise ValueError("正式评估不能截断题集；小批量请用开发集探索")
     chosen = [q for q in questions if q["split"] == split]
     if limit:
-        chosen = chosen[:limit]
+        chosen = balanced_subset(chosen, limit)
     if not chosen:
         raise ValueError("没有可运行的问题")
     methods = methods or ["B0", "R1", "R2", "R3"]
@@ -372,6 +372,24 @@ def run_evaluation(
             print(f"{q['id']} {method}: {row['status']}", flush=True)
     audit(run)
     return run
+
+
+def balanced_subset(questions: list[dict], limit: int) -> list[dict]:
+    if limit < 1:
+        raise ValueError("limit必须为正整数")
+    groups = {
+        (theme, kind): [q for q in questions if q["theme"] == theme and q["kind"] == kind]
+        for theme in ["sleep", "diet", "exercise"]
+        for kind in ["direct", "paraphrase", "multi", "unanswerable"]
+    }
+    selected = []
+    while any(groups.values()) and len(selected) < limit:
+        for kind in ["direct", "paraphrase", "multi", "unanswerable"]:
+            for theme in ["sleep", "diet", "exercise"]:
+                group = groups[(theme, kind)]
+                if group and len(selected) < limit:
+                    selected.append(group.pop(0))
+    return selected
 
 
 def audit(run: Path) -> dict:
