@@ -30,4 +30,6 @@ jobs:
         run: uv run --locked campus-health prepare
       - if: ${{ github.event_name == 'workflow_dispatch' && inputs.integration }}
         run: uv run --locked campus-health ask "怎样在日常生活中增加身体活动？" --method B0
+      - if: ${{ github.event_name == 'workflow_dispatch' && inputs.integration }}
+        run: uv run --locked campus-health retrieve "怎样在日常生活中增加身体活动？" --method R3
     # 不在公开CI放API密钥，不把夹具检查称为真实API/Windows全链路验收。

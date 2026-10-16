@@ -1,0 +1,363 @@
+{
+  "recorded_at": "2026-10-16T13:43:38.478119+00:00",
+  "parent_run": "20261016T133814139413Z_parameter-sweep-dev",
+  "note": "12题开发样本平衡功能验证，不是30题完整参数实验或90题正式测试；AI评分未校准，保留失败和分母",
+  "experiments": [
+    {
+      "factor": "tokenizer",
+      "value": "jieba",
+      "run": "20261016T133814213768Z_exploratory-dev",
+      "summary": {
+        "audited_at": "2026-10-16T13:38:14.421702+00:00",
+        "kind": "audit_saved_outputs_not_new_model_calls",
+        "results_sha256": "05ecaf5f36a6cc69ca1ff5958e5f560043b96be5a4daf4c219964c7d388882d5",
+        "summary": [
+          {
+            "method": "B0",
+            "attempted": 12,
+            "completed": 12,
+            "failed": 0,
+            "completion_rate": 1.0,
+            "evidence_recall": 1.0,
+            "evidence_recall_n": 9,
+            "evidence_precision": 0.2777777777777778,
+            "evidence_precision_n": 9,
+            "keypoint_coverage": null,
+            "keypoint_coverage_n": 0,
+            "faithfulness": null,
+            "faithfulness_n": 0,
+            "citation_support": null,
+            "citation_support_n": 0,
+            "citation_validity": 1.0,
+            "citation_validity_n": 12,
+            "correct_refusal": null,
+            "correct_refusal_n": 0,
+            "false_refusal": null,
+            "false_refusal_n": 0,
+            "retrieval_seconds": {
+              "mean": 0.0002308157466662427,
+              "median": 0.00022650000755675137,
+              "p95": 0.00029470989538822324,
+              "n": 12
+            },
+            "generation_seconds": {
+              "mean": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "n": 12
+            },
+            "total_seconds": {
+              "mean": 0.00024138183168057972,
+              "median": 0.00023670800146646798,
+              "p95": 0.0003143333000480197,
+              "n": 12
+            },
+            "scoring_note": "回答质量仅对已成功且已评分项统计；同时报告完成率与各指标分母"
+          }
+        ],
+        "costs": {},
+        "rows": 12,
+        "expected_rows": 12,
+        "complete": true,
+        "errors": 0,
+        "judge_errors": 0,
+        "unreviewed_ai_scoring": true
+      }
+    },
+    {
+      "factor": "tokenizer",
+      "value": "char2",
+      "run": "20261016T133814426230Z_exploratory-dev",
+      "summary": {
+        "audited_at": "2026-10-16T13:38:14.573111+00:00",
+        "kind": "audit_saved_outputs_not_new_model_calls",
+        "results_sha256": "e44254a1d3b25881ce10c48901a84fd67e2f68dac9fab2669d1fe39ee78af8bb",
+        "summary": [
+          {
+            "method": "B0",
+            "attempted": 12,
+            "completed": 12,
+            "failed": 0,
+            "completion_rate": 1.0,
+            "evidence_recall": 1.0,
+            "evidence_recall_n": 9,
+            "evidence_precision": 0.2777777777777778,
+            "evidence_precision_n": 9,
+            "keypoint_coverage": null,
+            "keypoint_coverage_n": 0,
+            "faithfulness": null,
+            "faithfulness_n": 0,
+            "citation_support": null,
+            "citation_support_n": 0,
+            "citation_validity": 1.0,
+            "citation_validity_n": 12,
+            "correct_refusal": null,
+            "correct_refusal_n": 0,
+            "false_refusal": null,
+            "false_refusal_n": 0,
+            "retrieval_seconds": {
+              "mean": 0.00022920483994918564,
+              "median": 0.00022077051107771695,
+              "p95": 0.0002890251562348567,
+              "n": 12
+            },
+            "generation_seconds": {
+              "mean": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "n": 12
+            },
+            "total_seconds": {
+              "mean": 0.0002394895006242829,
+              "median": 0.0002331040013814345,
+              "p95": 0.000306527447537519,
+              "n": 12
+            },
+            "scoring_note": "回答质量仅对已成功且已评分项统计；同时报告完成率与各指标分母"
+          }
+        ],
+        "costs": {},
+        "rows": 12,
+        "expected_rows": 12,
+        "complete": true,
+        "errors": 0,
+        "judge_errors": 0,
+        "unreviewed_ai_scoring": true
+      }
+    },
+    {
+      "factor": "top_k",
+      "value": 2,
+      "run": "20261016T133814575416Z_exploratory-dev",
+      "summary": {
+        "audited_at": "2026-10-16T13:38:50.757095+00:00",
+        "kind": "audit_saved_outputs_not_new_model_calls",
+        "results_sha256": "44f37000e57915565432537103b72b75a43ae1630e29de8d7509f215f2647961",
+        "summary": [
+          {
+            "method": "R3",
+            "attempted": 12,
+            "completed": 12,
+            "failed": 0,
+            "completion_rate": 1.0,
+            "evidence_recall": 0.7777777777777778,
+            "evidence_recall_n": 9,
+            "evidence_precision": 0.4444444444444444,
+            "evidence_precision_n": 9,
+            "keypoint_coverage": 0.875,
+            "keypoint_coverage_n": 8,
+            "faithfulness": 1.0,
+            "faithfulness_n": 7,
+            "citation_support": 1.0,
+            "citation_support_n": 7,
+            "citation_validity": 1.0,
+            "citation_validity_n": 8,
+            "correct_refusal": 1.0,
+            "correct_refusal_n": 3,
+            "false_refusal": 0.1111111111111111,
+            "false_refusal_n": 9,
+            "retrieval_seconds": {
+              "mean": 0.016437933833609957,
+              "median": 0.016881207993719727,
+              "p95": 0.026767175007262257,
+              "n": 12
+            },
+            "generation_seconds": {
+              "mean": 1.4946212848323437,
+              "median": 1.4129646044893889,
+              "p95": 2.0776391790874182,
+              "n": 12
+            },
+            "total_seconds": {
+              "mean": 1.5111054374137893,
+              "median": 1.4197244579991093,
+              "p95": 2.0916446958042796,
+              "n": 12
+            },
+            "scoring_note": "回答质量仅对已成功且已评分项统计；同时报告完成率与各指标分母"
+          }
+        ],
+        "costs": {
+          "ai_judge": {
+            "responses": 12,
+            "failed_attempts_unknown_cost": 0,
+            "prompt_tokens": 13524,
+            "completion_tokens": 1609,
+            "cny_min": 0.017576639999999998,
+            "cny_max": 0.035153279999999995
+          },
+          "answer": {
+            "responses": 12,
+            "failed_attempts_unknown_cost": 0,
+            "prompt_tokens": 7844,
+            "completion_tokens": 1466,
+            "cny_min": 0.008063200000000001,
+            "cny_max": 0.016126400000000003
+          }
+        },
+        "rows": 12,
+        "expected_rows": 12,
+        "complete": true,
+        "errors": 0,
+        "judge_errors": 1,
+        "unreviewed_ai_scoring": true
+      }
+    },
+    {
+      "factor": "top_k",
+      "value": 4,
+      "run": "20261016T133850767776Z_exploratory-dev",
+      "summary": {
+        "audited_at": "2026-10-16T13:39:32.561041+00:00",
+        "kind": "audit_saved_outputs_not_new_model_calls",
+        "results_sha256": "94e9d22d70dd5d437431a4d75f01994da8194352309c320d25ea900ca26e979d",
+        "summary": [
+          {
+            "method": "R3",
+            "attempted": 12,
+            "completed": 12,
+            "failed": 0,
+            "completion_rate": 1.0,
+            "evidence_recall": 1.0,
+            "evidence_recall_n": 9,
+            "evidence_precision": 0.2777777777777778,
+            "evidence_precision_n": 9,
+            "keypoint_coverage": 1.0,
+            "keypoint_coverage_n": 8,
+            "faithfulness": 1.0,
+            "faithfulness_n": 8,
+            "citation_support": 1.0,
+            "citation_support_n": 8,
+            "citation_validity": 1.0,
+            "citation_validity_n": 9,
+            "correct_refusal": 1.0,
+            "correct_refusal_n": 3,
+            "false_refusal": 0.0,
+            "false_refusal_n": 9,
+            "retrieval_seconds": {
+              "mean": 0.019244312665250618,
+              "median": 0.017810541990911588,
+              "p95": 0.034624268457991984,
+              "n": 12
+            },
+            "generation_seconds": {
+              "mean": 1.7059174410872704,
+              "median": 1.7657204370043473,
+              "p95": 2.357222649992036,
+              "n": 12
+            },
+            "total_seconds": {
+              "mean": 1.7252085801689343,
+              "median": 1.7992639585136203,
+              "p95": 2.3749963107446086,
+              "n": 12
+            },
+            "scoring_note": "回答质量仅对已成功且已评分项统计；同时报告完成率与各指标分母"
+          }
+        ],
+        "costs": {
+          "ai_judge": {
+            "responses": 12,
+            "failed_attempts_unknown_cost": 0,
+            "prompt_tokens": 22414,
+            "completion_tokens": 2021,
+            "cny_min": 0.025356920000000005,
+            "cny_max": 0.05071384000000001
+          },
+          "answer": {
+            "responses": 12,
+            "failed_attempts_unknown_cost": 0,
+            "prompt_tokens": 12808,
+            "completion_tokens": 1880,
+            "cny_min": 0.01004192,
+            "cny_max": 0.02008384
+          }
+        },
+        "rows": 12,
+        "expected_rows": 12,
+        "complete": true,
+        "errors": 0,
+        "judge_errors": 1,
+        "unreviewed_ai_scoring": true
+      }
+    },
+    {
+      "factor": "top_k",
+      "value": 6,
+      "run": "20261016T133932572718Z_exploratory-dev",
+      "summary": {
+        "audited_at": "2026-10-16T13:40:16.434920+00:00",
+        "kind": "audit_saved_outputs_not_new_model_calls",
+        "results_sha256": "12145d69ae4c8087446f457510434b6bad0b35a69ee019de2bc2e1ff1c809854",
+        "summary": [
+          {
+            "method": "R3",
+            "attempted": 12,
+            "completed": 12,
+            "failed": 0,
+            "completion_rate": 1.0,
+            "evidence_recall": 1.0,
+            "evidence_recall_n": 9,
+            "evidence_precision": 0.1851851851851852,
+            "evidence_precision_n": 9,
+            "keypoint_coverage": 1.0,
+            "keypoint_coverage_n": 7,
+            "faithfulness": 1.0,
+            "faithfulness_n": 7,
+            "citation_support": 1.0,
+            "citation_support_n": 7,
+            "citation_validity": 1.0,
+            "citation_validity_n": 9,
+            "correct_refusal": 1.0,
+            "correct_refusal_n": 3,
+            "false_refusal": 0.0,
+            "false_refusal_n": 9,
+            "retrieval_seconds": {
+              "mean": 0.01628156241349643,
+              "median": 0.014409312003408559,
+              "p95": 0.026804387655283785,
+              "n": 12
+            },
+            "generation_seconds": {
+              "mean": 1.696796795166544,
+              "median": 1.70788887499657,
+              "p95": 2.1941251623487914,
+              "n": 12
+            },
+            "total_seconds": {
+              "mean": 1.7131408749943755,
+              "median": 1.7234641874965746,
+              "p95": 2.2071519124961925,
+              "n": 12
+            },
+            "scoring_note": "回答质量仅对已成功且已评分项统计；同时报告完成率与各指标分母"
+          }
+        ],
+        "costs": {
+          "ai_judge": {
+            "responses": 12,
+            "failed_attempts_unknown_cost": 0,
+            "prompt_tokens": 31030,
+            "completion_tokens": 2478,
+            "cny_min": 0.035171759999999996,
+            "cny_max": 0.07034351999999999
+          },
+          "answer": {
+            "responses": 12,
+            "failed_attempts_unknown_cost": 0,
+            "prompt_tokens": 17982,
+            "completion_tokens": 1999,
+            "cny_min": 0.014186639999999999,
+            "cny_max": 0.028373279999999997
+          }
+        },
+        "rows": 12,
+        "expected_rows": 12,
+        "complete": true,
+        "errors": 0,
+        "judge_errors": 2,
+        "unreviewed_ai_scoring": true
+      }
+    }
+  ]
+}

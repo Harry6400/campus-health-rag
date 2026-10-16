@@ -108,6 +108,9 @@ def main() -> None:
     a = commands.add_parser("ask")
     a.add_argument("question")
     a.add_argument("--method", default="R3", choices=["B0", "R1", "R2", "R3"])
+    retrieval = commands.add_parser("retrieve", help="不调用API，验证真实CPU检索层")
+    retrieval.add_argument("question")
+    retrieval.add_argument("--method", default="R3", choices=["B0", "R1", "R2", "R3"])
     for name in ["reproduce", "evaluate"]:
         e = commands.add_parser(name)
         e.add_argument("--questions", type=Path, default=ROOT / "data" / "questions.draft.jsonl")
@@ -172,6 +175,26 @@ def main() -> None:
             result, run = interactive(args.question, args.method, settings)
             print(result["answer"])
             print("真实运行记录：", run)
+        elif args.command == "retrieve":
+            from .retrieval import Retriever
+
+            run = new_run("retrieval-only-not-generation", settings)
+            start = time.perf_counter()
+            retriever = Retriever(data.load_corpus(), settings, dense=args.method in {"R2", "R3"})
+            setup_seconds = time.perf_counter() - start
+            start = time.perf_counter()
+            evidence = retriever.search(args.question, args.method)
+            result = {
+                "question": args.question,
+                "method": args.method,
+                "setup_seconds": setup_seconds,
+                "retrieval_seconds": time.perf_counter() - start,
+                "evidence": evidence,
+                "api_called": False,
+            }
+            write_json(run / "result.json", result)
+            print(json.dumps(result, ensure_ascii=False, indent=2))
+            print(run)
         elif args.command in {"reproduce", "evaluate"}:
             if not (ROOT / "data" / "corpus.jsonl").exists():
                 data.prepare()

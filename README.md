@@ -20,6 +20,12 @@ uv run --locked campus-health demo
 
 页面仅监听本机 `127.0.0.1`。录屏身份可通过 `.env` 的 `DEMO_NAME`、`DEMO_STUDENT_ID` 设置，不公开提交。
 
+无需API密钥也可以检查真实CPU检索层（包括向量模型）：
+
+```sh
+uv run --locked campus-health retrieve "怎样在日常生活中增加身体活动？" --method R3
+```
+
 开发取数（不等同固定版本复现）：
 
 ```sh
