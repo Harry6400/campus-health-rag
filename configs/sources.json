@@ -1,0 +1,29 @@
+{
+  "version": "20261016-draft1",
+  "status": "ai_source_reviewed_not_group_frozen",
+  "license": "政府資料開放授權條款第1版（仅正文；不含标志、图像与第三方附件）",
+  "license_urls": {
+    "mohw": "https://www.mohw.gov.tw/cp-81-155-1.html",
+    "hpa": "https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=92&pid=5141&sid=5140"
+  },
+  "sources": [
+    {"id":"sleep01","theme":"sleep","url":"https://www.mohw.gov.tw/cp-16-55275-1.html"},
+    {"id":"sleep02","theme":"sleep","url":"https://www.mohw.gov.tw/cp-16-21056-1.html"},
+    {"id":"sleep03","theme":"sleep","url":"https://www.mohw.gov.tw/cp-16-50246-1.html"},
+    {"id":"sleep04","theme":"sleep","url":"https://www.mohw.gov.tw/cp-16-47125-1.html"},
+    {"id":"sleep05","theme":"sleep","url":"https://www.mohw.gov.tw/cp-16-80441-1.html"},
+    {"id":"diet01","theme":"diet","url":"https://www.mohw.gov.tw/cp-3200-22196-1.html"},
+    {"id":"diet02","theme":"diet","url":"https://www.mohw.gov.tw/cp-16-37046-1.html"},
+    {"id":"diet03","theme":"diet","url":"https://www.mohw.gov.tw/cp-2704-51713-1.html"},
+    {"id":"diet04","theme":"diet","url":"https://www.mohw.gov.tw/cp-7171-84876-1.html"},
+    {"id":"diet05","theme":"diet","url":"https://www.hpa.gov.tw/EngPages/Detail.aspx?nodeid=1424&pid=15178"},
+    {"id":"diet06","theme":"diet","url":"https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=543&pid=9606"},
+    {"id":"exercise01","theme":"exercise","url":"https://www.mohw.gov.tw/cp-16-55035-1.html"},
+    {"id":"exercise02","theme":"exercise","url":"https://www.mohw.gov.tw/cp-16-81388-1.html"},
+    {"id":"exercise03","theme":"exercise","url":"https://www.mohw.gov.tw/cp-16-24831-1.html"},
+    {"id":"exercise04","theme":"exercise","url":"https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=571&pid=9739"},
+    {"id":"exercise05","theme":"exercise","url":"https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=571&pid=9773"},
+    {"id":"exercise06","theme":"exercise","url":"https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=127&pid=19968"},
+    {"id":"exercise07","theme":"exercise","url":"https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=825&pid=14230"}
+  ]
+}

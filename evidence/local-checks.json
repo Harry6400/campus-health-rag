@@ -1,0 +1,30 @@
+{
+  "recorded_at": "2026-10-16T13:25:46.919509+00:00",
+  "pytest": {
+    "passed": 18,
+    "command": ".venv/bin/pytest -q",
+    "note": "真实执行18通过，夹具不是实验数据"
+  },
+  "retrieval_smoke": {
+    "methods": [
+      "B0",
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "chunks": 72,
+    "run": "20261016T131926351934Z_retrieval-smoke"
+  },
+  "api_smoke": {
+    "run": "20261016T131533832303Z_api-smoke-not-evaluation",
+    "prompt_tokens": 413,
+    "completion_tokens": 69,
+    "formal_evaluation": false
+  },
+  "pending": [
+    "formal held-out test",
+    "actual group review",
+    "Windows full-chain",
+    "PDF and recording"
+  ]
+}

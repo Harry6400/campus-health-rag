@@ -1,0 +1,52 @@
+[project]
+name = "campus-health-rag"
+version = "0.1.0"
+description = "大学生日常健康知识：传统检索与可溯源 RAG 的真实对比"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+  "beautifulsoup4>=4.13,<5",
+  "httpx>=0.28,<0.29",
+  "jieba==0.42.1",
+  "numpy>=1.26,<3",
+  "openai>=2,<3",
+  "opencc-python-reimplemented>=0.1.7,<0.2",
+  "python-dotenv>=1,<2",
+  "rank-bm25==0.2.2",
+  "sentence-transformers>=5,<6",
+  "streamlit>=1.45,<2",
+  "truststore>=0.10,<0.11",
+]
+
+[project.scripts]
+campus-health = "campus_health.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8,<9", "ruff>=0.11,<1"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/campus_health"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.uv]
+required-version = ">=0.11"
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform != 'darwin'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true

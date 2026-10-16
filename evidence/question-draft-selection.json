@@ -1,0 +1,33 @@
+{
+  "time": "2026-10-16T13:22:09.178297+00:00",
+  "original_count": 138,
+  "selected_count": 118,
+  "selection": "在任何回答实验前按既定主题/类型配额、原顺序去重截取；不是按模型成绩挑题",
+  "sha256": "5baac52ef8905c5ceb8e73f987d7f7a184f6c919907043573d5e7961bf93b139",
+  "counts": {
+    "('sleep', 'dev', 'direct')": 3,
+    "('sleep', 'dev', 'paraphrase')": 3,
+    "('sleep', 'dev', 'multi')": 2,
+    "('sleep', 'dev', 'unanswerable')": 2,
+    "('sleep', 'test', 'direct')": 10,
+    "('sleep', 'test', 'paraphrase')": 8,
+    "('sleep', 'test', 'multi')": 6,
+    "('sleep', 'test', 'unanswerable')": 4,
+    "('diet', 'dev', 'direct')": 3,
+    "('diet', 'dev', 'paraphrase')": 3,
+    "('diet', 'dev', 'multi')": 2,
+    "('diet', 'dev', 'unanswerable')": 2,
+    "('diet', 'test', 'direct')": 10,
+    "('diet', 'test', 'paraphrase')": 8,
+    "('diet', 'test', 'multi')": 6,
+    "('diet', 'test', 'unanswerable')": 6,
+    "('exercise', 'dev', 'direct')": 3,
+    "('exercise', 'dev', 'paraphrase')": 3,
+    "('exercise', 'dev', 'multi')": 2,
+    "('exercise', 'dev', 'unanswerable')": 2,
+    "('exercise', 'test', 'direct')": 10,
+    "('exercise', 'test', 'paraphrase')": 8,
+    "('exercise', 'test', 'multi')": 6,
+    "('exercise', 'test', 'unanswerable')": 6
+  }
+}

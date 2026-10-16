@@ -1,0 +1,33 @@
+name: CPU checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      integration:
+        description: "Download verified development data and model; run real CPU baseline"
+        type: boolean
+        default: false
+jobs:
+  checks:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.11.14"
+          enable-cache: true
+      - run: uv sync --locked --group dev
+      - run: uv run --locked ruff check src tests
+      - run: uv run --locked pytest -q
+      - run: uv run --locked campus-health --help
+      - run: uv run --locked campus-health doctor
+      - if: ${{ github.event_name == 'workflow_dispatch' && inputs.integration }}
+        run: uv run --locked campus-health prepare
+      - if: ${{ github.event_name == 'workflow_dispatch' && inputs.integration }}
+        run: uv run --locked campus-health ask "怎样在日常生活中增加身体活动？" --method B0
+    # 不在公开CI放API密钥，不把夹具检查称为真实API/Windows全链路验收。

@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-16T13:33:45.720519+00:00",
+  "url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+  "html_sha256": "69911c5295d9955f36d0188f2aceae4b6c996c897bd19ea2231fd1e5a0952b30",
+  "model": "deepseek-flash",
+  "rates": {
+    "off_peak": {
+      "cached_input": 0.02,
+      "input": 1,
+      "output": 4
+    },
+    "peak": {
+      "cached_input": 0.04,
+      "input": 2,
+      "output": 8
+    }
+  },
+  "note": "官方价格数据与本地页面快照对应；不公开复制完整文档，实际费用另核账"
+}

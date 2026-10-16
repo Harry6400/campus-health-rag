@@ -1,0 +1,31 @@
+{
+  "seed": 20261016,
+  "model_id": "BAAI/bge-small-zh-v1.5",
+  "model_revision": "7999e1d3359715c523056ef9478215996d62a620",
+  "embedding_device": "cpu",
+  "chunk_tokens": 256,
+  "overlap_tokens": 32,
+  "top_k": 4,
+  "tokenizer": "jieba",
+  "rrf_k": 60,
+  "rrf_depth": 20,
+  "max_output_tokens": 700,
+  "temperature": 0,
+  "timeout_seconds": 90,
+  "max_attempts": 3,
+  "query_instruction": "为这个句子生成表示以用于检索相关文章：",
+  "prices_cny_per_million": {
+    "off_peak": {
+      "cached_input": 0.02,
+      "input": 1,
+      "output": 4
+    },
+    "peak": {
+      "cached_input": 0.04,
+      "input": 2,
+      "output": 8
+    }
+  },
+  "price_source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+  "price_checked_at": "2026-10-16T13:13:05.539433+00:00"
+}

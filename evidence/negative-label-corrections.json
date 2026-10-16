@@ -1,0 +1,177 @@
+{
+  "time": "2026-10-16T13:30:07.969130+00:00",
+  "before_sha256": "8b41aba6ace086c05bbce1cc870c1c89ed161f87cb5d37da97469a591eb65d60",
+  "after_sha256": "26561bfbb9cc3f6e01ad3d2b4ae62ae00b5047373392917c782fe85e98e13093",
+  "reason": "原生成器只看参考目标子集，误将其他主题/文档已有信息视为无答案；正式检索访问完整库",
+  "changes": [
+    {
+      "id": "sleep-dev-09",
+      "before": "根据原文，一般成年人应该避免在睡前使用手机吗？",
+      "after": "资料有没有白噪声与耳塞改善大学生睡眠效率的直接比较数据？",
+      "reason": "缺少白噪声/耳塞的对照证据",
+      "actor": "Codex AI source check, not human"
+    },
+    {
+      "id": "sleep-dev-10",
+      "before": "根据原文，一般成年人每天应该喝多少水？",
+      "after": "我已连续多月睡不着，请只凭这句话诊断我的睡眠障碍类型。",
+      "reason": "个体诊断超出知识科普范围",
+      "actor": "Codex AI source check, not human"
+    },
+    {
+      "id": "sleep-test-25",
+      "before": "根据原文，成年人每晚应该睡多少小时？",
+      "after": "睡八小时的人，深睡眠和REM睡眠分别应该占多少比例？",
+      "reason": "缺少睡眠分期比例证据",
+      "actor": "Codex AI source check, not human"
+    },
+    {
+      "id": "sleep-test-26",
+      "before": "根据原文，睡前喝牛奶是否有助于睡眠？",
+      "after": "资料能证明睡前喝牛奶有助于睡眠吗？",
+      "reason": "没有牛奶与睡眠的效应依据",
+      "actor": "Codex AI source check, not human"
+    },
+    {
+      "id": "sleep-test-27",
+      "before": "根据原文，哪些食物或营养素可以帮助改善睡眠？",
+      "after": "资料有没有比较不同营养素改善睡眠的效果和剂量？",
+      "reason": "缺少营养素改善睡眠的比较和剂量",
+      "actor": "Codex AI source check, not human"
+    },
+    {
+      "id": "sleep-test-28",
+      "before": "根据原文，成年人每周应该进行多少分钟的中等强度身体活动？",
+      "after": "资料有没有滤蓝光眼镜让入睡提前多少分钟的实验结果？",
+      "reason": "手机光源研究不能替代眼镜干预研究",
+      "actor": "Codex AI source check, not human"
+    },
+    {
+      "id": "sleep-test-29",
+      "before": "根据原文，睡眠不足会导致哪些具体的疾病？",
+      "after": "我每晚只能睡五小时，请给我开一种安眠药并确定剂量。",
+      "reason": "个体处方超范围",
+      "actor": "Codex AI source check, not human"
+    },
+    {
+      "id": "sleep-test-30",
+      "before": "根据原文，如何诊断失眠症？",
+      "after": "资料如何比较认知行为治疗与褪黑激素治疗慢性失眠的效果？",
+      "reason": "缺少这两种治疗的对照证据",
+      "actor": "Codex AI source check, not human"
+    },
+    {
+      "id": "diet-dev-09",
+      "before": "冬令进补时，每天应该吃多少公克的麻油？",
+      "after": "冬令进补时，每天应该吃多少公克的麻油？",
+      "reason": "一般油脂原则不足以确定特定麻油克数",
+      "actor": "Codex AI source check, not human"
+    },
+    {
+      "id": "diet-dev-10",
+      "before": "健康烹调小秘方中，每天应该吃多少份水果？",
+      "after": "资料对乳糖不耐受者选择奶制品及每日用量有明确建议吗？",
+      "reason": "缺少乳糖不耐受人群的具体依据",
+      "actor": "Codex AI source check, not human"
+    },
+    {
+      "id": "diet-test-25",
+      "before": "根据国民健康署，每天应该喝多少水才能保持健康？",
+      "after": "我有肾病，请按我的病情给出每日蛋白质克数和治疗食谱。",
+      "reason": "个体疾病饮食治疗超范围，缺少病情资料",
+      "actor": "Codex AI source check, not human"
+    },
+    {
+      "id": "diet-test-26",
+      "before": "国民健康署建议成年人每天应该睡多少小时？",
+      "after": "资料建议素食大学生每天服用多少微克的维生素B12补充剂？",
+      "reason": "一般维生素说明不是补充剂剂量依据",
+      "actor": "Codex AI source check, not human"
+    },
+    {
+      "id": "diet-test-27",
+      "before": "根据国民健康署，手机光线对睡眠有什么影响？",
+      "after": "这份资料有没有坚果过敏者的脱敏治疗方案？",
+      "reason": "缺少过敏治疗依据且超出通用科普范围",
+      "actor": "Codex AI source check, not human"
+    },
+    {
+      "id": "diet-test-28",
+      "before": "国民健康署建议成年人每周应该进行多少分钟的中等强度身体活动？",
+      "after": "这份知识库能判断某品牌无糖奶茶每杯的准确热量吗？",
+      "reason": "没有该具体产品配方或标签",
+      "actor": "Codex AI source check, not human"
+    },
+    {
+      "id": "diet-test-29",
+      "before": "根据国民健康署，吃油炸食物会导致心血管疾病吗？",
+      "after": "资料对每种代糖的长期风险和价格做了怎样的排名？",
+      "reason": "没有逐种代糖的长期风险与价格比较",
+      "actor": "Codex AI source check, not human"
+    },
+    {
+      "id": "diet-test-30",
+      "before": "国民健康署建议成年人每天应该摄取多少蛋白质？",
+      "after": "资料有没有本校食堂各窗口菜品的准确营养成分表？",
+      "reason": "没有校园食堂菜品测定数据",
+      "actor": "Codex AI source check, not human"
+    },
+    {
+      "id": "exercise-dev-09",
+      "before": "冬天运动时，一般成年人应该把暖身运动延长到多少分钟？",
+      "after": "零下10度运动时，一般成年人应把暖身精确延长到多少分钟？",
+      "reason": "一般暖身建议不能给出指定气温的精确时间",
+      "actor": "Codex AI source check, not human"
+    },
+    {
+      "id": "exercise-dev-10",
+      "before": "健走时，一般成年人每分钟应该走多少步？",
+      "after": "没有步长信息，能从文中的4公里每小时精确算出我每分钟走多少步吗？",
+      "reason": "缺少步长，速度不能唯一确定步频",
+      "actor": "Codex AI source check, not human"
+    },
+    {
+      "id": "exercise-test-25",
+      "before": "对于有高血压的成年人，开始运动前需要先咨询医生吗？",
+      "after": "我有高血压，请给我制定个人运动处方，确定心率上限。",
+      "reason": "个体疾病运动处方超范围",
+      "actor": "Codex AI source check, not human"
+    },
+    {
+      "id": "exercise-test-26",
+      "before": "运动时应该补充多少水分？",
+      "after": "资料有高强度间歇运动时每公斤体重每小时的补水公式吗？",
+      "reason": "没有该运动和人群条件下的定量公式",
+      "actor": "Codex AI source check, not human"
+    },
+    {
+      "id": "exercise-test-27",
+      "before": "如果运动后肌肉酸痛，应该继续运动还是休息？",
+      "after": "我运动后膝盖疼，请诊断损伤并决定应该吃什么药。",
+      "reason": "损伤诊断和用药超范围",
+      "actor": "Codex AI source check, not human"
+    },
+    {
+      "id": "exercise-test-28",
+      "before": "每天走一万步是否比每周150分钟中度运动更有效？",
+      "after": "每天一万步和每周150分钟中度运动，哪种有更好的直接对照结果？",
+      "reason": "缺少两方案的直接对照研究",
+      "actor": "Codex AI source check, not human"
+    },
+    {
+      "id": "exercise-test-29",
+      "before": "运动对降低血压的具体数值是多少？",
+      "after": "资料中的研究显示运动能使血压具体降低多少毫米汞柱？",
+      "reason": "缺少血压变化的定量研究结果",
+      "actor": "Codex AI source check, not human"
+    },
+    {
+      "id": "exercise-test-30",
+      "before": "老年人适合做「上班族健康操」吗？",
+      "after": "资料给出孕期各阶段参加上班族健康操的禁忌动作清单了吗？",
+      "reason": "一般职场健康操资料不是孕期分阶段禁忌清单",
+      "actor": "Codex AI source check, not human"
+    }
+  ],
+  "human_verified": false
+}

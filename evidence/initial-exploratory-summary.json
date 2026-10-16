@@ -1,0 +1,203 @@
+{
+  "note": "仅6道睡眠开发题×4方法的探索，非正式测试、非人工金标准；题集之后修订了不在本次运行中的负例",
+  "run_id": "20261016T132716152033Z_exploratory-dev",
+  "summary": {
+    "audited_at": "2026-10-16T13:28:24.591383+00:00",
+    "kind": "audit_saved_outputs_not_new_model_calls",
+    "results_sha256": "c233528fadcab53c271614678f6984b4fb87d9236ce3ae865c8ac1656147063d",
+    "summary": [
+      {
+        "method": "B0",
+        "attempted": 6,
+        "completed": 6,
+        "failed": 0,
+        "completion_rate": 1.0,
+        "evidence_recall": 1.0,
+        "evidence_recall_n": 6,
+        "evidence_precision": 0.25,
+        "evidence_precision_n": 6,
+        "keypoint_coverage": 1.0,
+        "keypoint_coverage_n": 6,
+        "faithfulness": 1.0,
+        "faithfulness_n": 6,
+        "citation_support": 1.0,
+        "citation_support_n": 6,
+        "citation_validity": 1.0,
+        "citation_validity_n": 6,
+        "correct_refusal": null,
+        "correct_refusal_n": 0,
+        "false_refusal": null,
+        "false_refusal_n": 0,
+        "retrieval_seconds": {
+          "mean": 0.002249416502309032,
+          "median": 0.00222199950076174,
+          "p95": 0.0036696875031339005,
+          "n": 6
+        },
+        "generation_seconds": {
+          "mean": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "n": 6
+        },
+        "total_seconds": {
+          "mean": 0.0023107361630536616,
+          "median": 0.002291853990755044,
+          "p95": 0.0037226357380859554,
+          "n": 6
+        },
+        "scoring_note": "回答质量仅对已成功且已评分项统计；同时报告完成率与各指标分母"
+      },
+      {
+        "method": "R1",
+        "attempted": 6,
+        "completed": 6,
+        "failed": 0,
+        "completion_rate": 1.0,
+        "evidence_recall": 1.0,
+        "evidence_recall_n": 6,
+        "evidence_precision": 0.25,
+        "evidence_precision_n": 6,
+        "keypoint_coverage": 1.0,
+        "keypoint_coverage_n": 6,
+        "faithfulness": 1.0,
+        "faithfulness_n": 6,
+        "citation_support": 1.0,
+        "citation_support_n": 6,
+        "citation_validity": 1.0,
+        "citation_validity_n": 6,
+        "correct_refusal": null,
+        "correct_refusal_n": 0,
+        "false_refusal": 0.0,
+        "false_refusal_n": 6,
+        "retrieval_seconds": {
+          "mean": 0.0009624444937799126,
+          "median": 0.0008477709925500676,
+          "p95": 0.0014414582547033206,
+          "n": 6
+        },
+        "generation_seconds": {
+          "mean": 1.4651413123259165,
+          "median": 1.442224749494926,
+          "p95": 1.6862183022531099,
+          "n": 6
+        },
+        "total_seconds": {
+          "mean": 1.4661673333321232,
+          "median": 1.4436607915122295,
+          "p95": 1.6871320627396926,
+          "n": 6
+        },
+        "scoring_note": "回答质量仅对已成功且已评分项统计；同时报告完成率与各指标分母"
+      },
+      {
+        "method": "R2",
+        "attempted": 6,
+        "completed": 6,
+        "failed": 0,
+        "completion_rate": 1.0,
+        "evidence_recall": 0.3333333333333333,
+        "evidence_recall_n": 6,
+        "evidence_precision": 0.08333333333333333,
+        "evidence_precision_n": 6,
+        "keypoint_coverage": 0.6,
+        "keypoint_coverage_n": 5,
+        "faithfulness": 1.0,
+        "faithfulness_n": 4,
+        "citation_support": 1.0,
+        "citation_support_n": 4,
+        "citation_validity": 1.0,
+        "citation_validity_n": 5,
+        "correct_refusal": null,
+        "correct_refusal_n": 0,
+        "false_refusal": 0.16666666666666666,
+        "false_refusal_n": 6,
+        "retrieval_seconds": {
+          "mean": 0.021947173503576778,
+          "median": 0.01958514550642576,
+          "p95": 0.03289613524975721,
+          "n": 6
+        },
+        "generation_seconds": {
+          "mean": 1.4271364721644204,
+          "median": 1.4410599789989647,
+          "p95": 1.779191333494964,
+          "n": 6
+        },
+        "total_seconds": {
+          "mean": 1.449136409496229,
+          "median": 1.4588651874946663,
+          "p95": 1.8000682910060277,
+          "n": 6
+        },
+        "scoring_note": "回答质量仅对已成功且已评分项统计；同时报告完成率与各指标分母"
+      },
+      {
+        "method": "R3",
+        "attempted": 6,
+        "completed": 6,
+        "failed": 0,
+        "completion_rate": 1.0,
+        "evidence_recall": 0.6666666666666666,
+        "evidence_recall_n": 6,
+        "evidence_precision": 0.16666666666666666,
+        "evidence_precision_n": 6,
+        "keypoint_coverage": 0.8333333333333334,
+        "keypoint_coverage_n": 6,
+        "faithfulness": 1.0,
+        "faithfulness_n": 6,
+        "citation_support": 1.0,
+        "citation_support_n": 6,
+        "citation_validity": 1.0,
+        "citation_validity_n": 6,
+        "correct_refusal": null,
+        "correct_refusal_n": 0,
+        "false_refusal": 0.0,
+        "false_refusal_n": 6,
+        "retrieval_seconds": {
+          "mean": 0.013724478834774345,
+          "median": 0.015347249500337057,
+          "p95": 0.01680056199984392,
+          "n": 6
+        },
+        "generation_seconds": {
+          "mean": 1.2547766251615637,
+          "median": 1.2396369379857788,
+          "p95": 1.4127440417578327,
+          "n": 6
+        },
+        "total_seconds": {
+          "mean": 1.268546270832303,
+          "median": 1.2552473334944807,
+          "p95": 1.4268873642431572,
+          "n": 6
+        },
+        "scoring_note": "回答质量仅对已成功且已评分项统计；同时报告完成率与各指标分母"
+      }
+    ],
+    "costs": {
+      "ai_judge": {
+        "responses": 24,
+        "failed_attempts_unknown_cost": 0,
+        "prompt_tokens": 49245,
+        "completion_tokens": 3661,
+        "cny_min": 0.06213283999999999,
+        "cny_max": 0.12426567999999998
+      },
+      "answer": {
+        "responses": 18,
+        "failed_attempts_unknown_cost": 0,
+        "prompt_tokens": 19253,
+        "completion_tokens": 2254,
+        "cny_min": 0.02362772,
+        "cny_max": 0.04725544
+      }
+    },
+    "rows": 24,
+    "expected_rows": 24,
+    "complete": true,
+    "errors": 0,
+    "judge_errors": 1,
+    "unreviewed_ai_scoring": true
+  }
+}

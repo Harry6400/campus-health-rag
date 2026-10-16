@@ -1,0 +1,9 @@
+{
+  "status": "pending",
+  "reviewer": "",
+  "reviewed_at": "",
+  "questions_sha256": "26561bfbb9cc3f6e01ad3d2b4ae62ae00b5047373392917c782fe85e98e13093",
+  "corpus_sha256": "481fed36687503978bcf8a1bfb5a2c96fbaa542f5d29e3be72e0e520e1ef4f8e",
+  "config_sha256": "03c12eb4aacfbdc65e8db2541888e86cbda7ace21bd0ab81cddea195ece4c290",
+  "comment": "实际审核后由小组填写；AI不得自动改为approved或代签"
+}
