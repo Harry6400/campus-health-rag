@@ -1,0 +1,54 @@
+{
+  "recorded_at": "2026-10-16T13:58:51.738854+00:00",
+  "clone_commit": "6edc35b4440782d63fff5a4d3e48644880cbd9bf",
+  "run_id": "20261016T134125796766Z_clean-clone-mac",
+  "steps": [
+    {
+      "command": [
+        "uv",
+        "sync",
+        "--locked",
+        "--group",
+        "dev"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "campus-health",
+        "prepare"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "campus-health",
+        "doctor"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "pytest",
+        "-q"
+      ],
+      "returncode": 0
+    }
+  ],
+  "log_sha256": {
+    "4.log": "750629578324cd1a852a4ef10c37b6fefb2d779d15da0bf14eee1b49db0b8fce",
+    "2.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "3.log": "1ed2f0f380968b9b1d827c05f4893d78de9129ee86471cad1d2b6070ecfa4176",
+    "1.log": "f38abdcb38d8d34c1a2e804dd17402bff40f24299e1a7f40b08b245225ef0215"
+  },
+  "scope": "从新目录安装依赖、下载校验数据、无密钥doctor、当时18项检查；未运行模型或API，不冒充主结果复现"
+}

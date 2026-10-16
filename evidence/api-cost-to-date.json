@@ -1,0 +1,11 @@
+{
+  "recorded_at": "2026-10-16T13:52:05.206349+00:00",
+  "responses": 213,
+  "failed_attempts_unknown_cost": 0,
+  "prompt_tokens": 377118,
+  "completion_tokens": 69765,
+  "cny_min": 0.5812922799999999,
+  "cny_max": 1.1625845599999998,
+  "unpriced_responses": 0,
+  "note": "所有开发题草稿、回答、AI评分、格式修复调用合计；官方峰谷价区间估算，不是账户实际扣费"
+}

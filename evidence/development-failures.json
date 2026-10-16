@@ -1,0 +1,68 @@
+{
+  "recorded_at": "2026-10-16T13:53:34.220265+00:00",
+  "note": "真实的检索、数据构造、评估三个阶段的失败；不是声称已有三类终端问答错误，报告采用仍需小组审核。旧输出保留不覆盖。",
+  "cases": [
+    {
+      "stage": "retrieval",
+      "kind": "answerable question refused after evidence miss",
+      "evidence_file": "real-casebook.json",
+      "run_id": "20261016T132716152033Z_exploratory-dev",
+      "question_id": "sleep-dev-02",
+      "method": "R2"
+    },
+    {
+      "stage": "data labeling",
+      "kind": "reference-subset absence confused with whole-corpus absence",
+      "question": "根据原文，一般成年人应该避免在睡前使用手机吗？",
+      "actual_draft_label": false,
+      "whole_corpus_support": "sleep01:u0012",
+      "source_run": "20261016T132456770210Z_question-draft-v2",
+      "correction_record": "negative-label-corrections.json",
+      "human_verified": false
+    },
+    {
+      "stage": "AI evaluation",
+      "kind": "per-claim scores returned instead of per-citation scores",
+      "run_id": "20261016T133533842763Z_exploratory-dev",
+      "question_id": "diet-dev-04",
+      "method": "R2",
+      "expected_citation_scores": 7,
+      "received_citation_scores": 8,
+      "raw_judgment": {
+        "keypoint_scores": [
+          1,
+          1,
+          1
+        ],
+        "claim_scores": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "citation_scores": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "reasons": [
+          "回答明确涵盖原型食材、适量油盐、均衡饮食三个要点，与证据diet04:c0000-0010一致。",
+          "claim1引用[1][2]支持原型食材、适量油盐、均衡饮食及搭配全谷杂粮、蔬果、乳品及坚果种子类，证据diet04:c0000-0010有对应内容。",
+          "claim2引用[3]支持进补不等于大吃大喝、减少高油高盐、依我的餐盘均衡饮食六口诀、确保全谷杂粮与蔬果，证据diet04:c0009-0019有对应内容。",
+          "claim3引用[4]支持汤头以天然中药材、姜片或大量蔬菜熬煮，减少高汤块或盐巴以降低钠含量与身体负担，证据diet04:c0019-0023有对应内容。",
+          "claim4引用[4]支持避免高盐、高糖、高油的丸饺类、甜不辣、油条等加工火锅料，多选用天然原型食材，证据diet04:c0019-0023有对应内容。",
+          "claim5引用[1][4]支持根茎类视为部分主食、适量取用、避免再搭配米饭面线超量、确保当季蔬菜充足、饭后补充拳头大当季水果，证据diet04:c0022-0030和diet04:c0019-0023有对应内容。"
+        ]
+      },
+      "response_id": "9be85658-f3c1-4ecd-a521-7581b361278c",
+      "fix": "explicit flattened citation_checks and expected_lengths; four old failure samples rescored successfully in separate run",
+      "fix_run": "20261016T134534100867Z_judge-format-fix-check-not-regeneration"
+    }
+  ]
+}

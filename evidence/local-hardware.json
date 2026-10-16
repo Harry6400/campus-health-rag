@@ -1,0 +1,9 @@
+{
+  "recorded_at": "2026-10-16T13:57:52.226553+00:00",
+  "source": "本次会话 sysctl -n machdep.cpu.brand_string hw.memsize 实际输出",
+  "cpu": "Apple M5",
+  "memory_bytes": 17179869184,
+  "embedding_device": "cpu",
+  "torch_threads": 4,
+  "note": "不记录序列号、UUID或网络标识；硬件读取在沙箱外经授权完成"
+}

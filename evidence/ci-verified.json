@@ -1,0 +1,381 @@
+{
+  "recorded_at": "2026-10-16T13:57:52.221498+00:00",
+  "run": {
+    "conclusion": "success",
+    "headSha": "8c172b6cb12d6ef3a2b5003f6db15a0caf305294",
+    "jobs": [
+      {
+        "completedAt": "2026-10-16T13:55:07Z",
+        "conclusion": "success",
+        "databaseId": 117007873961,
+        "name": "checks (macos-latest)",
+        "startedAt": "2026-10-16T13:53:50Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-10-16T13:53:52Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-10-16T13:53:50Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:53:54Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-10-16T13:53:52Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:53:56Z",
+            "conclusion": "success",
+            "name": "Run astral-sh/setup-uv@v6",
+            "number": 3,
+            "startedAt": "2026-10-16T13:53:54Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:09Z",
+            "conclusion": "success",
+            "name": "Run uv sync --locked --group dev",
+            "number": 4,
+            "startedAt": "2026-10-16T13:53:56Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:09Z",
+            "conclusion": "success",
+            "name": "Run uv run --locked ruff check src tests",
+            "number": 5,
+            "startedAt": "2026-10-16T13:54:09Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:14Z",
+            "conclusion": "success",
+            "name": "Run uv run --locked pytest -q",
+            "number": 6,
+            "startedAt": "2026-10-16T13:54:09Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:14Z",
+            "conclusion": "success",
+            "name": "Run uv run --locked campus-health --help",
+            "number": 7,
+            "startedAt": "2026-10-16T13:54:14Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:15Z",
+            "conclusion": "success",
+            "name": "Run uv run --locked campus-health doctor",
+            "number": 8,
+            "startedAt": "2026-10-16T13:54:14Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:17Z",
+            "conclusion": "success",
+            "name": "Run uv run --locked campus-health prepare",
+            "number": 9,
+            "startedAt": "2026-10-16T13:54:15Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:46Z",
+            "conclusion": "success",
+            "name": "Run uv run --locked campus-health ask \"怎样在日常生活中增加身体活动？\" --method B0",
+            "number": 10,
+            "startedAt": "2026-10-16T13:54:17Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:55:00Z",
+            "conclusion": "success",
+            "name": "Run uv run --locked campus-health retrieve \"怎样在日常生活中增加身体活动？\" --method R3",
+            "number": 11,
+            "startedAt": "2026-10-16T13:54:46Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:55:01Z",
+            "conclusion": "success",
+            "name": "Post Run astral-sh/setup-uv@v6",
+            "number": 21,
+            "startedAt": "2026-10-16T13:55:00Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:55:01Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 22,
+            "startedAt": "2026-10-16T13:55:01Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:55:03Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 23,
+            "startedAt": "2026-10-16T13:55:01Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/Harry6400/campus-health-rag/actions/runs/38911401482/job/117007873961"
+      },
+      {
+        "completedAt": "2026-10-16T13:54:55Z",
+        "conclusion": "success",
+        "databaseId": 117007874417,
+        "name": "checks (windows-latest)",
+        "startedAt": "2026-10-16T13:53:46Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-10-16T13:53:48Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-10-16T13:53:47Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:53:53Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-10-16T13:53:48Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:53:58Z",
+            "conclusion": "success",
+            "name": "Run astral-sh/setup-uv@v6",
+            "number": 3,
+            "startedAt": "2026-10-16T13:53:53Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:09Z",
+            "conclusion": "success",
+            "name": "Run uv sync --locked --group dev",
+            "number": 4,
+            "startedAt": "2026-10-16T13:53:58Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:09Z",
+            "conclusion": "success",
+            "name": "Run uv run --locked ruff check src tests",
+            "number": 5,
+            "startedAt": "2026-10-16T13:54:09Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:14Z",
+            "conclusion": "success",
+            "name": "Run uv run --locked pytest -q",
+            "number": 6,
+            "startedAt": "2026-10-16T13:54:09Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:15Z",
+            "conclusion": "success",
+            "name": "Run uv run --locked campus-health --help",
+            "number": 7,
+            "startedAt": "2026-10-16T13:54:14Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:16Z",
+            "conclusion": "success",
+            "name": "Run uv run --locked campus-health doctor",
+            "number": 8,
+            "startedAt": "2026-10-16T13:54:15Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:18Z",
+            "conclusion": "success",
+            "name": "Run uv run --locked campus-health prepare",
+            "number": 9,
+            "startedAt": "2026-10-16T13:54:16Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:37Z",
+            "conclusion": "success",
+            "name": "Run uv run --locked campus-health ask \"怎样在日常生活中增加身体活动？\" --method B0",
+            "number": 10,
+            "startedAt": "2026-10-16T13:54:18Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:50Z",
+            "conclusion": "success",
+            "name": "Run uv run --locked campus-health retrieve \"怎样在日常生活中增加身体活动？\" --method R3",
+            "number": 11,
+            "startedAt": "2026-10-16T13:54:37Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:50Z",
+            "conclusion": "success",
+            "name": "Post Run astral-sh/setup-uv@v6",
+            "number": 21,
+            "startedAt": "2026-10-16T13:54:50Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:52Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 22,
+            "startedAt": "2026-10-16T13:54:50Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:52Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 23,
+            "startedAt": "2026-10-16T13:54:52Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/Harry6400/campus-health-rag/actions/runs/38911401482/job/117007874417"
+      },
+      {
+        "completedAt": "2026-10-16T13:54:49Z",
+        "conclusion": "success",
+        "databaseId": 117007874761,
+        "name": "checks (ubuntu-latest)",
+        "startedAt": "2026-10-16T13:53:46Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-10-16T13:53:48Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-10-16T13:53:46Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:53:48Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-10-16T13:53:48Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:53:51Z",
+            "conclusion": "success",
+            "name": "Run astral-sh/setup-uv@v6",
+            "number": 3,
+            "startedAt": "2026-10-16T13:53:48Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:24Z",
+            "conclusion": "success",
+            "name": "Run uv sync --locked --group dev",
+            "number": 4,
+            "startedAt": "2026-10-16T13:53:51Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:24Z",
+            "conclusion": "success",
+            "name": "Run uv run --locked ruff check src tests",
+            "number": 5,
+            "startedAt": "2026-10-16T13:54:24Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:26Z",
+            "conclusion": "success",
+            "name": "Run uv run --locked pytest -q",
+            "number": 6,
+            "startedAt": "2026-10-16T13:54:24Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:26Z",
+            "conclusion": "success",
+            "name": "Run uv run --locked campus-health --help",
+            "number": 7,
+            "startedAt": "2026-10-16T13:54:26Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:27Z",
+            "conclusion": "success",
+            "name": "Run uv run --locked campus-health doctor",
+            "number": 8,
+            "startedAt": "2026-10-16T13:54:26Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:28Z",
+            "conclusion": "success",
+            "name": "Run uv run --locked campus-health prepare",
+            "number": 9,
+            "startedAt": "2026-10-16T13:54:27Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:39Z",
+            "conclusion": "success",
+            "name": "Run uv run --locked campus-health ask \"怎样在日常生活中增加身体活动？\" --method B0",
+            "number": 10,
+            "startedAt": "2026-10-16T13:54:28Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:47Z",
+            "conclusion": "success",
+            "name": "Run uv run --locked campus-health retrieve \"怎样在日常生活中增加身体活动？\" --method R3",
+            "number": 11,
+            "startedAt": "2026-10-16T13:54:39Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:47Z",
+            "conclusion": "success",
+            "name": "Post Run astral-sh/setup-uv@v6",
+            "number": 21,
+            "startedAt": "2026-10-16T13:54:47Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:47Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 22,
+            "startedAt": "2026-10-16T13:54:47Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-16T13:54:47Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 23,
+            "startedAt": "2026-10-16T13:54:47Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/Harry6400/campus-health-rag/actions/runs/38911401482/job/117007874761"
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/Harry6400/campus-health-rag/actions/runs/38911401482"
+  },
+  "scope": "托管Windows/Mac真实依赖安装、19项检查、数据下载、BM25和R3 CPU向量检索；无API密钥，不代表队友电脑API全链路或正式测试通过"
+}

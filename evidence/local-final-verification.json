@@ -1,0 +1,34 @@
+{
+  "recorded_at": "2026-10-16T13:52:05.195520+00:00",
+  "run_id": "20261016T135203504900Z_local-final-verification",
+  "checks": [
+    {
+      "command": [
+        ".venv/bin/ruff",
+        "check",
+        "src",
+        "tests",
+        "tools"
+      ],
+      "exit_code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "command": [
+        ".venv/bin/pytest",
+        "-q"
+      ],
+      "exit_code": 0,
+      "output": "...................                                                      [100%]\n19 passed in 0.60s\n"
+    },
+    {
+      "command": [
+        ".venv/bin/campus-health",
+        "validate-questions"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"errors\": []\n}\n"
+    }
+  ],
+  "note": "测试夹具与结构检查不等于正式实验/人工核验"
+}
