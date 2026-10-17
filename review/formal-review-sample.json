@@ -1,0 +1,289 @@
+{
+  "status": "preselected_pending_group_approval",
+  "selection_rule": "按冻结题库文件顺序，在每个主题×题型中取前2题；先选样本，不查看正式输出。每主题直接题第1题和无答案题第1题双人复核。",
+  "question_file": "data/questions.draft.jsonl",
+  "questions_sha256": "10f098142b700bbf91d40f1cbb82a49176382991cd0ed957ff92315480ca109b",
+  "unique_question_count": 24,
+  "double_review_count": 6,
+  "reviewer_assignment_counts": {
+    "R1": 15,
+    "R2": 15
+  },
+  "reviewers": [
+    "R1",
+    "R2"
+  ],
+  "questions": [
+    {
+      "question_id": "sleep-test-01",
+      "theme": "sleep",
+      "kind": "direct",
+      "answerable": true,
+      "question_sha256": "4d5e5480bba2cab7d5f29d722f62d8007ec1b995ad68e819ee7be0a9df5134bb",
+      "double_review": true,
+      "reviewer_ids": [
+        "R1",
+        "R2"
+      ]
+    },
+    {
+      "question_id": "sleep-test-02",
+      "theme": "sleep",
+      "kind": "direct",
+      "answerable": true,
+      "question_sha256": "bf9d6a635544b2a2d96e75625c389f7c2d244938cf789460cedd272df000474b",
+      "double_review": false,
+      "reviewer_ids": [
+        "R1"
+      ]
+    },
+    {
+      "question_id": "sleep-test-11",
+      "theme": "sleep",
+      "kind": "paraphrase",
+      "answerable": true,
+      "question_sha256": "144ff07127970052aef87c42a8acb7653d1e72dae883f4feb38e88cd57c759ea",
+      "double_review": false,
+      "reviewer_ids": [
+        "R1"
+      ]
+    },
+    {
+      "question_id": "sleep-test-12",
+      "theme": "sleep",
+      "kind": "paraphrase",
+      "answerable": true,
+      "question_sha256": "9a317c51b3724b087e606a3510cdd9d2f13f36b3394231ce55b4331ce2835c6b",
+      "double_review": false,
+      "reviewer_ids": [
+        "R2"
+      ]
+    },
+    {
+      "question_id": "sleep-test-19",
+      "theme": "sleep",
+      "kind": "multi",
+      "answerable": true,
+      "question_sha256": "8e68ea7fcbfb05a653f1e437d7d7439e4cad3831641b3b6ac5a4f2f5cbc3c3c5",
+      "double_review": false,
+      "reviewer_ids": [
+        "R2"
+      ]
+    },
+    {
+      "question_id": "sleep-test-20",
+      "theme": "sleep",
+      "kind": "multi",
+      "answerable": true,
+      "question_sha256": "a7c9a194713fefdee27c34cd88ec952b2709b2f7e5188f19ff6a6f8e90afffaa",
+      "double_review": false,
+      "reviewer_ids": [
+        "R1"
+      ]
+    },
+    {
+      "question_id": "sleep-test-25",
+      "theme": "sleep",
+      "kind": "unanswerable",
+      "answerable": false,
+      "question_sha256": "fbd58e72329a184fac26c951f0d901bc15d3d3e727de6f231f1410b5125fcf63",
+      "double_review": true,
+      "reviewer_ids": [
+        "R1",
+        "R2"
+      ]
+    },
+    {
+      "question_id": "sleep-test-26",
+      "theme": "sleep",
+      "kind": "unanswerable",
+      "answerable": false,
+      "question_sha256": "741c9c4c96cda82aa82f308b0664e91246c58840933141b56f452947bf25702b",
+      "double_review": false,
+      "reviewer_ids": [
+        "R2"
+      ]
+    },
+    {
+      "question_id": "diet-test-01",
+      "theme": "diet",
+      "kind": "direct",
+      "answerable": true,
+      "question_sha256": "55ccd5d112dcebda23f7ca4ad01fd3aa7d044e49b0a961d5b11e76a898b2ddff",
+      "double_review": true,
+      "reviewer_ids": [
+        "R1",
+        "R2"
+      ]
+    },
+    {
+      "question_id": "diet-test-02",
+      "theme": "diet",
+      "kind": "direct",
+      "answerable": true,
+      "question_sha256": "5f92a16d499effac53482a70010b040a67f18df0be2ea208df087d31f821ed4c",
+      "double_review": false,
+      "reviewer_ids": [
+        "R1"
+      ]
+    },
+    {
+      "question_id": "diet-test-11",
+      "theme": "diet",
+      "kind": "paraphrase",
+      "answerable": true,
+      "question_sha256": "c6195905a53f483e041666a2bbcd4d9c0b72076089e990feb9b466d700b69b90",
+      "double_review": false,
+      "reviewer_ids": [
+        "R1"
+      ]
+    },
+    {
+      "question_id": "diet-test-12",
+      "theme": "diet",
+      "kind": "paraphrase",
+      "answerable": true,
+      "question_sha256": "07a2b199551f75943933211d2d3edc3454a88b91d5f0f3c7997f0b623901abbb",
+      "double_review": false,
+      "reviewer_ids": [
+        "R2"
+      ]
+    },
+    {
+      "question_id": "diet-test-19",
+      "theme": "diet",
+      "kind": "multi",
+      "answerable": true,
+      "question_sha256": "bbc104a25e49571a61c0de02e3c0fbfc37cd2a882e95f30453cbea064d4a51f8",
+      "double_review": false,
+      "reviewer_ids": [
+        "R2"
+      ]
+    },
+    {
+      "question_id": "diet-test-20",
+      "theme": "diet",
+      "kind": "multi",
+      "answerable": true,
+      "question_sha256": "9d70dda134cea2ffe8e15c4b8df7dcf54b5cb4a9c71dcc19acfe67d51814e32c",
+      "double_review": false,
+      "reviewer_ids": [
+        "R1"
+      ]
+    },
+    {
+      "question_id": "diet-test-25",
+      "theme": "diet",
+      "kind": "unanswerable",
+      "answerable": false,
+      "question_sha256": "30309537f089f683c94b223abe3c9180e31c916a853a5b2ad606211b13c75ed6",
+      "double_review": true,
+      "reviewer_ids": [
+        "R1",
+        "R2"
+      ]
+    },
+    {
+      "question_id": "diet-test-26",
+      "theme": "diet",
+      "kind": "unanswerable",
+      "answerable": false,
+      "question_sha256": "6c3fa9022d60b7e8d4271ff0f86b747dd0e151e21fffaa3668f8ead9d7ac4e40",
+      "double_review": false,
+      "reviewer_ids": [
+        "R2"
+      ]
+    },
+    {
+      "question_id": "exercise-test-01",
+      "theme": "exercise",
+      "kind": "direct",
+      "answerable": true,
+      "question_sha256": "715baaa9172b6451104932b88597ecef177e60e99656753a291613c20f0a51b5",
+      "double_review": true,
+      "reviewer_ids": [
+        "R1",
+        "R2"
+      ]
+    },
+    {
+      "question_id": "exercise-test-02",
+      "theme": "exercise",
+      "kind": "direct",
+      "answerable": true,
+      "question_sha256": "9c11bbbad0b1897634ba6f7c0c189c6c5fc35ed9b984f6487207b2e253dc04f4",
+      "double_review": false,
+      "reviewer_ids": [
+        "R1"
+      ]
+    },
+    {
+      "question_id": "exercise-test-11",
+      "theme": "exercise",
+      "kind": "paraphrase",
+      "answerable": true,
+      "question_sha256": "05aa1447c630ee6bd3d040721686b1acfbf37e699ca8e8f3ab61d3f4ff3d1824",
+      "double_review": false,
+      "reviewer_ids": [
+        "R1"
+      ]
+    },
+    {
+      "question_id": "exercise-test-12",
+      "theme": "exercise",
+      "kind": "paraphrase",
+      "answerable": true,
+      "question_sha256": "5d07824d817691477624bd9c809b95d8e5e0700658deb60aa29f47e39eb5ce38",
+      "double_review": false,
+      "reviewer_ids": [
+        "R2"
+      ]
+    },
+    {
+      "question_id": "exercise-test-19",
+      "theme": "exercise",
+      "kind": "multi",
+      "answerable": true,
+      "question_sha256": "4370e47d1fc3842559c38937dc79758a0486d67ca12bcd897020617e522d6cb9",
+      "double_review": false,
+      "reviewer_ids": [
+        "R2"
+      ]
+    },
+    {
+      "question_id": "exercise-test-20",
+      "theme": "exercise",
+      "kind": "multi",
+      "answerable": true,
+      "question_sha256": "9b28c33f2a1c525cbdc5a6d24afb9d1b374fd2c1cb8575f6bda46c92565396b5",
+      "double_review": false,
+      "reviewer_ids": [
+        "R1"
+      ]
+    },
+    {
+      "question_id": "exercise-test-25",
+      "theme": "exercise",
+      "kind": "unanswerable",
+      "answerable": false,
+      "question_sha256": "8da20b10e6d870517ad4a400ca0ebc06e470e149d34a7c35b5a11c1dba84ac34",
+      "double_review": true,
+      "reviewer_ids": [
+        "R1",
+        "R2"
+      ]
+    },
+    {
+      "question_id": "exercise-test-26",
+      "theme": "exercise",
+      "kind": "unanswerable",
+      "answerable": false,
+      "question_sha256": "a242b80eaf1ad9b4e1a639172df9898a5b17054e40ba63bb90303fa1cee25ae6",
+      "double_review": false,
+      "reviewer_ids": [
+        "R2"
+      ]
+    }
+  ],
+  "limitations": "R1/R2是待映射到真实学生审核人的占位ID，不表示审核已发生。两人需先独立判断，再记录讨论与分歧。"
+}

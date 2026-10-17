@@ -1,0 +1,41 @@
+{
+  "checked_at_utc": "2026-10-17T01:43:26.799903+00:00",
+  "status": "ready_pending_group_signoff",
+  "protocol_exists": false,
+  "api_key_configured": true,
+  "api_key_value_recorded": false,
+  "official_api_identity": {
+    "provider": "deepseek",
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-flash"
+  },
+  "question_rows": 120,
+  "test_questions": 90,
+  "protocol_template_fingerprint_matches": true,
+  "fingerprint_match": {
+    "questions_sha256": true,
+    "corpus_sha256": true,
+    "corpus_manifest_file_sha256": true,
+    "corpus_file_sha256": true,
+    "config_sha256": true,
+    "api": true,
+    "api_sha256": true,
+    "answer_prompt_sha256": true,
+    "judge_prompt_sha256": true,
+    "code_sha256": true,
+    "runtime": true,
+    "execution": true,
+    "review_sample_sha256": true
+  },
+  "review_sample": {
+    "path": "review/formal-review-sample.json",
+    "sha256": "9f462d0753931f1fe5fda95112fadb2706353ec84a942ea2f54373787fd295f7",
+    "unique_questions": 24,
+    "double_review_questions": 6,
+    "reviewer_slots": {
+      "R1": 15,
+      "R2": 15
+    }
+  },
+  "formal_run_started": false
+}

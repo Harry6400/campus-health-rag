@@ -1,0 +1,73 @@
+{
+  "recorded_at": "2026-10-16T16:13:57.345423+00:00",
+  "before_sha256": "5975b63bb4ebb573c14a0467850c9fff686697aa1acf14f35800327b4697253b",
+  "questions_sha256": "10f098142b700bbf91d40f1cbb82a49176382991cd0ed957ff92315480ca109b",
+  "corpus_sha256": "481fed36687503978bcf8a1bfb5a2c96fbaa542f5d29e3be72e0e520e1ef4f8e",
+  "changed_ids": [
+    "sleep-dev-05",
+    "sleep-dev-08",
+    "exercise-dev-03"
+  ],
+  "backup": "review/private/questions-before-cross-split-20261016T161357Z.jsonl",
+  "total": 120,
+  "dev": 30,
+  "test": 90,
+  "structure_passed": true,
+  "shared_reference_units": [],
+  "shared_group_ids": [],
+  "resolved": [
+    {
+      "dev": "sleep-dev-05",
+      "test": [
+        "sleep-test-07",
+        "sleep-test-17"
+      ],
+      "reason": "睡前助眠方法已换成社交时差研究风险题"
+    },
+    {
+      "dev": "sleep-dev-08",
+      "test": [
+        "exercise-test-02",
+        "exercise-test-19"
+      ],
+      "reason": "已不再问每周150分钟"
+    },
+    {
+      "dev": "exercise-dev-03",
+      "test": [
+        "exercise-test-18"
+      ],
+      "reason": "已不再问健走作为容易开始的运动"
+    }
+  ],
+  "residual_related_concepts": [
+    {
+      "dev": [
+        "diet-dev-02",
+        "diet-dev-05"
+      ],
+      "test": [
+        "diet-test-01",
+        "diet-test-11"
+      ],
+      "reason": "高纤低油低糖低盐，与外食四少中的少油少盐少糖存在概念和部分答案重叠；三低一高与四少不是完全相同意图，但不能声称原子知识完全隔离。"
+    },
+    {
+      "dev": [
+        "sleep-dev-04"
+      ],
+      "test": [
+        "sleep-test-07",
+        "sleep-test-17"
+      ],
+      "reason": "睡不着时起身听音乐、有睡意再上床，与睡前轻松平静活动有概念联系；情境及完整必答事实不同。"
+    }
+  ],
+  "limitations": [
+    "以上是已发现的关系，不是语义绝对独立证明。",
+    "同一18份知识库可被开发和测试共同检索；不是未见文档泛化测试。",
+    "开发内、测试内存在改写和组合题共享事实，不能将题数当作完全独立知识样本数。"
+  ],
+  "whole_dataset_approved": false,
+  "experiments_started": false
+}

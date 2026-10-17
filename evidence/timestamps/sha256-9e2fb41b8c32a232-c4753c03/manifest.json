@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "record_id": "c4753c0336dd45bba0800c94b5686f8e",
+  "label": "Public sanitized log copies",
+  "hash_algorithm": "SHA-256",
+  "timestamp_service": "FreeTSA RFC 3161 TSA",
+  "files": [
+    {
+      "path": "docs/EVIDENCE_TIMESTAMPING.md",
+      "bytes": 4168,
+      "sha256": "70e661a95a9789ad2b6d679b2943743d68cbb3f4906372ef321ead265691d1d3"
+    },
+    {
+      "path": "docs/STATUS.md",
+      "bytes": 6051,
+      "sha256": "44cb65631abff1f3048cab55e6e5a638e8564847d80c07b2013f0e96389bfb6c"
+    },
+    {
+      "path": "evidence/development-sweep-console.public.log",
+      "bytes": 3739,
+      "sha256": "54a1c1011ce8400f5b60d15c2f61d668a6c94baa51c3b8af9755c3dcccf7aa1b"
+    },
+    {
+      "path": "evidence/formal-preflight-doctor.public.log",
+      "bytes": 555,
+      "sha256": "494518c9f9b7871311f2ea9728256c8c412df171f4b4df3fba6c593b3af7c539"
+    },
+    {
+      "path": "evidence/formal-preflight-tests.public.log",
+      "bytes": 735,
+      "sha256": "ffbcd7df4e0afc5010b83a9a6283e5fb42954e05f80bf35e4527243f0e27427c"
+    }
+  ]
+}

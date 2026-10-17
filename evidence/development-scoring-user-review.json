@@ -1,0 +1,51 @@
+{
+  "recorded_at": "2026-10-16T16:26:56.087197+00:00",
+  "run": "20261016T161911255389Z_exploratory-dev",
+  "question_id": "diet-dev-05",
+  "results_sha256": "4d4ea6482f760b408ccf8916e2826f90291a21e9636f20ace1e2182429370391",
+  "question": "健康饮食的大原则是什么？",
+  "answer": "健康饮食应以均衡与适量为要，并落实健康均衡饮食。 [1]\n\n应确保当季蔬菜份量充足，并在饭后补充拳头大的当季水果，以摄取维生素C与植化素。 [1]\n\n进补不等于大吃大喝，应减少高油高盐食物。 [2]\n\n可依「我的餐盘」均衡饮食六口诀，确保全谷杂粮与蔬果摄取充足。 [2]\n\n麻油等油脂类应留意整体油量控制，避免摄取过量油脂。 [2]",
+  "reviewer_type": "用户在对话中实际核验展示的两项，AI如实转录",
+  "approval_text": "认可，低油和低盐两项已覆盖",
+  "review_scope": "仅低油与低盐覆盖；不认定整题、所有claims或全套评分均已人工核验",
+  "confirmed_items": [
+    {
+      "index_zero_based": 1,
+      "keypoint": "低油",
+      "original_ai_score": 0,
+      "user_reviewed_score": 1
+    },
+    {
+      "index_zero_based": 3,
+      "keypoint": "低盐",
+      "original_ai_score": 0,
+      "user_reviewed_score": 1
+    }
+  ],
+  "unreviewed_items": [
+    "高纤",
+    "低糖"
+  ],
+  "evidence_basis": "回答明确说减少高油高盐食物及避免摄取过量油脂，所引原文含相应表述。",
+  "original_ai_scores": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "partially_reviewed_scores": [
+    0,
+    1,
+    0,
+    1
+  ],
+  "original_question_coverage": 0.0,
+  "partially_reviewed_question_coverage": 0.5,
+  "original_group_coverage": 0.8541666666666666,
+  "partially_reviewed_group_coverage": 0.875,
+  "group_n": 24,
+  "aggregation_note": "只替换用户确认的两项，其余仍沿用原AI评分；这是部分人工校正结果，不是全量人工准确率。",
+  "selection_effect": "该两项修正不改变jieba、k=4的初步推荐",
+  "raw_results_modified": false,
+  "formal_test_authorized": false
+}

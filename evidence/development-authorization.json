@@ -1,0 +1,43 @@
+{
+  "recorded_at": "2026-10-16T16:18:13.741419+00:00",
+  "approval": "用户认可10f09814题集与披露的概念关联，授权修正执行器、自检和30题开发选参，不授权90题正式测试",
+  "questions_sha256": "10f098142b700bbf91d40f1cbb82a49176382991cd0ed957ff92315480ca109b",
+  "generation_api": {
+    "provider": "deepseek",
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-flash"
+  },
+  "settings": {
+    "seed": 20261016,
+    "model_id": "BAAI/bge-small-zh-v1.5",
+    "model_revision": "7999e1d3359715c523056ef9478215996d62a620",
+    "embedding_device": "cpu",
+    "chunk_tokens": 256,
+    "overlap_tokens": 32,
+    "top_k": 4,
+    "tokenizer": "jieba",
+    "rrf_k": 60,
+    "rrf_depth": 20,
+    "max_output_tokens": 700,
+    "temperature": 0,
+    "timeout_seconds": 90,
+    "max_attempts": 3,
+    "query_instruction": "为这个句子生成表示以用于检索相关文章：",
+    "prices_cny_per_million": {
+      "off_peak": {
+        "cached_input": 0.02,
+        "input": 1,
+        "output": 4
+      },
+      "peak": {
+        "cached_input": 0.04,
+        "input": 2,
+        "output": 8
+      }
+    },
+    "price_source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+    "price_checked_at": "2026-10-16T13:13:05.539433+00:00"
+  },
+  "scope": "tokenizer B0 x 2 + selected-tokenizer R3 k=2/4/6, dev only",
+  "formal_test_authorized": false
+}

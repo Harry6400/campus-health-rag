@@ -1,0 +1,19 @@
+{
+  "recorded_at": "2026-10-16T15:49:34.060427+00:00",
+  "status": "user_confirmed_rule_not_results",
+  "approval_source": "用户选择谨慎拒答优先",
+  "tokenizer": [
+    "evidence_recall descending",
+    "evidence_precision descending",
+    "prefer jieba on complete tie"
+  ],
+  "top_k": [
+    "correct_refusal descending",
+    "keypoint_coverage descending",
+    "faithfulness descending",
+    "citation_support descending",
+    "smaller k on complete tie"
+  ],
+  "preconditions": "只用开发集；运行和评分完整且口径可比后选择；不删除失败题，不把缺失记零或记满分；不完整时停止自动选参并排查",
+  "formal_test_started": false
+}

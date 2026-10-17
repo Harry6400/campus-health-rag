@@ -1,0 +1,104 @@
+{
+  "recorded_at": "2026-10-16T15:27:17.606324+00:00",
+  "purpose": "UI experience verification, not formal evaluation",
+  "automated_tests": 39,
+  "test_log": "evidence/ui-experience-tests.log",
+  "lint_log": "evidence/ui-experience-lint.log",
+  "actual_browser": "Microsoft Edge on macOS",
+  "viewport_override": {
+    "requested_width": 390,
+    "requested_height": 844,
+    "observed_css_width": 354,
+    "observed_css_height": 767,
+    "browser_zoom_dpr": 1.100000023841858,
+    "document_width": 354,
+    "h1_font_px": 28,
+    "h1_top_px": 67.99715423583984,
+    "reset_after_test": true
+  },
+  "live_interactive_checks": [
+    {
+      "run": "20261016T151756979750Z_interactive-not-evaluation",
+      "method": "R3",
+      "question": "根据原文，成人每日需要睡足多少小时？",
+      "answer": "建议成人每日需要睡足7-9小时。 [2]",
+      "usage": {
+        "completion_tokens": 34,
+        "prompt_tokens": 1074,
+        "total_tokens": 1108,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 896
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 178
+      },
+      "cost": {
+        "cny_min": 0.00033192000000000003,
+        "cny_max": 0.0006638400000000001,
+        "basis": "官方峰谷价区间估算，非账户实际扣费",
+        "cache_usage_missing": false,
+        "price_checked_at": "2026-10-16T13:13:05.539433+00:00",
+        "price_source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing"
+      },
+      "retrieval_seconds": 0.031214374990668148,
+      "generation_seconds": 1.3352614589966834,
+      "total_seconds": 1.3664763749984559
+    },
+    {
+      "run": "20261016T152149448330Z_interactive-not-evaluation",
+      "method": "R3",
+      "question": "根据原文，成人每日需要睡足多少小时？",
+      "answer": "建议成人每日需要睡足7-9小时。 [2]",
+      "usage": {
+        "completion_tokens": 34,
+        "prompt_tokens": 1074,
+        "total_tokens": 1108,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 896
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 178
+      },
+      "cost": {
+        "cny_min": 0.00033192000000000003,
+        "cny_max": 0.0006638400000000001,
+        "basis": "官方峰谷价区间估算，非账户实际扣费",
+        "cache_usage_missing": false,
+        "price_checked_at": "2026-10-16T13:13:05.539433+00:00",
+        "price_source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing"
+      },
+      "retrieval_seconds": 0.02504066700930707,
+      "generation_seconds": 1.7630794169963337,
+      "total_seconds": 1.7881207920145243
+    }
+  ],
+  "runtime_log": "evidence/ui-experience-server.log",
+  "formal_test_started": false,
+  "secret_scan_passed": true,
+  "screenshots": [
+    "evidence/ui-experience-answer.jpg",
+    "evidence/ui-experience-home.jpg",
+    "evidence/ui-experience-mobile-home.jpg",
+    "evidence/ui-experience-mobile-records.jpg",
+    "evidence/ui-experience-records.jpg",
+    "evidence/ui-experience-source-empty.jpg"
+  ],
+  "source_hashes": {
+    "src/campus_health/app.py": "644cb9d4eca815dab95c9b3f31e044bb0b20c247e58ddccaf2b69a6992b97f79",
+    "src/campus_health/api_ui.py": "57344c7e54d882f4b726023751d57198a390fb60b664b6721a3d8f0600b2a286",
+    "src/campus_health/ui_views.py": "a99940a23f481a1a876a0962f8b3098ff57b5130e2cbfc61fed478bc84ab8aed",
+    ".streamlit/config.toml": "83b574bed7e15ba680e5ba83c2d6acd05613d8d90a3a6b5a093df4e19166a775"
+  },
+  "unverified": [
+    "physical teammate Windows UI/API workflow",
+    "other external compatible API vendors",
+    "physical mobile device"
+  ],
+  "review": "evidence/ui-experience-review.md"
+}

@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "purpose": "公开时间戳可验证的私有人工复核记录内容摘要；不公开复核人身份或私有记录正文。",
+  "records": [
+    {
+      "path": "review/private/development-key-case-confirmations-20261017.json",
+      "sha256": "8a702856b10bbb441a0cd8008cd42fab8600d38cab1401d6ae123dbc8ce3f68c"
+    }
+  ]
+}

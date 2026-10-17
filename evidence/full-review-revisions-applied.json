@@ -1,0 +1,29 @@
+{
+  "recorded_at": "2026-10-16T16:11:12.929308+00:00",
+  "before_sha256": "2742a35099b1748bbd12f49fdb0f8b93fde2ed5a27c3adac377b3caf7cb93a41",
+  "after_sha256": "5975b63bb4ebb573c14a0467850c9fff686697aa1acf14f35800327b4697253b",
+  "count": 16,
+  "changed_ids": [
+    "sleep-dev-05",
+    "sleep-test-08",
+    "sleep-test-18",
+    "sleep-test-22",
+    "sleep-test-14",
+    "sleep-test-15",
+    "sleep-test-16",
+    "sleep-test-21",
+    "sleep-test-28",
+    "diet-dev-04",
+    "diet-test-07",
+    "diet-test-17",
+    "diet-test-22",
+    "exercise-dev-07",
+    "exercise-dev-08",
+    "exercise-test-04"
+  ],
+  "backup": "review/private/questions-before-full-review-20261016T161112Z.jsonl",
+  "structure_validation": "120题唯一、分主题数量、要点/证据组长度、引用存在性通过；非实验结果",
+  "formal_protocol_present": false,
+  "experiments_started": false,
+  "whole_dataset_approved": false
+}

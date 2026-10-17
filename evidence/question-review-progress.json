@@ -1,0 +1,20 @@
+{
+  "recorded_at": "2026-10-16T16:24:59.707341+00:00",
+  "total": 120,
+  "counts": {
+    "dev_sleep": 10,
+    "dev_diet": 10,
+    "dev_exercise": 10,
+    "test_sleep": 30,
+    "test_diet": 30,
+    "test_exercise": 30
+  },
+  "errors": [],
+  "questions_sha256": "10f098142b700bbf91d40f1cbb82a49176382991cd0ed957ff92315480ca109b",
+  "pending_previously_presented_question_changes": [],
+  "whole_dataset_approved": false,
+  "formal_protocol_present": false,
+  "note": "用户已认可采用10f09814题集及披露关联，并批准完整开发选参；5组完成。正式冻结与90题测试尚未批准；whole_dataset_approved未用作120题人工认证。",
+  "reference_set_adoption_approved_for_development": true,
+  "full_development_experiment_completed": true
+}

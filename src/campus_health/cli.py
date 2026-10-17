@@ -12,12 +12,17 @@ from pathlib import Path
 from .storage import ROOT, config, new_run, now, read_json, safe_error, write_json
 
 
-def interactive(question: str, method: str, settings: dict, retriever=None) -> tuple[dict, Path]:
+def interactive(
+    question: str, method: str, settings: dict, retriever=None, api=None
+) -> tuple[dict, Path]:
+    from .api_config import environment_api
     from .data import load_corpus
     from .llm import answer_question, render_answer
     from .retrieval import Retriever
 
-    run = new_run("interactive-not-evaluation", settings)
+    api = (api or environment_api()) if method != "B0" else None
+    public_api = api.public() if api else None
+    run = new_run("interactive-not-evaluation", {**settings, "generation_api": public_api})
     start_setup = time.perf_counter()
     retriever = retriever or Retriever(load_corpus(), settings, dense=method in {"R2", "R3"})
     setup = time.perf_counter() - start_setup
@@ -33,10 +38,12 @@ def interactive(question: str, method: str, settings: dict, retriever=None) -> t
         }
         info = None
     else:
-        value, info = answer_question(question, evidence, settings, run / "calls.jsonl")
+        value, info = answer_question(question, evidence, settings, run / "calls.jsonl", api=api)
     result = {
         "kind": "interactive_not_benchmark",
         "method": method,
+        "generation_api": public_api,
+        "actual_model": info["response"].get("model") if info else None,
         "question": question,
         "evidence": evidence,
         "structured": value,

@@ -1,0 +1,3325 @@
+{
+  "recorded_at": "2026-10-16T16:13:57.345423+00:00",
+  "before_sha256": "26561bfbb9cc3f6e01ad3d2b4ae62ae00b5047373392917c782fe85e98e13093",
+  "after_sha256": "10f098142b700bbf91d40f1cbb82a49176382991cd0ed957ff92315480ca109b",
+  "whole_dataset_approved": false,
+  "old_runs_unchanged": true,
+  "local_backup": "review/private/questions-before-confirmed-review-20261016T153045302437+0000.jsonl",
+  "changes": [
+    {
+      "question_id": "sleep-dev-02",
+      "recorded_at": "2026-10-16T15:30:45.302437+00:00",
+      "approval_source": "本对话先前的用户明确选择；本轮要求落实",
+      "original_confirmation_time": "未单独记录，不倒填时间",
+      "attribution": "用户对展示材料作出判断；AI转录和修改",
+      "action": "如实转录用户对展示原文与参考要点对应关系的确认；未确认全部模型输出。",
+      "before": {
+        "question": "根据原文，成人每日需要睡足多少小时？",
+        "group_id": "sleep05_成人每日睡眠时长",
+        "answerable": true,
+        "keypoints": [
+          "7-9小时"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep05:u0021"
+            ]
+          ]
+        ],
+        "expected_behavior": "应直接引用原文中关于成人每日睡眠时长的具体数值。",
+        "id": "sleep-dev-02",
+        "theme": "sleep",
+        "split": "dev",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "根据原文，成人每日需要睡足多少小时？",
+        "group_id": "sleep05_成人每日睡眠时长",
+        "answerable": true,
+        "keypoints": [
+          "7-9小时"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep05:u0021"
+            ]
+          ]
+        ],
+        "expected_behavior": "应直接引用原文中关于成人每日睡眠时长的具体数值。",
+        "id": "sleep-dev-02",
+        "theme": "sleep",
+        "split": "dev",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "displayed_reference_confirmed_via_chat",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "sleep-dev-03",
+      "recorded_at": "2026-10-16T15:30:45.302437+00:00",
+      "approval_source": "本对话先前的用户明确选择；本轮要求落实",
+      "original_confirmation_time": "未单独记录，不倒填时间",
+      "attribution": "用户对展示材料作出判断；AI转录和修改",
+      "action": "用户确认应替换错主题题目；候选内容尚未审定，暂保留旧题并阻止冻结。",
+      "before": {
+        "question": "根据原文，成人每周运动累积至少多少分钟？",
+        "group_id": "sleep05_成人每周运动时长",
+        "answerable": true,
+        "keypoints": [
+          "至少150分钟"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep05:u0020"
+            ]
+          ]
+        ],
+        "expected_behavior": "应直接引用原文中关于成人每周运动累积时长的具体数值。",
+        "id": "sleep-dev-03",
+        "theme": "sleep",
+        "split": "dev",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "根据原文，成人每周运动累积至少多少分钟？",
+        "group_id": "sleep05_成人每周运动时长",
+        "answerable": true,
+        "keypoints": [
+          "至少150分钟"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep05:u0020"
+            ]
+          ]
+        ],
+        "expected_behavior": "应直接引用原文中关于成人每周运动累积时长的具体数值。",
+        "id": "sleep-dev-03",
+        "theme": "sleep",
+        "split": "dev",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "replacement_required_pending_candidate_review",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "sleep-dev-06",
+      "recorded_at": "2026-10-16T15:30:45.302437+00:00",
+      "approval_source": "本对话先前的用户明确选择；本轮要求落实",
+      "original_confirmation_time": "未单独记录，不倒填时间",
+      "attribution": "用户对展示材料作出判断；AI转录和修改",
+      "action": "用户确认应替换错主题题目；候选内容尚未审定，暂保留旧题并阻止冻结。",
+      "before": {
+        "question": "原文建议的均衡饮食原则是什么？",
+        "group_id": "sleep05_均衡饮食原则",
+        "answerable": true,
+        "keypoints": [
+          "三低一高",
+          "低油、低糖、低盐、高纤"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep05:u0019"
+            ]
+          ],
+          [
+            [
+              "sleep05:u0019"
+            ]
+          ]
+        ],
+        "expected_behavior": "应引用原文中关于均衡饮食的“三低一高”原则及具体内容。",
+        "id": "sleep-dev-06",
+        "theme": "sleep",
+        "split": "dev",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "原文建议的均衡饮食原则是什么？",
+        "group_id": "sleep05_均衡饮食原则",
+        "answerable": true,
+        "keypoints": [
+          "三低一高",
+          "低油、低糖、低盐、高纤"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep05:u0019"
+            ]
+          ],
+          [
+            [
+              "sleep05:u0019"
+            ]
+          ]
+        ],
+        "expected_behavior": "应引用原文中关于均衡饮食的“三低一高”原则及具体内容。",
+        "id": "sleep-dev-06",
+        "theme": "sleep",
+        "split": "dev",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "replacement_required_pending_candidate_review",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "diet-dev-03",
+      "recorded_at": "2026-10-16T15:30:45.302437+00:00",
+      "approval_source": "本对话先前的用户明确选择；本轮要求落实",
+      "original_confirmation_time": "未单独记录，不倒填时间",
+      "attribution": "用户对展示材料作出判断；AI转录和修改",
+      "action": "按用户确认改正文章出处，并补充成人范围；尚未批准整套题集。",
+      "before": {
+        "question": "根据健康烹调小秘方，每日食盐摄取不宜超过多少公克？",
+        "group_id": "diet04_每日食盐上限",
+        "answerable": true,
+        "keypoints": [
+          "6公克"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet04:u0006"
+            ]
+          ]
+        ],
+        "expected_behavior": "应能准确回答6公克。",
+        "id": "diet-dev-03",
+        "theme": "diet",
+        "split": "dev",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "根据《冬令进补5原则》，成人每日食盐摄取不宜超过多少公克？",
+        "group_id": "diet04_每日食盐上限",
+        "answerable": true,
+        "keypoints": [
+          "6公克"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet04:u0006"
+            ]
+          ]
+        ],
+        "expected_behavior": "按指定文章回答成人每日食盐摄取不宜超过6公克，不泛化为所有地区的统一标准。",
+        "id": "diet-dev-03",
+        "theme": "diet",
+        "split": "dev",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "source_and_scope_confirmed_via_chat",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "diet-dev-07",
+      "recorded_at": "2026-10-16T15:30:45.302437+00:00",
+      "approval_source": "本对话先前的用户明确选择；本轮要求落实",
+      "original_confirmation_time": "未单独记录，不倒填时间",
+      "attribution": "用户对展示材料作出判断；AI转录和修改",
+      "action": "如实转录用户对展示原文与参考要点对应关系的确认；未确认全部模型输出。",
+      "before": {
+        "question": "根据冬令进补原则，如何做到油脂适量和天然调味？",
+        "group_id": "diet04_油脂适量与天然调味",
+        "answerable": true,
+        "keypoints": [
+          "留意整体油量控制，避免摄取过量油脂",
+          "汤头以天然中药材、姜片或大量蔬菜熬煮出鲜甜味，减少使用高汤块或盐巴"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet04:u0019"
+            ]
+          ],
+          [
+            [
+              "diet04:u0020"
+            ]
+          ]
+        ],
+        "expected_behavior": "应能结合两项原则说明。",
+        "id": "diet-dev-07",
+        "theme": "diet",
+        "split": "dev",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "根据冬令进补原则，如何做到油脂适量和天然调味？",
+        "group_id": "diet04_油脂适量与天然调味",
+        "answerable": true,
+        "keypoints": [
+          "留意整体油量控制，避免摄取过量油脂",
+          "汤头以天然中药材、姜片或大量蔬菜熬煮出鲜甜味，减少使用高汤块或盐巴"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet04:u0019"
+            ]
+          ],
+          [
+            [
+              "diet04:u0020"
+            ]
+          ]
+        ],
+        "expected_behavior": "应能结合两项原则说明。",
+        "id": "diet-dev-07",
+        "theme": "diet",
+        "split": "dev",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "displayed_reference_confirmed_via_chat",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "exercise-dev-07",
+      "recorded_at": "2026-10-16T15:30:45.302437+00:00",
+      "approval_source": "本对话先前的用户明确选择；本轮要求落实",
+      "original_confirmation_time": "未单独记录，不倒填时间",
+      "attribution": "用户对展示材料作出判断；AI转录和修改",
+      "action": "按用户确认移除被问题“除了暖身”排除的必答项。",
+      "before": {
+        "question": "冬天运动时，除了暖身，还应注意哪些事项？",
+        "group_id": "exercise03_winter_exercise_precautions",
+        "answerable": true,
+        "keypoints": [
+          "运动前应充分暖身运动",
+          "运动中记得补充水分",
+          "运动后换上干暖衣服，做好保暖准备"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise03:u0001"
+            ]
+          ],
+          [
+            [
+              "exercise03:u0001"
+            ]
+          ],
+          [
+            [
+              "exercise03:u0001"
+            ]
+          ]
+        ],
+        "expected_behavior": "回答应指出冬天运动前充分暖身、运动中补充水分、运动后换上干暖衣服并做好保暖准备。",
+        "id": "exercise-dev-07",
+        "theme": "exercise",
+        "split": "dev",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "冬天运动时，除了暖身，还应注意哪些事项？",
+        "group_id": "exercise03_winter_exercise_precautions",
+        "answerable": true,
+        "keypoints": [
+          "运动中记得补充水分",
+          "运动后换上干暖衣服，做好保暖准备"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise03:u0001"
+            ]
+          ],
+          [
+            [
+              "exercise03:u0001"
+            ]
+          ]
+        ],
+        "expected_behavior": "覆盖运动中补水、运动后换上干暖衣服并保暖；不因未重复暖身而扣分。",
+        "id": "exercise-dev-07",
+        "theme": "exercise",
+        "split": "dev",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "required_keypoints_confirmed_via_chat",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "exercise-dev-09",
+      "recorded_at": "2026-10-16T15:30:45.302437+00:00",
+      "approval_source": "本对话先前的用户明确选择；本轮要求落实",
+      "original_confirmation_time": "未单独记录，不倒填时间",
+      "attribution": "用户对展示材料作出判断；AI转录和修改",
+      "action": "用户认可已展示证据不足以推出指定气温精确时长；全库无答案结论仍待核验。",
+      "before": {
+        "question": "零下10度运动时，一般成年人应把暖身精确延长到多少分钟？",
+        "group_id": "exercise-dev-09-scope-or-evidence-gap",
+        "answerable": false,
+        "keypoints": [],
+        "evidence_groups": [],
+        "expected_behavior": "说明无法据固定资料充分回答：一般暖身建议不能给出指定气温的精确时间",
+        "id": "exercise-dev-09",
+        "theme": "exercise",
+        "split": "dev",
+        "kind": "unanswerable",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "ai_negative_revised_pending_group_review",
+        "challenge": false,
+        "negative_basis": "一般暖身建议不能给出指定气温的精确时间"
+      },
+      "after": {
+        "question": "零下10度运动时，一般成年人应把暖身精确延长到多少分钟？",
+        "group_id": "exercise-dev-09-scope-or-evidence-gap",
+        "answerable": false,
+        "keypoints": [],
+        "evidence_groups": [],
+        "expected_behavior": "说明无法据固定资料充分回答：一般暖身建议不能给出指定气温的精确时间",
+        "id": "exercise-dev-09",
+        "theme": "exercise",
+        "split": "dev",
+        "kind": "unanswerable",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "shown_evidence_insufficient_confirmed_whole_corpus_pending",
+        "challenge": false,
+        "negative_basis": "一般暖身建议不能给出指定气温的精确时间"
+      }
+    },
+    {
+      "question_id": "sleep-dev-03",
+      "recorded_at": "2026-10-16T15:36:58.131880+00:00",
+      "approval_source": "本轮用户逐项明确回复",
+      "attribution": "用户核验展示材料与判断规则；AI转录修改",
+      "action": "本轮用户明确认可替换题和原文要点对应关系，AI据此替换旧题。",
+      "before": {
+        "question": "根据原文，成人每周运动累积至少多少分钟？",
+        "group_id": "sleep05_成人每周运动时长",
+        "answerable": true,
+        "keypoints": [
+          "至少150分钟"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep05:u0020"
+            ]
+          ]
+        ],
+        "expected_behavior": "应直接引用原文中关于成人每周运动累积时长的具体数值。",
+        "id": "sleep-dev-03",
+        "theme": "sleep",
+        "split": "dev",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "replacement_required_pending_candidate_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "原文提到，上班族因年假期间作息改变，收假后可能出现哪些表现？",
+        "group_id": "sleep02_收假作息改变可能表现",
+        "answerable": true,
+        "keypoints": [
+          "容易疲倦",
+          "注意力不集中",
+          "可能失眠"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep02:u0003"
+            ]
+          ],
+          [
+            [
+              "sleep02:u0004"
+            ]
+          ],
+          [
+            [
+              "sleep02:u0005"
+            ]
+          ]
+        ],
+        "expected_behavior": "保留上班族与可能性，列出疲倦、注意力不集中、可能失眠；不据此诊断。",
+        "id": "sleep-dev-03",
+        "theme": "sleep",
+        "split": "dev",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "replacement_reference_confirmed_via_chat",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "sleep-dev-06",
+      "recorded_at": "2026-10-16T15:36:58.131880+00:00",
+      "approval_source": "本轮用户逐项明确回复",
+      "attribution": "用户核验展示材料与判断规则；AI转录修改",
+      "action": "本轮用户明确认可替换题和原文要点对应关系，AI据此替换旧题。",
+      "before": {
+        "question": "原文建议的均衡饮食原则是什么？",
+        "group_id": "sleep05_均衡饮食原则",
+        "answerable": true,
+        "keypoints": [
+          "三低一高",
+          "低油、低糖、低盐、高纤"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep05:u0019"
+            ]
+          ],
+          [
+            [
+              "sleep05:u0019"
+            ]
+          ]
+        ],
+        "expected_behavior": "应引用原文中关于均衡饮食的“三低一高”原则及具体内容。",
+        "id": "sleep-dev-06",
+        "theme": "sleep",
+        "split": "dev",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "replacement_required_pending_candidate_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "平日因工作早起而睡眠不足，周末为了补眠又晚睡晚起，原文把这种作息现象称为什么？",
+        "group_id": "sleep03_社交时差定义",
+        "answerable": true,
+        "keypoints": [
+          "社交时差"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep03:u0013",
+              "sleep03:u0014"
+            ]
+          ]
+        ],
+        "expected_behavior": "按平日早起睡不足、周末晚睡晚起的描述回答社交时差，不泛化为所有晚睡。",
+        "id": "sleep-dev-06",
+        "theme": "sleep",
+        "split": "dev",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "replacement_reference_confirmed_via_chat",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "sleep-dev-10",
+      "recorded_at": "2026-10-16T15:36:58.131880+00:00",
+      "approval_source": "本轮用户逐项明确回复",
+      "attribution": "用户核验展示材料与判断规则；AI转录修改",
+      "action": "本轮用户确认个体诊断边界及人工复核拒答理由，拒答行为本身不证明理由正确。",
+      "before": {
+        "question": "我已连续多月睡不着，请只凭这句话诊断我的睡眠障碍类型。",
+        "group_id": "sleep-dev-10-scope-or-evidence-gap",
+        "answerable": false,
+        "keypoints": [],
+        "evidence_groups": [],
+        "expected_behavior": "说明无法据固定资料充分回答：个体诊断超出知识科普范围",
+        "id": "sleep-dev-10",
+        "theme": "sleep",
+        "split": "dev",
+        "kind": "unanswerable",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "ai_negative_revised_pending_group_review",
+        "challenge": false,
+        "negative_basis": "个体诊断超出知识科普范围"
+      },
+      "after": {
+        "question": "我已连续多月睡不着，请只凭这句话诊断我的睡眠障碍类型。",
+        "group_id": "sleep-dev-10-scope-or-evidence-gap",
+        "answerable": false,
+        "keypoints": [],
+        "evidence_groups": [],
+        "expected_behavior": "拒绝仅凭一句话诊断个体睡眠障碍类型，说明信息不足且超出一般科普范围；不得误称知识库没有任何失眠资料。",
+        "id": "sleep-dev-10",
+        "theme": "sleep",
+        "split": "dev",
+        "kind": "unanswerable",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "diagnosis_boundary_and_reason_check_confirmed_via_chat",
+        "challenge": false,
+        "negative_basis": "个体诊断超出知识科普范围",
+        "negative_type": "scope_boundary"
+      }
+    },
+    {
+      "question_id": "sleep-test-09",
+      "recorded_at": "2026-10-16T15:39:43.395908+00:00",
+      "approval_source": "本轮用户明确回复",
+      "attribution": "用户核验展示材料与限制；AI转录修改",
+      "action": "用户逐项认可展示表中的三道替换题及限定条件，AI替换原药物使用正向题；同研究资料合并为同组。",
+      "before": {
+        "question": "根据原文，服用安眠药期间应避免哪些活动？",
+        "group_id": "sleep01_medication_precautions",
+        "answerable": true,
+        "keypoints": [
+          "避免开车、从事需要专注力的工作或操作危险的机械"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep01:u0016"
+            ]
+          ]
+        ],
+        "expected_behavior": "应直接引用原文中关于服用安眠药期间避免活动的描述。",
+        "id": "sleep-test-09",
+        "theme": "sleep",
+        "split": "test",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "文章报告的研究中，全天手机使用时间每增加1小时，入睡时间和睡眠时长分别有什么变化？",
+        "group_id": "sleep04_phone_sleep_study",
+        "answerable": true,
+        "keypoints": [
+          "该研究报告入睡时间延后4.9分钟",
+          "该研究报告睡眠时长减少5.5分钟"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep04:u0012",
+              "sleep04:u0013",
+              "sleep04:u0014",
+              "sleep04:u0015",
+              "sleep04:u0016",
+              "sleep04:u0017",
+              "sleep04:u0018"
+            ]
+          ],
+          [
+            [
+              "sleep04:u0012",
+              "sleep04:u0013",
+              "sleep04:u0014",
+              "sleep04:u0015",
+              "sleep04:u0016",
+              "sleep04:u0017",
+              "sleep04:u0018"
+            ]
+          ]
+        ],
+        "expected_behavior": "覆盖所问研究结果与条件，明确为文章报告的研究结果，不作个体必然预测；三题共享研究资料，不能称为三个独立研究结果。",
+        "id": "sleep-test-09",
+        "theme": "sleep",
+        "split": "test",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "replacement_reference_and_study_limits_confirmed_via_chat",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "sleep-test-10",
+      "recorded_at": "2026-10-16T15:39:43.395908+00:00",
+      "approval_source": "本轮用户明确回复",
+      "attribution": "用户核验展示材料与限制；AI转录修改",
+      "action": "用户逐项认可展示表中的三道替换题及限定条件，AI替换原药物使用正向题；同研究资料合并为同组。",
+      "before": {
+        "question": "根据原文，服用安眠药后应该立即做什么？",
+        "group_id": "sleep01_medication_bedtime",
+        "answerable": true,
+        "keypoints": [
+          "服药完毕后就立刻到床上准备入睡，避免其他活动"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep01:u0017"
+            ]
+          ]
+        ],
+        "expected_behavior": "应直接引用原文中关于服药后行为的描述。",
+        "id": "sleep-test-10",
+        "theme": "sleep",
+        "split": "test",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "这项手机使用与睡眠研究连续记录了多少天的手机使用行为，并结合什么调查资料进行分析？",
+        "group_id": "sleep04_phone_sleep_study",
+        "answerable": true,
+        "keypoints": [
+          "连续14天记录手机使用行为",
+          "结合问卷调查"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep04:u0031"
+            ]
+          ],
+          [
+            [
+              "sleep04:u0031"
+            ]
+          ]
+        ],
+        "expected_behavior": "覆盖所问研究结果与条件，明确为文章报告的研究结果，不作个体必然预测；三题共享研究资料，不能称为三个独立研究结果。",
+        "id": "sleep-test-10",
+        "theme": "sleep",
+        "split": "test",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "replacement_reference_and_study_limits_confirmed_via_chat",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "sleep-test-23",
+      "recorded_at": "2026-10-16T15:39:43.395908+00:00",
+      "approval_source": "本轮用户明确回复",
+      "attribution": "用户核验展示材料与限制；AI转录修改",
+      "action": "用户逐项认可展示表中的三道替换题及限定条件，AI替换原药物使用正向题；同研究资料合并为同组。",
+      "before": {
+        "question": "根据原文，服用安眠药期间应避免哪些活动？服药后应该立即做什么？",
+        "group_id": "sleep01_medication_avoid_after",
+        "answerable": true,
+        "keypoints": [
+          "避免开车、从事需要专注力的工作或操作危险的机械",
+          "服药完毕后就立刻到床上准备入睡，避免其他活动"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep01:u0016"
+            ]
+          ],
+          [
+            [
+              "sleep01:u0017"
+            ]
+          ]
+        ],
+        "expected_behavior": "应结合原文中关于服用安眠药期间避免活动和服药后行为的描述。",
+        "id": "sleep-test-23",
+        "theme": "sleep",
+        "split": "test",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "结合文章，说明全天手机使用时间每增加1小时与睡眠变化的量化结果，以及研究采用的记录周期和调查方式。",
+        "group_id": "sleep04_phone_sleep_study",
+        "answerable": true,
+        "keypoints": [
+          "该研究报告入睡时间延后4.9分钟",
+          "该研究报告睡眠时长减少5.5分钟",
+          "连续14天记录手机使用行为，结合问卷调查"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep04:u0012",
+              "sleep04:u0013",
+              "sleep04:u0014",
+              "sleep04:u0015",
+              "sleep04:u0016",
+              "sleep04:u0017",
+              "sleep04:u0018"
+            ]
+          ],
+          [
+            [
+              "sleep04:u0012",
+              "sleep04:u0013",
+              "sleep04:u0014",
+              "sleep04:u0015",
+              "sleep04:u0016",
+              "sleep04:u0017",
+              "sleep04:u0018"
+            ]
+          ],
+          [
+            [
+              "sleep04:u0031"
+            ]
+          ]
+        ],
+        "expected_behavior": "覆盖所问研究结果与条件，明确为文章报告的研究结果，不作个体必然预测；三题共享研究资料，不能称为三个独立研究结果。",
+        "id": "sleep-test-23",
+        "theme": "sleep",
+        "split": "test",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "replacement_reference_and_study_limits_confirmed_via_chat",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "sleep-test-28",
+      "recorded_at": "2026-10-16T15:39:43.395908+00:00",
+      "approval_source": "本轮用户明确回复",
+      "attribution": "用户核验展示材料与限制；AI转录修改",
+      "action": "用户认可手机研究数据不能移用为眼镜效果，以及证据不足不等于无效；未替用户宣称已检查全库。",
+      "before": {
+        "question": "资料有没有滤蓝光眼镜让入睡提前多少分钟的实验结果？",
+        "group_id": "sleep-test-28-scope-or-evidence-gap",
+        "answerable": false,
+        "keypoints": [],
+        "evidence_groups": [],
+        "expected_behavior": "说明无法据固定资料充分回答：手机光源研究不能替代眼镜干预研究",
+        "id": "sleep-test-28",
+        "theme": "sleep",
+        "split": "test",
+        "kind": "unanswerable",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "ai_negative_revised_pending_group_review",
+        "challenge": false,
+        "negative_basis": "手机光源研究不能替代眼镜干预研究"
+      },
+      "after": {
+        "question": "资料有没有滤蓝光眼镜让入睡提前多少分钟的实验结果？",
+        "group_id": "sleep-test-28-scope-or-evidence-gap",
+        "answerable": false,
+        "keypoints": [],
+        "evidence_groups": [],
+        "expected_behavior": "所展示手机使用研究不能支持滤蓝光眼镜使入睡提前的分钟数；不得移用4.9分钟，也不得因证据不足断言眼镜无效。全库缺失标签仍需全库初核。",
+        "id": "sleep-test-28",
+        "theme": "sleep",
+        "split": "test",
+        "kind": "unanswerable",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "nontransferability_of_shown_phone_evidence_confirmed_whole_corpus_pending",
+        "challenge": false,
+        "negative_basis": "手机光源研究不能替代眼镜干预研究",
+        "negative_type": "evidence_gap"
+      }
+    },
+    {
+      "question_id": "diet-dev-05",
+      "recorded_at": "2026-10-16T15:49:34.060427+00:00",
+      "approval_source": "本轮用户明确回复；新增等价单位按已确认原则由AI初核",
+      "attribution": "具体题目/必答项修改由用户确认；新增等价单位是AI工作",
+      "action": "用户已确认等价证据原则；具体替代单位由AI对照全文添加，不改变答案要点，不把相似关键词或不同条件当等价。",
+      "before": {
+        "question": "健康饮食的大原则是什么？",
+        "group_id": "diet06_健康饮食基本原则",
+        "answerable": true,
+        "keypoints": [
+          "高纤",
+          "低油",
+          "低糖",
+          "低盐"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet06:u0001"
+            ]
+          ],
+          [
+            [
+              "diet06:u0001"
+            ]
+          ],
+          [
+            [
+              "diet06:u0001"
+            ]
+          ],
+          [
+            [
+              "diet06:u0001"
+            ]
+          ]
+        ],
+        "expected_behavior": "应能说出高纤、低油、低糖、低盐。",
+        "id": "diet-dev-05",
+        "theme": "diet",
+        "split": "dev",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "健康饮食的大原则是什么？",
+        "group_id": "diet06_健康饮食基本原则",
+        "answerable": true,
+        "keypoints": [
+          "高纤",
+          "低油",
+          "低糖",
+          "低盐"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet06:u0001"
+            ],
+            [
+              "sleep05:u0019"
+            ]
+          ],
+          [
+            [
+              "diet06:u0001"
+            ],
+            [
+              "sleep05:u0019"
+            ]
+          ],
+          [
+            [
+              "diet06:u0001"
+            ],
+            [
+              "sleep05:u0019"
+            ]
+          ],
+          [
+            [
+              "diet06:u0001"
+            ],
+            [
+              "sleep05:u0019"
+            ]
+          ]
+        ],
+        "expected_behavior": "应能说出高纤、低油、低糖、低盐。",
+        "id": "diet-dev-05",
+        "theme": "diet",
+        "split": "dev",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false,
+        "equivalence_review_status": "AI按用户确认的等价证据原则逐项初核；不冒称用户逐条读过新增单位"
+      }
+    },
+    {
+      "question_id": "diet-test-02",
+      "recorded_at": "2026-10-16T15:49:34.060427+00:00",
+      "approval_source": "本轮用户明确回复；新增等价单位按已确认原则由AI初核",
+      "attribution": "具体题目/必答项修改由用户确认；新增等价单位是AI工作",
+      "action": "用户确认：将题目与必答项收窄为营养素和饱足感。",
+      "before": {
+        "question": "国民健康署建议每餐搭配的「一碗五谷饭」有什么好处？",
+        "group_id": "diet01_whole_grain_rice_benefits",
+        "answerable": true,
+        "keypoints": [
+          "含有丰富的维生素B群、维生素E、矿物质及膳食纤维",
+          "比精制谷类更具有饱足感",
+          "能有效预防大肠癌、降血压及便秘等"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet01:u0020"
+            ]
+          ],
+          [
+            [
+              "diet01:u0020"
+            ]
+          ],
+          [
+            [
+              "diet01:u0020"
+            ]
+          ]
+        ],
+        "expected_behavior": "应提及全谷根茎类的营养素、饱足感及预防疾病等好处。",
+        "id": "diet-test-02",
+        "theme": "diet",
+        "split": "test",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "与精制谷类相比，原文从营养素与饱足感两方面如何介绍五谷饭？",
+        "group_id": "diet01_whole_grain_rice_benefits",
+        "answerable": true,
+        "keypoints": [
+          "含有丰富的维生素B群、维生素E、矿物质及膳食纤维",
+          "比精制谷类更具有饱足感"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet01:u0020"
+            ]
+          ],
+          [
+            [
+              "diet01:u0020"
+            ]
+          ]
+        ],
+        "expected_behavior": "仅核验原文介绍的营养素与饱足感；不要求输出疾病预防效益，不作个体防病保证。",
+        "id": "diet-test-02",
+        "theme": "diet",
+        "split": "test",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "nutrition_and_satiety_scope_confirmed_via_chat",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "diet-test-04",
+      "recorded_at": "2026-10-16T15:49:34.060427+00:00",
+      "approval_source": "本轮用户明确回复；新增等价单位按已确认原则由AI初核",
+      "attribution": "具体题目/必答项修改由用户确认；新增等价单位是AI工作",
+      "action": "用户确认：类别为必答、例子可选，不重复计分。",
+      "before": {
+        "question": "国民健康署提出的父亲节健康美食守则中，「挑低脂」建议选择哪类食物取代红肉？",
+        "group_id": "diet02_choose_low_fat_replace_red_meat",
+        "answerable": true,
+        "keypoints": [
+          "白肉",
+          "鱼肉、鸡肉或海鲜类等"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet02:u0006"
+            ]
+          ],
+          [
+            [
+              "diet02:u0006"
+            ]
+          ]
+        ],
+        "expected_behavior": "应回答以白肉取代红肉，并举例鱼肉、鸡肉或海鲜。",
+        "id": "diet-test-04",
+        "theme": "diet",
+        "split": "test",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "国民健康署提出的父亲节健康美食守则中，「挑低脂」建议选择哪类食物取代红肉？",
+        "group_id": "diet02_choose_low_fat_replace_red_meat",
+        "answerable": true,
+        "keypoints": [
+          "选择脂肪含量较低的白肉取代高脂红肉"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet02:u0006"
+            ]
+          ]
+        ],
+        "expected_behavior": "回答原文建议的低脂白肉类别；鱼肉、鸡肉或海鲜仅为可选例子，不重复设为必答项。",
+        "id": "diet-test-04",
+        "theme": "diet",
+        "split": "test",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "required_category_optional_examples_confirmed_via_chat",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "diet-test-12",
+      "recorded_at": "2026-10-16T15:49:34.060427+00:00",
+      "approval_source": "本轮用户明确回复；新增等价单位按已确认原则由AI初核",
+      "attribution": "具体题目/必答项修改由用户确认；新增等价单位是AI工作",
+      "action": "用户确认：将题目与必答项收窄为营养素和饱足感。",
+      "before": {
+        "question": "国民健康署说每餐要吃一碗五谷饭，这样有什么好处？",
+        "group_id": "diet01_whole_grain_rice_benefits",
+        "answerable": true,
+        "keypoints": [
+          "含有丰富的维生素B群、维生素E、矿物质及膳食纤维",
+          "比精制谷类更具有饱足感",
+          "能有效预防大肠癌、降血压及便秘等"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet01:u0020"
+            ]
+          ],
+          [
+            [
+              "diet01:u0020"
+            ]
+          ],
+          [
+            [
+              "diet01:u0020"
+            ]
+          ]
+        ],
+        "expected_behavior": "应提及全谷根茎类的营养素、饱足感及预防疾病等好处。",
+        "id": "diet-test-12",
+        "theme": "diet",
+        "split": "test",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "按原文的介绍，五谷饭在营养素和饱足感方面有哪些特点？",
+        "group_id": "diet01_whole_grain_rice_benefits",
+        "answerable": true,
+        "keypoints": [
+          "含有丰富的维生素B群、维生素E、矿物质及膳食纤维",
+          "比精制谷类更具有饱足感"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet01:u0020"
+            ]
+          ],
+          [
+            [
+              "diet01:u0020"
+            ]
+          ]
+        ],
+        "expected_behavior": "仅核验原文介绍的营养素与饱足感；不要求输出疾病预防效益，不作个体防病保证。",
+        "id": "diet-test-12",
+        "theme": "diet",
+        "split": "test",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "nutrition_and_satiety_scope_confirmed_via_chat",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "diet-test-14",
+      "recorded_at": "2026-10-16T15:49:34.060427+00:00",
+      "approval_source": "本轮用户明确回复；新增等价单位按已确认原则由AI初核",
+      "attribution": "具体题目/必答项修改由用户确认；新增等价单位是AI工作",
+      "action": "用户确认：类别为必答、例子可选，不重复计分。",
+      "before": {
+        "question": "父亲节聚餐时，国民健康署建议用什么肉代替红肉？",
+        "group_id": "diet02_choose_low_fat_replace_red_meat",
+        "answerable": true,
+        "keypoints": [
+          "白肉",
+          "鱼肉、鸡肉或海鲜类等"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet02:u0006"
+            ]
+          ],
+          [
+            [
+              "diet02:u0006"
+            ]
+          ]
+        ],
+        "expected_behavior": "应回答以白肉取代红肉，并举例鱼肉、鸡肉或海鲜。",
+        "id": "diet-test-14",
+        "theme": "diet",
+        "split": "test",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "父亲节聚餐时，国民健康署建议用什么肉代替红肉？",
+        "group_id": "diet02_choose_low_fat_replace_red_meat",
+        "answerable": true,
+        "keypoints": [
+          "选择脂肪含量较低的白肉取代高脂红肉"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet02:u0006"
+            ]
+          ]
+        ],
+        "expected_behavior": "回答原文建议的低脂白肉类别；鱼肉、鸡肉或海鲜仅为可选例子，不重复设为必答项。",
+        "id": "diet-test-14",
+        "theme": "diet",
+        "split": "test",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "required_category_optional_examples_confirmed_via_chat",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "exercise-dev-07",
+      "recorded_at": "2026-10-16T15:49:34.060427+00:00",
+      "approval_source": "本轮用户明确回复；新增等价单位按已确认原则由AI初核",
+      "attribution": "具体题目/必答项修改由用户确认；新增等价单位是AI工作",
+      "action": "用户已确认等价证据原则；具体替代单位由AI对照全文添加，不改变答案要点，不把相似关键词或不同条件当等价。",
+      "before": {
+        "question": "冬天运动时，除了暖身，还应注意哪些事项？",
+        "group_id": "exercise03_winter_exercise_precautions",
+        "answerable": true,
+        "keypoints": [
+          "运动中记得补充水分",
+          "运动后换上干暖衣服，做好保暖准备"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise03:u0001"
+            ]
+          ],
+          [
+            [
+              "exercise03:u0001"
+            ]
+          ]
+        ],
+        "expected_behavior": "覆盖运动中补水、运动后换上干暖衣服并保暖；不因未重复暖身而扣分。",
+        "id": "exercise-dev-07",
+        "theme": "exercise",
+        "split": "dev",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "required_keypoints_confirmed_via_chat",
+        "challenge": false
+      },
+      "after": {
+        "question": "冬天运动时，除了暖身，还应注意哪些事项？",
+        "group_id": "exercise03_winter_exercise_precautions",
+        "answerable": true,
+        "keypoints": [
+          "运动中记得补充水分",
+          "运动后换上干暖衣服，做好保暖准备"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise03:u0001"
+            ],
+            [
+              "exercise03:u0014"
+            ]
+          ],
+          [
+            [
+              "exercise03:u0001"
+            ],
+            [
+              "exercise03:u0016"
+            ]
+          ]
+        ],
+        "expected_behavior": "覆盖运动中补水、运动后换上干暖衣服并保暖；不因未重复暖身而扣分。",
+        "id": "exercise-dev-07",
+        "theme": "exercise",
+        "split": "dev",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "required_keypoints_confirmed_via_chat",
+        "challenge": false,
+        "equivalence_review_status": "AI按用户确认的等价证据原则逐项初核；不冒称用户逐条读过新增单位"
+      }
+    },
+    {
+      "question_id": "exercise-test-03",
+      "recorded_at": "2026-10-16T15:49:34.060427+00:00",
+      "approval_source": "本轮用户明确回复；新增等价单位按已确认原则由AI初核",
+      "attribution": "具体题目/必答项修改由用户确认；新增等价单位是AI工作",
+      "action": "用户已确认等价证据原则；具体替代单位由AI对照全文添加，不改变答案要点，不把相似关键词或不同条件当等价。",
+      "before": {
+        "question": "根据运动强度分类，中度身体运动的定义是什么？",
+        "group_id": "exercise04_moderate_definition",
+        "answerable": true,
+        "keypoints": [
+          "持续从事10分钟以上还能顺畅地对话，但无法唱歌"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise04:u0010"
+            ]
+          ]
+        ],
+        "expected_behavior": "应直接引用原文中对中度身体运动的描述。",
+        "id": "exercise-test-03",
+        "theme": "exercise",
+        "split": "test",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "根据运动强度分类，中度身体运动的定义是什么？",
+        "group_id": "exercise04_moderate_definition",
+        "answerable": true,
+        "keypoints": [
+          "持续从事10分钟以上还能顺畅地对话，但无法唱歌"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise04:u0010"
+            ],
+            [
+              "exercise06:u0007",
+              "exercise06:u0008"
+            ]
+          ]
+        ],
+        "expected_behavior": "应直接引用原文中对中度身体运动的描述。",
+        "id": "exercise-test-03",
+        "theme": "exercise",
+        "split": "test",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false,
+        "equivalence_review_status": "AI按用户确认的等价证据原则逐项初核；不冒称用户逐条读过新增单位"
+      }
+    },
+    {
+      "question_id": "exercise-test-05",
+      "recorded_at": "2026-10-16T15:49:34.060427+00:00",
+      "approval_source": "本轮用户明确回复；新增等价单位按已确认原则由AI初核",
+      "attribution": "具体题目/必答项修改由用户确认；新增等价单位是AI工作",
+      "action": "用户已确认等价证据原则；具体替代单位由AI对照全文添加，不改变答案要点，不把相似关键词或不同条件当等价。",
+      "before": {
+        "question": "根据国民健康署，分段累积运动量时，每次至少要连续运动多少分钟？",
+        "group_id": "exercise05_minimum_10min",
+        "answerable": true,
+        "keypoints": [
+          "每次至少要连续10分钟"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise05:u0002"
+            ]
+          ]
+        ],
+        "expected_behavior": "应直接引用原文中关于每次至少连续10分钟的建议。",
+        "id": "exercise-test-05",
+        "theme": "exercise",
+        "split": "test",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "根据国民健康署，分段累积运动量时，每次至少要连续运动多少分钟？",
+        "group_id": "exercise05_minimum_10min",
+        "answerable": true,
+        "keypoints": [
+          "每次至少要连续10分钟"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise05:u0002"
+            ],
+            [
+              "exercise06:u0008"
+            ]
+          ]
+        ],
+        "expected_behavior": "应直接引用原文中关于每次至少连续10分钟的建议。",
+        "id": "exercise-test-05",
+        "theme": "exercise",
+        "split": "test",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false,
+        "equivalence_review_status": "AI按用户确认的等价证据原则逐项初核；不冒称用户逐条读过新增单位"
+      }
+    },
+    {
+      "question_id": "exercise-test-13",
+      "recorded_at": "2026-10-16T15:49:34.060427+00:00",
+      "approval_source": "本轮用户明确回复；新增等价单位按已确认原则由AI初核",
+      "attribution": "具体题目/必答项修改由用户确认；新增等价单位是AI工作",
+      "action": "用户已确认等价证据原则；具体替代单位由AI对照全文添加，不改变答案要点，不把相似关键词或不同条件当等价。",
+      "before": {
+        "question": "怎么判断我现在的运动强度是不是中度？",
+        "group_id": "exercise04_moderate_how_to_judge",
+        "answerable": true,
+        "keypoints": [
+          "持续从事10分钟以上还能顺畅地对话，但无法唱歌"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise04:u0010"
+            ]
+          ]
+        ],
+        "expected_behavior": "应引用原文中对中度身体运动的描述。",
+        "id": "exercise-test-13",
+        "theme": "exercise",
+        "split": "test",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "怎么判断我现在的运动强度是不是中度？",
+        "group_id": "exercise04_moderate_how_to_judge",
+        "answerable": true,
+        "keypoints": [
+          "持续从事10分钟以上还能顺畅地对话，但无法唱歌"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise04:u0010"
+            ],
+            [
+              "exercise06:u0007",
+              "exercise06:u0008"
+            ]
+          ]
+        ],
+        "expected_behavior": "应引用原文中对中度身体运动的描述。",
+        "id": "exercise-test-13",
+        "theme": "exercise",
+        "split": "test",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false,
+        "equivalence_review_status": "AI按用户确认的等价证据原则逐项初核；不冒称用户逐条读过新增单位"
+      }
+    },
+    {
+      "question_id": "exercise-test-15",
+      "recorded_at": "2026-10-16T15:49:34.060427+00:00",
+      "approval_source": "本轮用户明确回复；新增等价单位按已确认原则由AI初核",
+      "attribution": "具体题目/必答项修改由用户确认；新增等价单位是AI工作",
+      "action": "用户已确认等价证据原则；具体替代单位由AI对照全文添加，不改变答案要点，不把相似关键词或不同条件当等价。",
+      "before": {
+        "question": "没时间运动的人，有什么简单的方法可以增加活动量？",
+        "group_id": "exercise01_six_tips",
+        "answerable": true,
+        "keypoints": [
+          "空瓶加水替代哑铃",
+          "楼梯+电梯",
+          "简单家务随手运动",
+          "午休走走",
+          "动态休闲去踏青",
+          "交通途中动一动"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise01:u0003"
+            ]
+          ],
+          [
+            [
+              "exercise01:u0004"
+            ]
+          ],
+          [
+            [
+              "exercise01:u0005"
+            ]
+          ],
+          [
+            [
+              "exercise01:u0006"
+            ]
+          ],
+          [
+            [
+              "exercise01:u0007"
+            ]
+          ],
+          [
+            [
+              "exercise01:u0009"
+            ]
+          ]
+        ],
+        "expected_behavior": "应引用原文中提供的6招小撇步。",
+        "id": "exercise-test-15",
+        "theme": "exercise",
+        "split": "test",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "没时间运动的人，有什么简单的方法可以增加活动量？",
+        "group_id": "exercise01_six_tips",
+        "answerable": true,
+        "keypoints": [
+          "空瓶加水替代哑铃",
+          "楼梯+电梯",
+          "简单家务随手运动",
+          "午休走走",
+          "动态休闲去踏青",
+          "交通途中动一动"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise01:u0003"
+            ],
+            [
+              "exercise05:u0014"
+            ]
+          ],
+          [
+            [
+              "exercise01:u0004"
+            ]
+          ],
+          [
+            [
+              "exercise01:u0005"
+            ]
+          ],
+          [
+            [
+              "exercise01:u0006"
+            ]
+          ],
+          [
+            [
+              "exercise01:u0007"
+            ]
+          ],
+          [
+            [
+              "exercise01:u0009"
+            ]
+          ]
+        ],
+        "expected_behavior": "应引用原文中提供的6招小撇步。",
+        "id": "exercise-test-15",
+        "theme": "exercise",
+        "split": "test",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false,
+        "equivalence_review_status": "AI按用户确认的等价证据原则逐项初核；不冒称用户逐条读过新增单位"
+      }
+    },
+    {
+      "question_id": "exercise-test-16",
+      "recorded_at": "2026-10-16T15:49:34.060427+00:00",
+      "approval_source": "本轮用户明确回复；新增等价单位按已确认原则由AI初核",
+      "attribution": "具体题目/必答项修改由用户确认；新增等价单位是AI工作",
+      "action": "用户已确认等价证据原则；具体替代单位由AI对照全文添加，不改变答案要点，不把相似关键词或不同条件当等价。",
+      "before": {
+        "question": "健走的时候姿势要注意什么？",
+        "group_id": "exercise06_walking_posture",
+        "answerable": true,
+        "keypoints": [
+          "抬头挺胸缩小腹、双手微握放腰部、自然摆动肩放松、迈开脚步向前行"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise06:u0013"
+            ]
+          ]
+        ],
+        "expected_behavior": "应引用原文中的健走小口诀。",
+        "id": "exercise-test-16",
+        "theme": "exercise",
+        "split": "test",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "健走的时候姿势要注意什么？",
+        "group_id": "exercise06_walking_posture",
+        "answerable": true,
+        "keypoints": [
+          "抬头挺胸缩小腹、双手微握放腰部、自然摆动肩放松、迈开脚步向前行"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise06:u0013"
+            ],
+            [
+              "exercise03:u0026",
+              "exercise03:u0027",
+              "exercise03:u0028",
+              "exercise03:u0029"
+            ]
+          ]
+        ],
+        "expected_behavior": "应引用原文中的健走小口诀。",
+        "id": "exercise-test-16",
+        "theme": "exercise",
+        "split": "test",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false,
+        "equivalence_review_status": "AI按用户确认的等价证据原则逐项初核；不冒称用户逐条读过新增单位"
+      }
+    },
+    {
+      "question_id": "exercise-test-19",
+      "recorded_at": "2026-10-16T15:49:34.060427+00:00",
+      "approval_source": "本轮用户明确回复；新增等价单位按已确认原则由AI初核",
+      "attribution": "具体题目/必答项修改由用户确认；新增等价单位是AI工作",
+      "action": "用户已确认等价证据原则；具体替代单位由AI对照全文添加，不改变答案要点，不把相似关键词或不同条件当等价。",
+      "before": {
+        "question": "要达到健康促进的效果，每周应累积多少分钟的中度身体活动？如何判断强度是否达到中度？",
+        "group_id": "exercise06_weekly_and_intensity",
+        "answerable": true,
+        "keypoints": [
+          "每周累积150分钟以上的中度身体活动",
+          "运动时感觉有点累，呼吸比平常快，可以说话但无法唱歌"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise06:u0006"
+            ]
+          ],
+          [
+            [
+              "exercise06:u0007"
+            ]
+          ]
+        ],
+        "expected_behavior": "应结合原文中关于每周150分钟目标和强度判别的说明。",
+        "id": "exercise-test-19",
+        "theme": "exercise",
+        "split": "test",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": true
+      },
+      "after": {
+        "question": "要达到健康促进的效果，每周应累积多少分钟的中度身体活动？如何判断强度是否达到中度？",
+        "group_id": "exercise06_weekly_and_intensity",
+        "answerable": true,
+        "keypoints": [
+          "每周累积150分钟以上的中度身体活动",
+          "运动时感觉有点累，呼吸比平常快，可以说话但无法唱歌"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise06:u0006"
+            ]
+          ],
+          [
+            [
+              "exercise06:u0007"
+            ],
+            [
+              "exercise04:u0010",
+              "exercise04:u0011"
+            ]
+          ]
+        ],
+        "expected_behavior": "应结合原文中关于每周150分钟目标和强度判别的说明。",
+        "id": "exercise-test-19",
+        "theme": "exercise",
+        "split": "test",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": true,
+        "equivalence_review_status": "AI按用户确认的等价证据原则逐项初核；不冒称用户逐条读过新增单位"
+      }
+    },
+    {
+      "question_id": "exercise-test-22",
+      "recorded_at": "2026-10-16T15:49:34.060427+00:00",
+      "approval_source": "本轮用户明确回复；新增等价单位按已确认原则由AI初核",
+      "attribution": "具体题目/必答项修改由用户确认；新增等价单位是AI工作",
+      "action": "用户已确认等价证据原则；具体替代单位由AI对照全文添加，不改变答案要点，不把相似关键词或不同条件当等价。",
+      "before": {
+        "question": "根据运动强度分类，中度身体运动和费力身体运动在说话测试上有何区别？",
+        "group_id": "exercise04_moderate_vs_high_talk_test",
+        "answerable": true,
+        "keypoints": [
+          "中度：持续10分钟以上还能顺畅对话但无法唱歌",
+          "费力：持续10分钟以上无法边活动边轻松说话"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise04:u0010"
+            ]
+          ],
+          [
+            [
+              "exercise04:u0007"
+            ]
+          ]
+        ],
+        "expected_behavior": "应结合原文中对两种强度说话测试的描述。",
+        "id": "exercise-test-22",
+        "theme": "exercise",
+        "split": "test",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "根据运动强度分类，中度身体运动和费力身体运动在说话测试上有何区别？",
+        "group_id": "exercise04_moderate_vs_high_talk_test",
+        "answerable": true,
+        "keypoints": [
+          "中度：持续10分钟以上还能顺畅对话但无法唱歌",
+          "费力：持续10分钟以上无法边活动边轻松说话"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise04:u0010"
+            ],
+            [
+              "exercise06:u0007",
+              "exercise06:u0008"
+            ]
+          ],
+          [
+            [
+              "exercise04:u0007"
+            ]
+          ]
+        ],
+        "expected_behavior": "应结合原文中对两种强度说话测试的描述。",
+        "id": "exercise-test-22",
+        "theme": "exercise",
+        "split": "test",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false,
+        "equivalence_review_status": "AI按用户确认的等价证据原则逐项初核；不冒称用户逐条读过新增单位"
+      }
+    },
+    {
+      "question_id": "exercise-test-24",
+      "recorded_at": "2026-10-16T15:49:34.060427+00:00",
+      "approval_source": "本轮用户明确回复；新增等价单位按已确认原则由AI初核",
+      "attribution": "具体题目/必答项修改由用户确认；新增等价单位是AI工作",
+      "action": "用户确认：删除未有对应参考解释的为什么。",
+      "before": {
+        "question": "根据国民健康署，轻度身体运动和坐式生活型态能否列入每周150分钟身体活动累积量？为什么？",
+        "group_id": "exercise04_light_sedentary_not_counted",
+        "answerable": true,
+        "keypoints": [
+          "轻度身体运动不能列入",
+          "坐式生活型态不能列入"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise04:u0013"
+            ]
+          ],
+          [
+            [
+              "exercise04:u0015"
+            ]
+          ]
+        ],
+        "expected_behavior": "应结合原文中关于轻度身体运动和坐式生活型态不能计入累积量的说明。",
+        "id": "exercise-test-24",
+        "theme": "exercise",
+        "split": "test",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "根据国民健康署，轻度身体运动和坐式生活型态能否列入每周150分钟身体活动累积量？",
+        "group_id": "exercise04_light_sedentary_not_counted",
+        "answerable": true,
+        "keypoints": [
+          "轻度身体运动不能列入",
+          "坐式生活型态不能列入"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise04:u0013"
+            ]
+          ],
+          [
+            [
+              "exercise04:u0015"
+            ]
+          ]
+        ],
+        "expected_behavior": "分别回答两类均不能列入；不要求原文未展开的生理机制解释。",
+        "id": "exercise-test-24",
+        "theme": "exercise",
+        "split": "test",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "unsupported_why_removed_confirmed_via_chat",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "diet-dev-08",
+      "recorded_at": "2026-10-16T15:57:16.078985+00:00",
+      "approval_source": "用户明确选择：明确题目范围，按所问清单计分",
+      "attribution": "用户确认评分设计；AI据已展示原文落实措辞，例子按已确认原则不重复计分",
+      "action": "明确题目要求的类别/数量；问题、计分要点和原文对齐。",
+      "before": {
+        "question": "根据健康烹调小秘方，如何做到低油和低盐？",
+        "group_id": "diet06_低油与低盐",
+        "answerable": true,
+        "keypoints": [
+          "选择植物性的好油来烹调，每日用量2-3汤匙",
+          "可善用醋、蕃茄等酸味物质，香菇、海带、柴鱼等鲜味物质，中药材、米酒、姜、蒜、洋葱、香菜等香气物质进行调味，减少盐的使用"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet06:u0008"
+            ]
+          ],
+          [
+            [
+              "diet06:u0030"
+            ]
+          ]
+        ],
+        "expected_behavior": "应能结合低油和低盐的具体做法。",
+        "id": "diet-dev-08",
+        "theme": "diet",
+        "split": "dev",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "根据《健康烹调小秘方》，烹调用油应选择什么类型、原文给出的每日用量是多少；又可利用哪三类风味食材调味来减少盐？",
+        "group_id": "diet06_低油与低盐",
+        "answerable": true,
+        "keypoints": [
+          "选择植物性的好油来烹调，每日用量2-3汤匙",
+          "利用酸味、鲜味及香气食材调味，减少盐的使用（不要求列全各类示例）"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet06:u0008"
+            ]
+          ],
+          [
+            [
+              "diet06:u0030"
+            ]
+          ]
+        ],
+        "expected_behavior": "回答植物性烹调用油及原文每日2-3汤匙，并覆盖酸味、鲜味、香气三类调味来源；各类食材例子不要求列全，不转为个体用油处方。",
+        "id": "diet-dev-08",
+        "theme": "diet",
+        "split": "dev",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "explicit_question_scope_confirmed_via_chat",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "diet-test-09",
+      "recorded_at": "2026-10-16T15:57:16.078985+00:00",
+      "approval_source": "用户明确选择：明确题目范围，按所问清单计分",
+      "attribution": "用户确认评分设计；AI据已展示原文落实措辞，例子按已确认原则不重复计分",
+      "action": "明确题目要求的类别/数量；问题、计分要点和原文对齐。",
+      "before": {
+        "question": "国民健康署建议以什么饮品代替手摇饮？",
+        "group_id": "diet05_alternative_drinks",
+        "answerable": true,
+        "keypoints": [
+          "无糖饮品（无糖茶、无糖咖啡、无糖气泡水等）",
+          "原味乳品"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet05:u0017"
+            ]
+          ],
+          [
+            [
+              "diet05:u0017"
+            ]
+          ]
+        ],
+        "expected_behavior": "应回答无糖饮品或原味乳品。",
+        "id": "diet-test-09",
+        "theme": "diet",
+        "split": "test",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "原文给出了哪两类替代手摇饮的饮品选择？",
+        "group_id": "diet05_alternative_drinks",
+        "answerable": true,
+        "keypoints": [
+          "无糖饮品（各类示例可选）",
+          "原味乳品"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet05:u0017"
+            ]
+          ],
+          [
+            [
+              "diet05:u0017"
+            ]
+          ]
+        ],
+        "expected_behavior": "同时覆盖无糖饮品和原味乳品两类；无糖茶、无糖咖啡、无糖气泡水等仅为例子，不要求全部列出。",
+        "id": "diet-test-09",
+        "theme": "diet",
+        "split": "test",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "explicit_question_scope_confirmed_via_chat",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "exercise-test-15",
+      "recorded_at": "2026-10-16T15:57:16.078985+00:00",
+      "approval_source": "用户明确选择：明确题目范围，按所问清单计分",
+      "attribution": "用户确认评分设计；AI据已展示原文落实措辞，例子按已确认原则不重复计分",
+      "action": "明确题目要求的类别/数量；问题、计分要点和原文对齐。",
+      "before": {
+        "question": "没时间运动的人，有什么简单的方法可以增加活动量？",
+        "group_id": "exercise01_six_tips",
+        "answerable": true,
+        "keypoints": [
+          "空瓶加水替代哑铃",
+          "楼梯+电梯",
+          "简单家务随手运动",
+          "午休走走",
+          "动态休闲去踏青",
+          "交通途中动一动"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise01:u0003"
+            ],
+            [
+              "exercise05:u0014"
+            ]
+          ],
+          [
+            [
+              "exercise01:u0004"
+            ]
+          ],
+          [
+            [
+              "exercise01:u0005"
+            ]
+          ],
+          [
+            [
+              "exercise01:u0006"
+            ]
+          ],
+          [
+            [
+              "exercise01:u0007"
+            ]
+          ],
+          [
+            [
+              "exercise01:u0009"
+            ]
+          ]
+        ],
+        "expected_behavior": "应引用原文中提供的6招小撇步。",
+        "id": "exercise-test-15",
+        "theme": "exercise",
+        "split": "test",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false,
+        "equivalence_review_status": "AI按用户确认的等价证据原则逐项初核；不冒称用户逐条读过新增单位"
+      },
+      "after": {
+        "question": "根据文章列出的六招，没时间运动的人可以怎样在生活中增加活动量？请列出这六种方法。",
+        "group_id": "exercise01_six_tips",
+        "answerable": true,
+        "keypoints": [
+          "空瓶加水替代哑铃",
+          "楼梯+电梯",
+          "简单家务随手运动",
+          "午休走走",
+          "动态休闲去踏青",
+          "交通途中动一动"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise01:u0003"
+            ],
+            [
+              "exercise05:u0014"
+            ]
+          ],
+          [
+            [
+              "exercise01:u0004"
+            ]
+          ],
+          [
+            [
+              "exercise01:u0005"
+            ]
+          ],
+          [
+            [
+              "exercise01:u0006"
+            ]
+          ],
+          [
+            [
+              "exercise01:u0007"
+            ]
+          ],
+          [
+            [
+              "exercise01:u0009"
+            ]
+          ]
+        ],
+        "expected_behavior": "覆盖文章六种活动方法；可用同义表达，不要求照抄小标题。可将多个方法合并在一个有依据的claim中。",
+        "id": "exercise-test-15",
+        "theme": "exercise",
+        "split": "test",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "explicit_question_scope_confirmed_via_chat",
+        "challenge": false,
+        "equivalence_review_status": "AI按用户确认的等价证据原则逐项初核；不冒称用户逐条读过新增单位"
+      }
+    },
+    {
+      "question_id": "sleep-dev-05",
+      "recorded_at": "2026-10-16T16:11:12.929308+00:00",
+      "approval_source": "用户明确选择：按草案修订，并准备替换题（推荐）",
+      "attribution": "用户批准16项修改草案；AI落实措辞，不代表用户逐题人工复核",
+      "action": "应用question-full-review草案；不批准整体题集或实验",
+      "before": {
+        "question": "原文提到，睡前可以做什么来帮助入眠？",
+        "group_id": "sleep02_睡前助眠方法",
+        "answerable": true,
+        "keypoints": [
+          "听柔和的音乐",
+          "泡温水澡"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep02:u0013"
+            ]
+          ],
+          [
+            [
+              "sleep02:u0014"
+            ]
+          ]
+        ],
+        "expected_behavior": "应提取原文中睡前听柔和音乐、泡温水澡等帮助入眠的方法。",
+        "id": "sleep-dev-05",
+        "theme": "sleep",
+        "split": "dev",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "根据《收假了~避免收假症候群，从回归正常作息做起》，睡前可采取哪两种做法帮助入眠？",
+        "group_id": "sleep02_睡前助眠方法",
+        "answerable": true,
+        "keypoints": [
+          "听柔和的音乐",
+          "泡温水澡"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep02:u0013"
+            ]
+          ],
+          [
+            [
+              "sleep02:u0014"
+            ]
+          ]
+        ],
+        "expected_behavior": "覆盖文章列出的听柔和音乐和泡温水澡两种方法；不把其他文章的泛化放松活动当作这两项的完整替代。",
+        "id": "sleep-dev-05",
+        "theme": "sleep",
+        "split": "dev",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "user_approved_full_review_revision_applied_by_ai",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "sleep-test-08",
+      "recorded_at": "2026-10-16T16:11:12.929308+00:00",
+      "approval_source": "用户明确选择：按草案修订，并准备替换题（推荐）",
+      "attribution": "用户批准16项修改草案；AI落实措辞，不代表用户逐题人工复核",
+      "action": "应用question-full-review草案；不批准整体题集或实验",
+      "before": {
+        "question": "根据原文，当生活作息及环境已经改善但仍出现失眠状况时，应该怎么做？",
+        "group_id": "sleep01_seek_help",
+        "answerable": true,
+        "keypoints": [
+          "应就医寻求医师的专业协助，并依照医师处方，正确使用镇静安眠药"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep01:u0014"
+            ]
+          ]
+        ],
+        "expected_behavior": "应直接引用原文中关于就医和用药的建议。",
+        "id": "sleep-test-08",
+        "theme": "sleep",
+        "split": "test",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "根据原文，当生活作息及环境已经改善但仍出现失眠状况时，应该怎么做？",
+        "group_id": "sleep01_seek_help",
+        "answerable": true,
+        "keypoints": [
+          "生活作息及环境改善后仍失眠，应就医寻求医师的专业协助"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep01:u0014"
+            ]
+          ]
+        ],
+        "expected_behavior": "回答所问求助做法，不要求用药。若补充药物内容，须说明需医师评估有必要并遵医嘱，不把所有失眠都解释为必须用药。",
+        "id": "sleep-test-08",
+        "theme": "sleep",
+        "split": "test",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "user_approved_full_review_revision_applied_by_ai",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "sleep-test-18",
+      "recorded_at": "2026-10-16T16:11:12.929308+00:00",
+      "approval_source": "用户明确选择：按草案修订，并准备替换题（推荐）",
+      "attribution": "用户批准16项修改草案；AI落实措辞，不代表用户逐题人工复核",
+      "action": "应用question-full-review草案；不批准整体题集或实验",
+      "before": {
+        "question": "如果改善了作息和环境还是失眠，该怎么办？",
+        "group_id": "sleep01_seek_help",
+        "answerable": true,
+        "keypoints": [
+          "应就医寻求医师的专业协助，并依照医师处方，正确使用镇静安眠药"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep01:u0014"
+            ]
+          ]
+        ],
+        "expected_behavior": "应引用原文中关于就医和用药的建议。",
+        "id": "sleep-test-18",
+        "theme": "sleep",
+        "split": "test",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "如果改善了作息和环境还是失眠，该怎么办？",
+        "group_id": "sleep01_seek_help",
+        "answerable": true,
+        "keypoints": [
+          "生活作息及环境改善后仍失眠，应就医寻求医师的专业协助"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep01:u0014"
+            ]
+          ]
+        ],
+        "expected_behavior": "回答应寻求医师专业协助；不将镇静安眠药设为必答，不作个人诊断或处方。",
+        "id": "sleep-test-18",
+        "theme": "sleep",
+        "split": "test",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "user_approved_full_review_revision_applied_by_ai",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "sleep-test-22",
+      "recorded_at": "2026-10-16T16:11:12.929308+00:00",
+      "approval_source": "用户明确选择：按草案修订，并准备替换题（推荐）",
+      "attribution": "用户批准16项修改草案；AI落实措辞，不代表用户逐题人工复核",
+      "action": "应用question-full-review草案；不批准整体题集或实验",
+      "before": {
+        "question": "根据原文，良好的睡眠卫生习惯中，关于睡前活动和就医时机的建议分别是什么？",
+        "group_id": "sleep01_bedtime_seek_help",
+        "answerable": true,
+        "keypoints": [
+          "睡前尽量安排做些轻松的事，让身心处在平静状态",
+          "当生活作息及环境已经改善但仍出现失眠状况，应就医寻求医师的专业协助，并依照医师处方，正确使用镇静安眠药"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep01:u0013"
+            ]
+          ],
+          [
+            [
+              "sleep01:u0014"
+            ]
+          ]
+        ],
+        "expected_behavior": "应结合原文中关于睡前活动和就医时机的两项建议。",
+        "id": "sleep-test-22",
+        "theme": "sleep",
+        "split": "test",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "根据原文，良好的睡眠卫生习惯中，关于睡前活动和就医时机的建议分别是什么？",
+        "group_id": "sleep01_bedtime_seek_help",
+        "answerable": true,
+        "keypoints": [
+          "睡前尽量安排做些轻松的事，让身心处在平静状态",
+          "生活作息及环境改善后仍失眠，应就医寻求医师的专业协助"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep01:u0013"
+            ]
+          ],
+          [
+            [
+              "sleep01:u0014"
+            ]
+          ]
+        ],
+        "expected_behavior": "分别回答睡前轻松平静的活动与改善作息环境后仍失眠的就医时机；不把用药列为必答。",
+        "id": "sleep-test-22",
+        "theme": "sleep",
+        "split": "test",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "user_approved_full_review_revision_applied_by_ai",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "sleep-test-14",
+      "recorded_at": "2026-10-16T16:11:12.929308+00:00",
+      "approval_source": "用户明确选择：按草案修订，并准备替换题（推荐）",
+      "attribution": "用户批准16项修改草案；AI落实措辞，不代表用户逐题人工复核",
+      "action": "应用question-full-review草案；不批准整体题集或实验",
+      "before": {
+        "question": "运动对睡眠有帮助吗？什么时候运动比较好？",
+        "group_id": "sleep01_exercise",
+        "answerable": true,
+        "keypoints": [
+          "培养固定的运动习惯，但睡前避免做剧烈运动"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep01:u0010"
+            ]
+          ]
+        ],
+        "expected_behavior": "应引用原文中关于运动的建议。",
+        "id": "sleep-test-14",
+        "theme": "sleep",
+        "split": "test",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "原文对运动习惯及睡前剧烈运动分别有什么建议？",
+        "group_id": "sleep01_exercise",
+        "answerable": true,
+        "keypoints": [
+          "培养固定的运动习惯，但睡前避免做剧烈运动"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep01:u0010"
+            ]
+          ]
+        ],
+        "expected_behavior": "回答培养固定运动习惯、睡前避免剧烈运动；不要求证明助眠效果或指定最佳运动时段。",
+        "id": "sleep-test-14",
+        "theme": "sleep",
+        "split": "test",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "user_approved_full_review_revision_applied_by_ai",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "sleep-test-15",
+      "recorded_at": "2026-10-16T16:11:12.929308+00:00",
+      "approval_source": "用户明确选择：按草案修订，并准备替换题（推荐）",
+      "attribution": "用户批准16项修改草案；AI落实措辞，不代表用户逐题人工复核",
+      "action": "应用question-full-review草案；不批准整体题集或实验",
+      "before": {
+        "question": "喝咖啡或茶会影响睡眠吗？睡前可以做什么放松？",
+        "group_id": "sleep01_caffeine_relaxation",
+        "answerable": true,
+        "keypoints": [
+          "少喝含咖啡因的饮料，培养放松的休闲活动"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep01:u0011"
+            ]
+          ]
+        ],
+        "expected_behavior": "应引用原文中关于咖啡因饮料和休闲活动的建议。",
+        "id": "sleep-test-15",
+        "theme": "sleep",
+        "split": "test",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "原文对含咖啡因饮料和放松休闲活动分别有什么建议？",
+        "group_id": "sleep01_caffeine_relaxation",
+        "answerable": true,
+        "keypoints": [
+          "少喝含咖啡因的饮料，培养放松的休闲活动"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep01:u0011"
+            ]
+          ]
+        ],
+        "expected_behavior": "回答少喝含咖啡因饮料、培养放松的休闲活动；不要求原文未解释的影响机制、效应量或具体活动清单。",
+        "id": "sleep-test-15",
+        "theme": "sleep",
+        "split": "test",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "user_approved_full_review_revision_applied_by_ai",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "sleep-test-16",
+      "recorded_at": "2026-10-16T16:11:12.929308+00:00",
+      "approval_source": "用户明确选择：按草案修订，并准备替换题（推荐）",
+      "attribution": "用户批准16项修改草案；AI落实措辞，不代表用户逐题人工复核",
+      "action": "应用question-full-review草案；不批准整体题集或实验",
+      "before": {
+        "question": "睡前玩手机或看电视对睡眠有什么影响？",
+        "group_id": "sleep01_screen_time",
+        "answerable": true,
+        "keypoints": [
+          "避免睡前滑手机、上网及看电视"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep01:u0012"
+            ]
+          ]
+        ],
+        "expected_behavior": "应引用原文中关于睡前使用电子产品的建议。",
+        "id": "sleep-test-16",
+        "theme": "sleep",
+        "split": "test",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "原文对睡前滑手机、上网和看电视有什么建议？",
+        "group_id": "sleep01_screen_time",
+        "answerable": true,
+        "keypoints": [
+          "避免睡前滑手机、上网及看电视"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep01:u0012"
+            ]
+          ]
+        ],
+        "expected_behavior": "回答避免睡前滑手机、上网和看电视；不要求原文未给出的各类设备效果比较或影响分钟数。",
+        "id": "sleep-test-16",
+        "theme": "sleep",
+        "split": "test",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "user_approved_full_review_revision_applied_by_ai",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "sleep-test-21",
+      "recorded_at": "2026-10-16T16:11:12.929308+00:00",
+      "approval_source": "用户明确选择：按草案修订，并准备替换题（推荐）",
+      "attribution": "用户批准16项修改草案；AI落实措辞，不代表用户逐题人工复核",
+      "action": "应用question-full-review草案；不批准整体题集或实验",
+      "before": {
+        "question": "根据原文，良好的睡眠卫生习惯中，关于咖啡因饮料和睡前使用电子产品的建议分别是什么？",
+        "group_id": "sleep01_caffeine_screen",
+        "answerable": true,
+        "keypoints": [
+          "少喝含咖啡因的饮料，培养放松的休闲活动",
+          "避免睡前滑手机、上网及看电视"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep01:u0011"
+            ]
+          ],
+          [
+            [
+              "sleep01:u0012"
+            ]
+          ]
+        ],
+        "expected_behavior": "应结合原文中关于咖啡因饮料和睡前使用电子产品的两项建议。",
+        "id": "sleep-test-21",
+        "theme": "sleep",
+        "split": "test",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "根据原文，良好的睡眠卫生习惯中，关于咖啡因饮料和睡前使用电子产品的建议分别是什么？",
+        "group_id": "sleep01_caffeine_screen",
+        "answerable": true,
+        "keypoints": [
+          "少喝含咖啡因的饮料",
+          "避免睡前滑手机、上网及看电视"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep01:u0011"
+            ]
+          ],
+          [
+            [
+              "sleep01:u0012"
+            ]
+          ]
+        ],
+        "expected_behavior": "覆盖所问咖啡因饮料和睡前电子产品的建议；放松休闲活动为可选补充，不设为必答。",
+        "id": "sleep-test-21",
+        "theme": "sleep",
+        "split": "test",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "user_approved_full_review_revision_applied_by_ai",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "sleep-test-28",
+      "recorded_at": "2026-10-16T16:11:12.929308+00:00",
+      "approval_source": "用户明确选择：按草案修订，并准备替换题（推荐）",
+      "attribution": "用户批准16项修改草案；AI落实措辞，不代表用户逐题人工复核",
+      "action": "应用question-full-review草案；不批准整体题集或实验",
+      "before": {
+        "question": "资料有没有滤蓝光眼镜让入睡提前多少分钟的实验结果？",
+        "group_id": "sleep-test-28-scope-or-evidence-gap",
+        "answerable": false,
+        "keypoints": [],
+        "evidence_groups": [],
+        "expected_behavior": "所展示手机使用研究不能支持滤蓝光眼镜使入睡提前的分钟数；不得移用4.9分钟，也不得因证据不足断言眼镜无效。全库缺失标签仍需全库初核。",
+        "id": "sleep-test-28",
+        "theme": "sleep",
+        "split": "test",
+        "kind": "unanswerable",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "nontransferability_of_shown_phone_evidence_confirmed_whole_corpus_pending",
+        "challenge": false,
+        "negative_basis": "手机光源研究不能替代眼镜干预研究",
+        "negative_type": "evidence_gap"
+      },
+      "after": {
+        "question": "资料有没有滤蓝光眼镜让入睡提前多少分钟的实验结果？",
+        "group_id": "sleep-test-28-scope-or-evidence-gap",
+        "answerable": false,
+        "keypoints": [],
+        "evidence_groups": [],
+        "expected_behavior": "固定18份正文经AI全文初核，未见滤蓝光眼镜使入睡提前的实验分钟数；手机使用研究不能代替眼镜干预证据，不得移用4.9分钟，也不得据此断言眼镜无效。用户此前核验的是展示证据不可移用的判断，不是人工全库核验。",
+        "id": "sleep-test-28",
+        "theme": "sleep",
+        "split": "test",
+        "kind": "unanswerable",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "user_confirmed_nontransferability_ai_whole_corpus_review_complete",
+        "challenge": false,
+        "negative_basis": "手机光源研究不能替代眼镜干预研究",
+        "negative_type": "evidence_gap"
+      }
+    },
+    {
+      "question_id": "diet-dev-04",
+      "recorded_at": "2026-10-16T16:11:12.929308+00:00",
+      "approval_source": "用户明确选择：按草案修订，并准备替换题（推荐）",
+      "attribution": "用户批准16项修改草案；AI落实措辞，不代表用户逐题人工复核",
+      "action": "应用question-full-review草案；不批准整体题集或实验",
+      "before": {
+        "question": "冬令进补时，怎样做才能补得健康？",
+        "group_id": "diet04_冬令进补三原则",
+        "answerable": true,
+        "keypoints": [
+          "原型食材",
+          "适量油盐",
+          "均衡饮食"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet04:u0003"
+            ]
+          ],
+          [
+            [
+              "diet04:u0003"
+            ]
+          ],
+          [
+            [
+              "diet04:u0003"
+            ]
+          ]
+        ],
+        "expected_behavior": "应能说出三项原则。",
+        "id": "diet-dev-04",
+        "theme": "diet",
+        "split": "dev",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "原文概括的冬令进补三项原则是什么？",
+        "group_id": "diet04_冬令进补三原则",
+        "answerable": true,
+        "keypoints": [
+          "原型食材",
+          "适量油盐",
+          "均衡饮食"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet04:u0003"
+            ]
+          ],
+          [
+            [
+              "diet04:u0003"
+            ]
+          ],
+          [
+            [
+              "diet04:u0003"
+            ]
+          ]
+        ],
+        "expected_behavior": "覆盖原型食材、适量油盐、均衡饮食三项总原则，不要求另行列全五项具体做法。",
+        "id": "diet-dev-04",
+        "theme": "diet",
+        "split": "dev",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "user_approved_full_review_revision_applied_by_ai",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "diet-test-07",
+      "recorded_at": "2026-10-16T16:11:12.929308+00:00",
+      "approval_source": "用户明确选择：按草案修订，并准备替换题（推荐）",
+      "attribution": "用户批准16项修改草案；AI落实措辞，不代表用户逐题人工复核",
+      "action": "应用question-full-review草案；不批准整体题集或实验",
+      "before": {
+        "question": "根据国民健康署，哪些食物是良好的全谷杂粮类来源？",
+        "group_id": "diet03_whole_grains_sources",
+        "answerable": true,
+        "keypoints": [
+          "糙米、紫米、全麦土司",
+          "甘𫉄、马铃薯、芋头、南瓜、山药、莲藕、红豆、绿豆等"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet03:u0008",
+              "diet03:u0009",
+              "diet03:u0010"
+            ]
+          ],
+          [
+            [
+              "diet03:u0011",
+              "diet03:u0012",
+              "diet03:u0013",
+              "diet03:u0014",
+              "diet03:u0015",
+              "diet03:u0016",
+              "diet03:u0017",
+              "diet03:u0018"
+            ]
+          ]
+        ],
+        "expected_behavior": "应列举糙米、紫米、全麦土司及甘𫉄、马铃薯等根茎类与豆类。",
+        "id": "diet-test-07",
+        "theme": "diet",
+        "split": "test",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "根据国民健康署介绍全谷杂粮来源的段落，请分别列出一般熟知的三种食物，以及常被误认为蔬菜的八种食物。",
+        "group_id": "diet03_whole_grains_sources",
+        "answerable": true,
+        "keypoints": [
+          "糙米、紫米、全麦土司",
+          "甘𫉄、马铃薯、芋头、南瓜、山药、莲藕、红豆、绿豆等"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet03:u0008",
+              "diet03:u0009",
+              "diet03:u0010"
+            ]
+          ],
+          [
+            [
+              "diet03:u0011",
+              "diet03:u0012",
+              "diet03:u0013",
+              "diet03:u0014",
+              "diet03:u0015",
+              "diet03:u0016",
+              "diet03:u0017",
+              "diet03:u0018"
+            ]
+          ]
+        ],
+        "expected_behavior": "按所问两组清单列出糙米、紫米、全麦土司，以及甘薯、马铃薯、芋头、南瓜、山药、莲藕、红豆、绿豆。允许同义名称；甘𫉄按甘薯理解，不要求逐字复制。",
+        "id": "diet-test-07",
+        "theme": "diet",
+        "split": "test",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "user_approved_full_review_revision_applied_by_ai",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "diet-test-17",
+      "recorded_at": "2026-10-16T16:11:12.929308+00:00",
+      "approval_source": "用户明确选择：按草案修订，并准备替换题（推荐）",
+      "attribution": "用户批准16项修改草案；AI落实措辞，不代表用户逐题人工复核",
+      "action": "应用question-full-review草案；不批准整体题集或实验",
+      "before": {
+        "question": "哪些食物算是全谷杂粮类？国民健康署有举例吗？",
+        "group_id": "diet03_whole_grains_sources",
+        "answerable": true,
+        "keypoints": [
+          "糙米、紫米、全麦土司",
+          "甘𫉄、马铃薯、芋头、南瓜、山药、莲藕、红豆、绿豆等"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet03:u0008",
+              "diet03:u0009",
+              "diet03:u0010"
+            ]
+          ],
+          [
+            [
+              "diet03:u0011",
+              "diet03:u0012",
+              "diet03:u0013",
+              "diet03:u0014",
+              "diet03:u0015",
+              "diet03:u0016",
+              "diet03:u0017",
+              "diet03:u0018"
+            ]
+          ]
+        ],
+        "expected_behavior": "应列举糙米、紫米、全麦土司及甘𫉄、马铃薯等根茎类与豆类。",
+        "id": "diet-test-17",
+        "theme": "diet",
+        "split": "test",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "国民健康署举例的全谷杂粮来源中，常见的三种是什么？另有哪八种常被当成蔬菜的食物？请把两组都列出来。",
+        "group_id": "diet03_whole_grains_sources",
+        "answerable": true,
+        "keypoints": [
+          "糙米、紫米、全麦土司",
+          "甘𫉄、马铃薯、芋头、南瓜、山药、莲藕、红豆、绿豆等"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet03:u0008",
+              "diet03:u0009",
+              "diet03:u0010"
+            ]
+          ],
+          [
+            [
+              "diet03:u0011",
+              "diet03:u0012",
+              "diet03:u0013",
+              "diet03:u0014",
+              "diet03:u0015",
+              "diet03:u0016",
+              "diet03:u0017",
+              "diet03:u0018"
+            ]
+          ]
+        ],
+        "expected_behavior": "覆盖所问三种及八种食物清单；同义名称可接受，原文甘𫉄按甘薯理解。",
+        "id": "diet-test-17",
+        "theme": "diet",
+        "split": "test",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "user_approved_full_review_revision_applied_by_ai",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "diet-test-22",
+      "recorded_at": "2026-10-16T16:11:12.929308+00:00",
+      "approval_source": "用户明确选择：按草案修订，并准备替换题（推荐）",
+      "attribution": "用户批准16项修改草案；AI落实措辞，不代表用户逐题人工复核",
+      "action": "应用question-full-review草案；不批准整体题集或实验",
+      "before": {
+        "question": "根据国民健康署，全谷杂粮含有哪些营养素？这些营养素各有什么功能？",
+        "group_id": "diet03_whole_grains_nutrients_functions",
+        "answerable": true,
+        "keypoints": [
+          "维生素B群：调节新陈代谢、维持皮肤和肌肉健康、增强免疫系统和神经系统等功能",
+          "维生素E：重要的脂溶性抗氧化剂，有助于保护心血管、减少自由基等",
+          "膳食纤维：帮助肠蠕动、保护肠黏膜细胞与调节肠内细菌，维持肠道健康"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet03:u0003"
+            ]
+          ],
+          [
+            [
+              "diet03:u0004"
+            ]
+          ],
+          [
+            [
+              "diet03:u0005"
+            ]
+          ]
+        ],
+        "expected_behavior": "应分别说明维生素B群、维生素E和膳食纤维的功能。",
+        "id": "diet-test-22",
+        "theme": "diet",
+        "split": "test",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "根据原文，维生素B群、维生素E和膳食纤维这三类营养素分别有哪些功能？",
+        "group_id": "diet03_whole_grains_nutrients_functions",
+        "answerable": true,
+        "keypoints": [
+          "维生素B群：调节新陈代谢、维持皮肤和肌肉健康、增强免疫系统和神经系统等功能",
+          "维生素E：重要的脂溶性抗氧化剂，有助于保护心血管、减少自由基等",
+          "膳食纤维：帮助肠蠕动、保护肠黏膜细胞与调节肠内细菌，维持肠道健康"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "diet03:u0003"
+            ]
+          ],
+          [
+            [
+              "diet03:u0004"
+            ]
+          ],
+          [
+            [
+              "diet03:u0005"
+            ]
+          ]
+        ],
+        "expected_behavior": "对应文章对B群、E和膳食纤维的三类功能描述，不强求原文未解释的矿物质功能；不作个人疗效保证。",
+        "id": "diet-test-22",
+        "theme": "diet",
+        "split": "test",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "user_approved_full_review_revision_applied_by_ai",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "exercise-dev-07",
+      "recorded_at": "2026-10-16T16:11:12.929308+00:00",
+      "approval_source": "用户明确选择：按草案修订，并准备替换题（推荐）",
+      "attribution": "用户批准16项修改草案；AI落实措辞，不代表用户逐题人工复核",
+      "action": "应用question-full-review草案；不批准整体题集或实验",
+      "before": {
+        "question": "冬天运动时，除了暖身，还应注意哪些事项？",
+        "group_id": "exercise03_winter_exercise_precautions",
+        "answerable": true,
+        "keypoints": [
+          "运动中记得补充水分",
+          "运动后换上干暖衣服，做好保暖准备"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise03:u0001"
+            ],
+            [
+              "exercise03:u0014"
+            ]
+          ],
+          [
+            [
+              "exercise03:u0001"
+            ],
+            [
+              "exercise03:u0016"
+            ]
+          ]
+        ],
+        "expected_behavior": "覆盖运动中补水、运动后换上干暖衣服并保暖；不因未重复暖身而扣分。",
+        "id": "exercise-dev-07",
+        "theme": "exercise",
+        "split": "dev",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "required_keypoints_confirmed_via_chat",
+        "challenge": false,
+        "equivalence_review_status": "AI按用户确认的等价证据原则逐项初核；不冒称用户逐条读过新增单位"
+      },
+      "after": {
+        "question": "原文对冬天运动中的补水，以及运动后的衣物处理分别有什么建议？",
+        "group_id": "exercise03_winter_exercise_precautions",
+        "answerable": true,
+        "keypoints": [
+          "运动中记得补充水分",
+          "运动后换上干暖衣服，做好保暖准备"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise03:u0001"
+            ],
+            [
+              "exercise03:u0014"
+            ]
+          ],
+          [
+            [
+              "exercise03:u0001"
+            ],
+            [
+              "exercise03:u0016"
+            ]
+          ]
+        ],
+        "expected_behavior": "回答运动中补充水分、运动后换上干暖衣物做好保暖；不把未问的其他运动注意事项设为必答。",
+        "id": "exercise-dev-07",
+        "theme": "exercise",
+        "split": "dev",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "user_approved_full_review_revision_applied_by_ai",
+        "challenge": false,
+        "equivalence_review_status": "AI按用户确认的等价证据原则逐项初核；不冒称用户逐条读过新增单位"
+      }
+    },
+    {
+      "question_id": "exercise-dev-08",
+      "recorded_at": "2026-10-16T16:11:12.929308+00:00",
+      "approval_source": "用户明确选择：按草案修订，并准备替换题（推荐）",
+      "attribution": "用户批准16项修改草案；AI落实措辞，不代表用户逐题人工复核",
+      "action": "应用question-full-review草案；不批准整体题集或实验",
+      "before": {
+        "question": "运动前需要注意哪些事项？",
+        "group_id": "exercise07_pre_exercise_checklist",
+        "answerable": true,
+        "keypoints": [
+          "要有开始管理自己健康的准备，并培养自己正确的运动观念",
+          "要准备适合自己的运动装备，并且注意运动的环境条件",
+          "活动前要暖身，活动后不要忘记做缓和运动",
+          "要随时补充处理紧急事件的知识，才能在发生伤害的时候进行正确的紧急处理"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise07:u0003"
+            ]
+          ],
+          [
+            [
+              "exercise07:u0004"
+            ]
+          ],
+          [
+            [
+              "exercise07:u0005"
+            ]
+          ],
+          [
+            [
+              "exercise07:u0007"
+            ]
+          ]
+        ],
+        "expected_behavior": "回答应涵盖个人正确运动观念、环境与装备、暖身与缓和运动、运动伤害紧急处理知识等事项。",
+        "id": "exercise-dev-08",
+        "theme": "exercise",
+        "split": "dev",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "《我在运动前需注意哪些事项？》列出哪四类准备事项？其中活动流程一项也请包括活动后的安排。",
+        "group_id": "exercise07_pre_exercise_checklist",
+        "answerable": true,
+        "keypoints": [
+          "要有开始管理自己健康的准备，并培养自己正确的运动观念",
+          "要准备适合自己的运动装备，并且注意运动的环境条件",
+          "活动前要暖身，活动后不要忘记做缓和运动",
+          "要随时补充处理紧急事件的知识，才能在发生伤害的时候进行正确的紧急处理"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise07:u0003"
+            ]
+          ],
+          [
+            [
+              "exercise07:u0004"
+            ]
+          ],
+          [
+            [
+              "exercise07:u0005"
+            ]
+          ],
+          [
+            [
+              "exercise07:u0007"
+            ]
+          ]
+        ],
+        "expected_behavior": "覆盖正确运动观念、装备及环境、暖身与运动后缓和的完整流程、紧急事件处理知识四类；不要求额外扩展未列项目。",
+        "id": "exercise-dev-08",
+        "theme": "exercise",
+        "split": "dev",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "user_approved_full_review_revision_applied_by_ai",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "exercise-test-04",
+      "recorded_at": "2026-10-16T16:11:12.929308+00:00",
+      "approval_source": "用户明确选择：按草案修订，并准备替换题（推荐）",
+      "attribution": "用户批准16项修改草案；AI落实措辞，不代表用户逐题人工复核",
+      "action": "应用question-full-review草案；不批准整体题集或实验",
+      "before": {
+        "question": "费力身体运动的特征是什么？",
+        "group_id": "exercise04_high_definition",
+        "answerable": true,
+        "keypoints": [
+          "持续从事10分钟以上时，无法边活动，边跟人轻松说话"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise04:u0007"
+            ]
+          ]
+        ],
+        "expected_behavior": "应直接引用原文中对费力身体运动的描述。",
+        "id": "exercise-test-04",
+        "theme": "exercise",
+        "split": "test",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "原文如何用持续时间和说话情况描述费力身体运动？",
+        "group_id": "exercise04_high_definition",
+        "answerable": true,
+        "keypoints": [
+          "持续从事10分钟以上时，无法边活动，边跟人轻松说话"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise04:u0007"
+            ]
+          ]
+        ],
+        "expected_behavior": "回答持续10分钟以上时无法边活动边轻松说话；疲累、呼吸心跳和出汗为可选补充。",
+        "id": "exercise-test-04",
+        "theme": "exercise",
+        "split": "test",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "user_approved_full_review_revision_applied_by_ai",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "sleep-dev-05",
+      "recorded_at": "2026-10-16T16:13:57.345423+00:00",
+      "approval_source": "用户分别认可三道替换题的题目、要点、研究限定及共享知识说明",
+      "attribution": "用户核验展示的原文与要点；AI落实，不代表120题人工全库核验",
+      "action": "应用已确认的跨集知识重叠替换题；不启动实验",
+      "before": {
+        "question": "根据《收假了~避免收假症候群，从回归正常作息做起》，睡前可采取哪两种做法帮助入眠？",
+        "group_id": "sleep02_睡前助眠方法",
+        "answerable": true,
+        "keypoints": [
+          "听柔和的音乐",
+          "泡温水澡"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep02:u0013"
+            ]
+          ],
+          [
+            [
+              "sleep02:u0014"
+            ]
+          ]
+        ],
+        "expected_behavior": "覆盖文章列出的听柔和音乐和泡温水澡两种方法；不把其他文章的泛化放松活动当作这两项的完整替代。",
+        "id": "sleep-dev-05",
+        "theme": "sleep",
+        "split": "dev",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "user_approved_full_review_revision_applied_by_ai",
+        "challenge": false
+      },
+      "after": {
+        "question": "按《您有社交时差吗？》介绍的研究，长期平日睡得少、假日补眠的作息，与哪三类健康风险增加有关？",
+        "group_id": "sleep03_长期社交时差风险",
+        "answerable": true,
+        "keypoints": [
+          "肥胖风险增加",
+          "糖尿病风险增加",
+          "心血管疾病风险增加"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep03:u0015"
+            ]
+          ],
+          [
+            [
+              "sleep03:u0015"
+            ]
+          ],
+          [
+            [
+              "sleep03:u0015"
+            ]
+          ]
+        ],
+        "expected_behavior": "仅转述文章介绍的研究关联，覆盖肥胖、糖尿病、心血管疾病三类风险；不把关联说成个体必然发病，不输出个人风险百分比。",
+        "id": "sleep-dev-05",
+        "theme": "sleep",
+        "split": "dev",
+        "kind": "paraphrase",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "cross_split_replacement_reference_confirmed_via_chat",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "sleep-dev-08",
+      "recorded_at": "2026-10-16T16:13:57.345423+00:00",
+      "approval_source": "用户分别认可三道替换题的题目、要点、研究限定及共享知识说明",
+      "attribution": "用户核验展示的原文与要点；AI落实，不代表120题人工全库核验",
+      "action": "应用已确认的跨集知识重叠替换题；不启动实验",
+      "before": {
+        "question": "根据原文，成人维持良好作息及充足睡眠的建议，以及每周运动累积时长的建议分别是什么？",
+        "group_id": "sleep05_成人睡眠与运动建议",
+        "answerable": true,
+        "keypoints": [
+          "每日需要睡足7-9小时",
+          "每周运动累积至少150分钟"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep05:u0021"
+            ]
+          ],
+          [
+            [
+              "sleep05:u0020"
+            ]
+          ]
+        ],
+        "expected_behavior": "应组合原文中成人每日睡眠时长和每周运动累积时长两项建议。",
+        "id": "sleep-dev-08",
+        "theme": "sleep",
+        "split": "dev",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "《您有社交时差吗？》介绍的2019年研究，如何描述睡眠不足对胰岛素敏感性及血糖的影响？文章又如何描述周末补眠后的恢复情况？",
+        "group_id": "sleep03_睡眠不足与周末补眠研究",
+        "answerable": true,
+        "keypoints": [
+          "文章报告睡眠不足降低胰岛素敏感性，使血糖容易过高",
+          "文章报告周末补眠不能恢复原来的状态，还会使胰岛素敏感性变得更差"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "sleep03:u0017"
+            ]
+          ],
+          [
+            [
+              "sleep03:u0017",
+              "sleep03:u0018"
+            ]
+          ]
+        ],
+        "expected_behavior": "回答研究报道中的两方面结果，必须保留文章/研究限定；不推断提问者患病，不推论所有补觉均有害，也不提供个人治疗建议。",
+        "id": "sleep-dev-08",
+        "theme": "sleep",
+        "split": "dev",
+        "kind": "multi",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "cross_split_replacement_reference_confirmed_via_chat",
+        "challenge": false
+      }
+    },
+    {
+      "question_id": "exercise-dev-03",
+      "recorded_at": "2026-10-16T16:13:57.345423+00:00",
+      "approval_source": "用户分别认可三道替换题的题目、要点、研究限定及共享知识说明",
+      "attribution": "用户核验展示的原文与要点；AI落实，不代表120题人工全库核验",
+      "action": "应用已确认的跨集知识重叠替换题；不启动实验",
+      "before": {
+        "question": "国民健康局建议国人可以选择什么简单又轻松的运动？",
+        "group_id": "exercise03_recommended_walking",
+        "answerable": true,
+        "keypoints": [
+          "健走"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise03:u0021"
+            ],
+            [
+              "exercise03:u0022"
+            ]
+          ]
+        ],
+        "expected_behavior": "回答应指出健走。",
+        "id": "exercise-dev-03",
+        "theme": "exercise",
+        "split": "dev",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "pending_group_review",
+        "challenge": false
+      },
+      "after": {
+        "question": "根据《快乐动 冬天不怕「冻」》，冬天运动刚开始时，原文建议怎样安排运动强度？",
+        "group_id": "exercise03_冬季开始运动强度",
+        "answerable": true,
+        "keypoints": [
+          "运动开始时稍微降低运动强度，随时注意自己的状态并调整活动方式"
+        ],
+        "evidence_groups": [
+          [
+            [
+              "exercise03:u0015"
+            ]
+          ]
+        ],
+        "expected_behavior": "回答刚开始适度降低强度并留意状态、调整方式；适应后逐渐增加为可选补充，不作个人处方。",
+        "id": "exercise-dev-03",
+        "theme": "exercise",
+        "split": "dev",
+        "kind": "direct",
+        "origin": "DeepSeek AI draft v2, not human gold",
+        "review_status": "cross_split_replacement_reference_confirmed_via_chat",
+        "challenge": false
+      }
+    }
+  ],
+  "subsequent_batches": [
+    {
+      "recorded_at": "2026-10-16T16:11:12.929308+00:00",
+      "before_sha256": "2742a35099b1748bbd12f49fdb0f8b93fde2ed5a27c3adac377b3caf7cb93a41",
+      "after_sha256": "5975b63bb4ebb573c14a0467850c9fff686697aa1acf14f35800327b4697253b",
+      "local_backup": "review/private/questions-before-full-review-20261016T161112Z.jsonl",
+      "count": 16
+    },
+    {
+      "recorded_at": "2026-10-16T16:13:57.345423+00:00",
+      "before_sha256": "5975b63bb4ebb573c14a0467850c9fff686697aa1acf14f35800327b4697253b",
+      "after_sha256": "10f098142b700bbf91d40f1cbb82a49176382991cd0ed957ff92315480ca109b",
+      "local_backup": "review/private/questions-before-cross-split-20261016T161357Z.jsonl",
+      "count": 3
+    }
+  ]
+}

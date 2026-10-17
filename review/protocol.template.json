@@ -1,9 +1,70 @@
 {
   "status": "pending",
-  "reviewer": "",
-  "reviewed_at": "",
-  "questions_sha256": "26561bfbb9cc3f6e01ad3d2b4ae62ae00b5047373392917c782fe85e98e13093",
+  "reviewers": [
+    {
+      "reviewer_id": "R1",
+      "reviewed_at": "",
+      "scope": []
+    },
+    {
+      "reviewer_id": "R2",
+      "reviewed_at": "",
+      "scope": []
+    }
+  ],
+  "reviewer_identity_record": {
+    "path": "review/private/formal-reviewer-identities.json",
+    "sha256": ""
+  },
+  "questions_sha256": "10f098142b700bbf91d40f1cbb82a49176382991cd0ed957ff92315480ca109b",
   "corpus_sha256": "481fed36687503978bcf8a1bfb5a2c96fbaa542f5d29e3be72e0e520e1ef4f8e",
+  "corpus_manifest_file_sha256": "89510eef10f00337f20a81982e29db62c167e527645e085d9d01a5c4ada0538f",
+  "corpus_file_sha256": "481fed36687503978bcf8a1bfb5a2c96fbaa542f5d29e3be72e0e520e1ef4f8e",
   "config_sha256": "03c12eb4aacfbdc65e8db2541888e86cbda7ace21bd0ab81cddea195ece4c290",
-  "comment": "实际审核后由小组填写；AI不得自动改为approved或代签"
+  "api": {
+    "provider": "deepseek",
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-flash"
+  },
+  "api_sha256": "c6d4eb6a973be55efdaabb585ecdca335d88268a8ac7836d6b7db4e88156361d",
+  "answer_prompt_sha256": "e623ad53a2cc6bb746746c18586bed75153b8522363b85ae6da36f79e22d71da",
+  "judge_prompt_sha256": "995318fd7d88ee2a1229c017438bcc86fb6ec8629a308ab4591ec70d7b25dd45",
+  "code_sha256": "ccf0e894dee870f54376423c45e482286ca239799db304893f9d39ac3bf0ca87",
+  "runtime": {
+    "python": "3.11.15",
+    "packages": {
+      "numpy": "2.4.6",
+      "torch": "2.14.1",
+      "sentence-transformers": "5.7.0",
+      "streamlit": "1.66.0",
+      "openai": "2.54.0"
+    }
+  },
+  "execution": {
+    "split": "test",
+    "methods": [
+      "B0",
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "ai_judge": true,
+    "question_count": 90,
+    "expected_result_rows": 360,
+    "answer_max_tokens": 700,
+    "judge_max_tokens": 1800,
+    "temperature": 0,
+    "thinking": "disabled",
+    "embedding_device": "cpu"
+  },
+  "review_sample_sha256": "9f462d0753931f1fe5fda95112fadb2706353ec84a942ea2f54373787fd295f7",
+  "approval_requirements": [
+    "corpus_sources_and_licenses",
+    "cross_split_overlap_disclosure",
+    "formal_configuration",
+    "metrics_and_scoring_rules",
+    "question_set_and_adoption",
+    "review_sample_and_assignments"
+  ],
+  "comment": "仅为候选冻结模板。收到两名学生对全部范围的实际审核后，才可填真实日期和私有身份记录哈希并另存review/protocol.json；不得由AI将状态改为approved。API密钥未写入。"
 }

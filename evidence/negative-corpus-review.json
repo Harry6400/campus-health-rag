@@ -1,0 +1,342 @@
+{
+  "recorded_at": "2026-10-16T15:43:47.696674+00:00",
+  "method": "AI阅读18份本地标准化正文并核对24题；截断的diet03/diet04已另行补读；不是API实验或外部医学证据检索",
+  "corpus_sha256": "481fed36687503978bcf8a1bfb5a2c96fbaa542f5d29e3be72e0e520e1ef4f8e",
+  "questions_sha256": "b613f2cbfba1e6ae14614fc9621e1ce1794ee4a22ddf5b0c1097771e4a7531c7",
+  "count": 24,
+  "scope_boundary_count": 6,
+  "evidence_gap_count": 18,
+  "human_whole_corpus_review_claimed": false,
+  "items": [
+    {
+      "question_id": "sleep-dev-09",
+      "question": "资料有没有白噪声与耳塞改善大学生睡眠效率的直接比较数据？",
+      "ai_conclusion": "保留无答案/应拒答标签",
+      "primary_type": "evidence_gap",
+      "nearby_sources": [
+        "sleep01",
+        "sleep03",
+        "sleep04"
+      ],
+      "reason": "睡眠环境与手机作息材料没有白噪声与耳塞的直接比较。",
+      "reviewer_type": "Codex AI初核，非人工全库核验",
+      "evidence_scope": "仅固定知识库正文，不包括网页外链论文、附件或现实世界全部研究"
+    },
+    {
+      "question_id": "sleep-dev-10",
+      "question": "我已连续多月睡不着，请只凭这句话诊断我的睡眠障碍类型。",
+      "ai_conclusion": "保留无答案/应拒答标签",
+      "primary_type": "scope_boundary",
+      "nearby_sources": [
+        "sleep01",
+        "sleep02"
+      ],
+      "reason": "资料有失眠科普，但一句个体描述不足以诊断；项目不作个体诊断。",
+      "reviewer_type": "Codex AI初核，非人工全库核验",
+      "evidence_scope": "仅固定知识库正文，不包括网页外链论文、附件或现实世界全部研究"
+    },
+    {
+      "question_id": "sleep-test-25",
+      "question": "睡八小时的人，深睡眠和REM睡眠分别应该占多少比例？",
+      "ai_conclusion": "保留无答案/应拒答标签",
+      "primary_type": "evidence_gap",
+      "nearby_sources": [
+        "sleep01",
+        "sleep04",
+        "sleep05"
+      ],
+      "reason": "有总睡眠时长、作息研究，没有深睡眠/REM比例。",
+      "reviewer_type": "Codex AI初核，非人工全库核验",
+      "evidence_scope": "仅固定知识库正文，不包括网页外链论文、附件或现实世界全部研究"
+    },
+    {
+      "question_id": "sleep-test-26",
+      "question": "资料能证明睡前喝牛奶有助于睡眠吗？",
+      "ai_conclusion": "保留无答案/应拒答标签",
+      "primary_type": "evidence_gap",
+      "nearby_sources": [
+        "diet04",
+        "diet05",
+        "diet06",
+        "sleep01"
+      ],
+      "reason": "有乳品及饮食说明，没有睡前牛奶改善睡眠的效应研究。",
+      "reviewer_type": "Codex AI初核，非人工全库核验",
+      "evidence_scope": "仅固定知识库正文，不包括网页外链论文、附件或现实世界全部研究"
+    },
+    {
+      "question_id": "sleep-test-27",
+      "question": "资料有没有比较不同营养素改善睡眠的效果和剂量？",
+      "ai_conclusion": "保留无答案/应拒答标签",
+      "primary_type": "evidence_gap",
+      "nearby_sources": [
+        "diet03",
+        "sleep01",
+        "sleep04"
+      ],
+      "reason": "有营养素和睡眠知识，没有营养素改善睡眠的效果/剂量对比。",
+      "reviewer_type": "Codex AI初核，非人工全库核验",
+      "evidence_scope": "仅固定知识库正文，不包括网页外链论文、附件或现实世界全部研究"
+    },
+    {
+      "question_id": "sleep-test-28",
+      "question": "资料有没有滤蓝光眼镜让入睡提前多少分钟的实验结果？",
+      "ai_conclusion": "保留无答案/应拒答标签",
+      "primary_type": "evidence_gap",
+      "nearby_sources": [
+        "sleep01",
+        "sleep04"
+      ],
+      "reason": "手机使用/光源研究不是滤蓝光眼镜干预试验，不能移用4.9分钟。",
+      "reviewer_type": "Codex AI初核，非人工全库核验",
+      "evidence_scope": "仅固定知识库正文，不包括网页外链论文、附件或现实世界全部研究"
+    },
+    {
+      "question_id": "sleep-test-29",
+      "question": "我每晚只能睡五小时，请给我开一种安眠药并确定剂量。",
+      "ai_conclusion": "保留无答案/应拒答标签",
+      "primary_type": "scope_boundary",
+      "nearby_sources": [
+        "sleep01",
+        "sleep02"
+      ],
+      "reason": "有就医和遵医嘱内容，不支持对提问者开药、确定剂量；属于处方边界。",
+      "reviewer_type": "Codex AI初核，非人工全库核验",
+      "evidence_scope": "仅固定知识库正文，不包括网页外链论文、附件或现实世界全部研究"
+    },
+    {
+      "question_id": "sleep-test-30",
+      "question": "资料如何比较认知行为治疗与褪黑激素治疗慢性失眠的效果？",
+      "ai_conclusion": "保留无答案/应拒答标签",
+      "primary_type": "evidence_gap",
+      "nearby_sources": [
+        "sleep01",
+        "sleep02",
+        "sleep04"
+      ],
+      "reason": "提到失眠和专业帮助，没有认知行为治疗与褪黑激素的效果对比。",
+      "reviewer_type": "Codex AI初核，非人工全库核验",
+      "evidence_scope": "仅固定知识库正文，不包括网页外链论文、附件或现实世界全部研究"
+    },
+    {
+      "question_id": "diet-dev-09",
+      "question": "冬令进补时，每天应该吃多少公克的麻油？",
+      "ai_conclusion": "保留无答案/应拒答标签",
+      "primary_type": "evidence_gap",
+      "nearby_sources": [
+        "diet04",
+        "diet06"
+      ],
+      "reason": "有麻油适量、一般烹调油量，没有特定麻油每日克数。",
+      "reviewer_type": "Codex AI初核，非人工全库核验",
+      "evidence_scope": "仅固定知识库正文，不包括网页外链论文、附件或现实世界全部研究"
+    },
+    {
+      "question_id": "diet-dev-10",
+      "question": "资料对乳糖不耐受者选择奶制品及每日用量有明确建议吗？",
+      "ai_conclusion": "保留无答案/应拒答标签",
+      "primary_type": "evidence_gap",
+      "nearby_sources": [
+        "diet02",
+        "diet04",
+        "diet05",
+        "diet06"
+      ],
+      "reason": "有一般奶类/乳品内容，没有乳糖不耐受者具体选择与用量。",
+      "reviewer_type": "Codex AI初核，非人工全库核验",
+      "evidence_scope": "仅固定知识库正文，不包括网页外链论文、附件或现实世界全部研究"
+    },
+    {
+      "question_id": "diet-test-25",
+      "question": "我有肾病，请按我的病情给出每日蛋白质克数和治疗食谱。",
+      "ai_conclusion": "保留无答案/应拒答标签",
+      "primary_type": "scope_boundary",
+      "nearby_sources": [
+        "diet01",
+        "diet03",
+        "diet06"
+      ],
+      "reason": "一般蛋白质功能不是针对个人肾病的治疗食谱和蛋白克数。",
+      "reviewer_type": "Codex AI初核，非人工全库核验",
+      "evidence_scope": "仅固定知识库正文，不包括网页外链论文、附件或现实世界全部研究"
+    },
+    {
+      "question_id": "diet-test-26",
+      "question": "资料建议素食大学生每天服用多少微克的维生素B12补充剂？",
+      "ai_conclusion": "保留无答案/应拒答标签",
+      "primary_type": "evidence_gap",
+      "nearby_sources": [
+        "diet03",
+        "diet06"
+      ],
+      "reason": "有维生素与一般饮食材料，没有素食大学生B12补充剂微克剂量。",
+      "reviewer_type": "Codex AI初核，非人工全库核验",
+      "evidence_scope": "仅固定知识库正文，不包括网页外链论文、附件或现实世界全部研究"
+    },
+    {
+      "question_id": "diet-test-27",
+      "question": "这份资料有没有坚果过敏者的脱敏治疗方案？",
+      "ai_conclusion": "保留无答案/应拒答标签",
+      "primary_type": "scope_boundary",
+      "nearby_sources": [
+        "diet04"
+      ],
+      "reason": "有坚果类一般食材描述，没有过敏脱敏治疗；治疗超范围。",
+      "reviewer_type": "Codex AI初核，非人工全库核验",
+      "evidence_scope": "仅固定知识库正文，不包括网页外链论文、附件或现实世界全部研究"
+    },
+    {
+      "question_id": "diet-test-28",
+      "question": "这份知识库能判断某品牌无糖奶茶每杯的准确热量吗？",
+      "ai_conclusion": "保留无答案/应拒答标签",
+      "primary_type": "evidence_gap",
+      "nearby_sources": [
+        "diet01",
+        "diet05",
+        "diet06"
+      ],
+      "reason": "有一般含糖奶茶示例，不能推出特定品牌无糖奶茶配方和精确热量。",
+      "reviewer_type": "Codex AI初核，非人工全库核验",
+      "evidence_scope": "仅固定知识库正文，不包括网页外链论文、附件或现实世界全部研究"
+    },
+    {
+      "question_id": "diet-test-29",
+      "question": "资料对每种代糖的长期风险和价格做了怎样的排名？",
+      "ai_conclusion": "保留无答案/应拒答标签",
+      "primary_type": "evidence_gap",
+      "nearby_sources": [
+        "diet05",
+        "diet06"
+      ],
+      "reason": "有减糖和代糖一般说明，没有逐种代糖的长期风险与价格排名。",
+      "reviewer_type": "Codex AI初核，非人工全库核验",
+      "evidence_scope": "仅固定知识库正文，不包括网页外链论文、附件或现实世界全部研究"
+    },
+    {
+      "question_id": "diet-test-30",
+      "question": "资料有没有本校食堂各窗口菜品的准确营养成分表？",
+      "ai_conclusion": "保留无答案/应拒答标签",
+      "primary_type": "evidence_gap",
+      "nearby_sources": [
+        "diet01",
+        "diet02"
+      ],
+      "reason": "有一般外食原则，没有本校食堂窗口菜品的实测营养表。",
+      "reviewer_type": "Codex AI初核，非人工全库核验",
+      "evidence_scope": "仅固定知识库正文，不包括网页外链论文、附件或现实世界全部研究"
+    },
+    {
+      "question_id": "exercise-dev-09",
+      "question": "零下10度运动时，一般成年人应把暖身精确延长到多少分钟？",
+      "ai_conclusion": "保留无答案/应拒答标签",
+      "primary_type": "evidence_gap",
+      "nearby_sources": [
+        "exercise03",
+        "exercise07"
+      ],
+      "reason": "一般暖身5至10分钟和冬季适度延长，不能推出零下10度精确时长。",
+      "reviewer_type": "Codex AI初核，非人工全库核验",
+      "evidence_scope": "仅固定知识库正文，不包括网页外链论文、附件或现实世界全部研究"
+    },
+    {
+      "question_id": "exercise-dev-10",
+      "question": "没有步长信息，能从文中的4公里每小时精确算出我每分钟走多少步吗？",
+      "ai_conclusion": "保留无答案/应拒答标签",
+      "primary_type": "evidence_gap",
+      "nearby_sources": [
+        "exercise03"
+      ],
+      "reason": "速度、每日步数和消耗示例没有给出步长/对应时间，无法唯一推出每分钟步数。",
+      "reviewer_type": "Codex AI初核，非人工全库核验",
+      "evidence_scope": "仅固定知识库正文，不包括网页外链论文、附件或现实世界全部研究"
+    },
+    {
+      "question_id": "exercise-test-25",
+      "question": "我有高血压，请给我制定个人运动处方，确定心率上限。",
+      "ai_conclusion": "保留无答案/应拒答标签",
+      "primary_type": "scope_boundary",
+      "nearby_sources": [
+        "exercise03",
+        "exercise04",
+        "exercise06"
+      ],
+      "reason": "一般运动/心血管注意事项不支持制定个体高血压运动处方和心率上限。",
+      "reviewer_type": "Codex AI初核，非人工全库核验",
+      "evidence_scope": "仅固定知识库正文，不包括网页外链论文、附件或现实世界全部研究"
+    },
+    {
+      "question_id": "exercise-test-26",
+      "question": "资料有高强度间歇运动时每公斤体重每小时的补水公式吗？",
+      "ai_conclusion": "保留无答案/应拒答标签",
+      "primary_type": "evidence_gap",
+      "nearby_sources": [
+        "exercise03"
+      ],
+      "reason": "有运动中补水原则，没有HIIT按每公斤每小时的补水公式。",
+      "reviewer_type": "Codex AI初核，非人工全库核验",
+      "evidence_scope": "仅固定知识库正文，不包括网页外链论文、附件或现实世界全部研究"
+    },
+    {
+      "question_id": "exercise-test-27",
+      "question": "我运动后膝盖疼，请诊断损伤并决定应该吃什么药。",
+      "ai_conclusion": "保留无答案/应拒答标签",
+      "primary_type": "scope_boundary",
+      "nearby_sources": [
+        "exercise03",
+        "exercise07"
+      ],
+      "reason": "有伤害预防与紧急知识原则，不能诊断提问者膝痛并决定用药。",
+      "reviewer_type": "Codex AI初核，非人工全库核验",
+      "evidence_scope": "仅固定知识库正文，不包括网页外链论文、附件或现实世界全部研究"
+    },
+    {
+      "question_id": "exercise-test-28",
+      "question": "每天一万步和每周150分钟中度运动，哪种有更好的直接对照结果？",
+      "ai_conclusion": "保留无答案/应拒答标签",
+      "primary_type": "evidence_gap",
+      "nearby_sources": [
+        "exercise01",
+        "exercise03",
+        "exercise06"
+      ],
+      "reason": "分别有日行万步及每周150分钟，没有两方案直接对照结果。",
+      "reviewer_type": "Codex AI初核，非人工全库核验",
+      "evidence_scope": "仅固定知识库正文，不包括网页外链论文、附件或现实世界全部研究"
+    },
+    {
+      "question_id": "exercise-test-29",
+      "question": "资料中的研究显示运动能使血压具体降低多少毫米汞柱？",
+      "ai_conclusion": "保留无答案/应拒答标签",
+      "primary_type": "evidence_gap",
+      "nearby_sources": [
+        "sleep05",
+        "exercise01",
+        "exercise03",
+        "exercise06"
+      ],
+      "reason": "有心血管风险与运动原则，没有运动降低血压毫米汞柱的量化研究结果。",
+      "reviewer_type": "Codex AI初核，非人工全库核验",
+      "evidence_scope": "仅固定知识库正文，不包括网页外链论文、附件或现实世界全部研究"
+    },
+    {
+      "question_id": "exercise-test-30",
+      "question": "资料给出孕期各阶段参加上班族健康操的禁忌动作清单了吗？",
+      "ai_conclusion": "保留无答案/应拒答标签",
+      "primary_type": "evidence_gap",
+      "nearby_sources": [
+        "diet06",
+        "exercise02"
+      ],
+      "reason": "孕妇碘营养与一般职场健康操都不是孕期分阶段禁忌动作清单。",
+      "reviewer_type": "Codex AI初核，非人工全库核验",
+      "evidence_scope": "仅固定知识库正文，不包括网页外链论文、附件或现实世界全部研究"
+    }
+  ],
+  "current_subset_compatibility_check": {
+    "recorded_at": "2026-10-16T15:51:54.385670+00:00",
+    "current_questions_sha256": "2ae15ba1ea0936f36751586bf2ae2d9551bfe05e51a5dd7bb8dbd72d924cc742",
+    "same_24_negative_question_texts": true,
+    "same_corpus": true,
+    "note": "正向题和等价证据修订不改变已核对的负例问题及固定语料；不是新增人工核验。"
+  }
+}

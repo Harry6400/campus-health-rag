@@ -1,0 +1,19 @@
+{
+  "time": "2026-10-17T01:42:43.064727+00:00",
+  "os": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.11.15",
+  "root": "<PROJECT_ROOT>",
+  "api_key_configured": true,
+  "model_id": "BAAI/bge-small-zh-v1.5",
+  "model_revision": "7999e1d3359715c523056ef9478215996d62a620",
+  "model_weights_present": true,
+  "protocol_reviewed": false,
+  "corpus_documents": 18,
+  "corpus_status": "ai_source_reviewed_not_group_frozen",
+  "api_status": 200,
+  "models": [
+    "deepseek-flash",
+    "deepseek-v4-pro"
+  ]
+}
+<PROJECT_ROOT>/runs/20261017T014243351318Z_doctor

@@ -1,0 +1,15 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.11.15, pytest-8.4.2, pluggy-1.7.0
+rootdir: <PROJECT_ROOT>
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.15.1
+collected 53 items
+
+tests/test_api_config.py ..............                                  [ 26%]
+tests/test_development_selection.py ...                                  [ 32%]
+tests/test_formal_protocol.py ...........                                [ 52%]
+tests/test_integrity.py ...................                              [ 88%]
+tests/test_ui_experience.py ......                                       [100%]
+
+============================== 53 passed in 3.39s ==============================

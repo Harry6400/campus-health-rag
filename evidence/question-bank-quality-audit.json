@@ -1,0 +1,165 @@
+{
+  "recorded_at": "2026-10-16T15:32:22.518867+00:00",
+  "note": "静态质量筛查，不是模型实验、不证明语义正确或错误",
+  "counts": {
+    "dev_sleep": 10,
+    "test_sleep": 30,
+    "dev_diet": 10,
+    "test_diet": 30,
+    "dev_exercise": 10,
+    "test_exercise": 30
+  },
+  "unique_group_ids": 101,
+  "identical_keypoint_groups": [
+    {
+      "questions": [
+        "sleep-test-01",
+        "sleep-test-11"
+      ]
+    },
+    {
+      "questions": [
+        "sleep-test-02",
+        "sleep-test-12"
+      ]
+    },
+    {
+      "questions": [
+        "sleep-test-03",
+        "sleep-test-13"
+      ]
+    },
+    {
+      "questions": [
+        "sleep-test-04",
+        "sleep-test-14"
+      ]
+    },
+    {
+      "questions": [
+        "sleep-test-05",
+        "sleep-test-15"
+      ]
+    },
+    {
+      "questions": [
+        "sleep-test-06",
+        "sleep-test-16"
+      ]
+    },
+    {
+      "questions": [
+        "sleep-test-07",
+        "sleep-test-17"
+      ]
+    },
+    {
+      "questions": [
+        "sleep-test-08",
+        "sleep-test-18"
+      ]
+    },
+    {
+      "questions": [
+        "diet-dev-01",
+        "diet-dev-04"
+      ]
+    },
+    {
+      "questions": [
+        "diet-dev-02",
+        "diet-dev-05"
+      ]
+    },
+    {
+      "questions": [
+        "diet-dev-03",
+        "diet-dev-06"
+      ]
+    },
+    {
+      "questions": [
+        "diet-test-01",
+        "diet-test-11"
+      ]
+    },
+    {
+      "questions": [
+        "diet-test-02",
+        "diet-test-12"
+      ]
+    },
+    {
+      "questions": [
+        "diet-test-03",
+        "diet-test-13"
+      ]
+    },
+    {
+      "questions": [
+        "diet-test-04",
+        "diet-test-14"
+      ]
+    },
+    {
+      "questions": [
+        "diet-test-05",
+        "diet-test-15"
+      ]
+    },
+    {
+      "questions": [
+        "diet-test-06",
+        "diet-test-16"
+      ]
+    },
+    {
+      "questions": [
+        "diet-test-07",
+        "diet-test-17"
+      ]
+    },
+    {
+      "questions": [
+        "diet-test-08",
+        "diet-test-18"
+      ]
+    },
+    {
+      "questions": [
+        "exercise-test-03",
+        "exercise-test-13"
+      ]
+    },
+    {
+      "questions": [
+        "exercise-test-08",
+        "exercise-test-09"
+      ]
+    }
+  ],
+  "cross_split_similarity_candidates": [
+    {
+      "dev": "sleep-dev-03",
+      "test": "exercise-test-06",
+      "similarity": 0.727,
+      "dev_point": "至少150分钟",
+      "test_point": "10分钟",
+      "status": "AI/static candidate only, requires semantic checking"
+    },
+    {
+      "dev": "sleep-dev-08",
+      "test": "exercise-test-20",
+      "similarity": 0.696,
+      "dev_point": "每周运动累积至少150分钟",
+      "test_point": "每天运动至少30分钟",
+      "status": "AI/static candidate only, requires semantic checking"
+    }
+  ],
+  "out_of_scope_positive_candidates": [
+    "sleep-test-09",
+    "sleep-test-10",
+    "sleep-test-23"
+  ],
+  "whole_dataset_approved": false
+}

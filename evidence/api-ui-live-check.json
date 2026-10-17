@@ -1,0 +1,61 @@
+{
+  "recorded_at": "2026-10-16T14:32:37.079854+00:00",
+  "kind": "development interface check, not formal evaluation",
+  "connection_check": {
+    "run": "20261016T143229019497Z_api-ui-live-check-not-evaluation",
+    "actual_model": "deepseek-flash",
+    "usage": {
+      "completion_tokens": 5,
+      "prompt_tokens": 42,
+      "total_tokens": 47,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 42
+    },
+    "cost": {
+      "cny_min": 6.2e-05,
+      "cny_max": 0.000124,
+      "basis": "官方峰谷价区间估算，非账户实际扣费",
+      "cache_usage_missing": false,
+      "price_checked_at": "2026-10-16T13:13:05.539433+00:00",
+      "price_source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing"
+    }
+  },
+  "B0": {
+    "run": "20261016T143230566640Z_interactive-not-evaluation",
+    "has_api_usage": false
+  },
+  "R1_session_config": {
+    "run": "20261016T143236198931Z_interactive-not-evaluation",
+    "actual_model": "deepseek-flash",
+    "answer": "建议成人每日需要睡足7-9小时。 [1]",
+    "usage": {
+      "completion_tokens": 34,
+      "prompt_tokens": 1082,
+      "total_tokens": 1116,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 186
+    },
+    "cost": {
+      "cny_min": 0.00033992,
+      "cny_max": 0.00067984,
+      "basis": "官方峰谷价区间估算，非账户实际扣费",
+      "cache_usage_missing": false,
+      "price_checked_at": "2026-10-16T13:13:05.539433+00:00",
+      "price_source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing"
+    }
+  },
+  "secret_scan_passed": true,
+  "custom_vendor_live_tested": false
+}

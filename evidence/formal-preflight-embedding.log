@@ -1,0 +1,11 @@
+W1017 09:42:56.092000 95439 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/71 [00:00<?, ?it/s]Loading weights: 100%|██████████| 71/71 [00:00<00:00, 6886.40it/s]
+{
+  "status": "ok",
+  "model_id": "BAAI/bge-small-zh-v1.5",
+  "revision": "7999e1d3359715c523056ef9478215996d62a620",
+  "device": "cpu",
+  "dimension": 512,
+  "local_files_only": true,
+  "checksum_validation": "ok"
+}
