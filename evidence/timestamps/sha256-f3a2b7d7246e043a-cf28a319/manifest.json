@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "record_id": "cf28a319e56e44f6a4aa94bebcab115f",
+  "label": "UI stage 2: typed searchable run history",
+  "hash_algorithm": "SHA-256",
+  "timestamp_service": "FreeTSA RFC 3161 TSA",
+  "files": [
+    {
+      "path": "evidence/ui-progress/20261018-02-run-history/01-find-retrieval.jpg",
+      "bytes": 49322,
+      "sha256": "91acab1efd6ac67c5f3df0dd2633f2fe686d788a7ef46407f8a7346c75c6eec8"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-02-run-history/02-retrieval-summary.jpg",
+      "bytes": 54650,
+      "sha256": "41285ce929281b2fa059534daa0e5c2612eee1ffcb49f8f284539b85ed4e40c0"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-02-run-history/03-empty-search.jpg",
+      "bytes": 45245,
+      "sha256": "7fdeda56181228366d901572f1a08ceceeff1abf36a48b6f64519981225fff7e"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-02-run-history/history-before.json",
+      "bytes": 26547,
+      "sha256": "fe07a3eca3a6055ed16ac00a3243b98baddd99b7bac3df20d2435eaf712210ba"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-02-run-history/lint.log",
+      "bytes": 19,
+      "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-02-run-history/read-only-verification.json",
+      "bytes": 114,
+      "sha256": "3a5b38f4fd1ed45cde1e6e7efee9e9a76ddf757fe45336e9fef60649e8c7d735"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-02-run-history/stage.json",
+      "bytes": 1850,
+      "sha256": "2b465a2a5974b3f662ed23f439f49325e301e6b9165e65bf22f61676a7c438eb"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-02-run-history/tests.log",
+      "bytes": 180,
+      "sha256": "3f0fd296933fc861ed26f4a89abc2592acc7278e0bef9223d3f3f7c810620c33"
+    }
+  ]
+}

@@ -7,19 +7,16 @@ import pandas as pd
 import streamlit as st
 
 from campus_health.api_config import redact
-from campus_health.api_ui import api_controls, api_identity, apply_pending_model, cost_rows
+from campus_health.api_ui import api_controls, api_identity, apply_pending_model
 from campus_health.cli import interactive
 from campus_health.data import load_corpus
+from campus_health.history_ui import render_history
 from campus_health.retrieval import Retriever
 from campus_health.storage import ROOT, config, read_json, safe_error
 from campus_health.ui_views import (
     EXAMPLES,
     METHODS,
     THEMES,
-    latency_rows,
-    quality_rows,
-    run_label,
-    summary_rows,
 )
 
 st.set_page_config(
@@ -279,78 +276,7 @@ with question_tab:
             st.json({str(i): c["unit_ids"] for i, c in enumerate(result["evidence"], 1)})
 
 with records_tab:
-    summaries = sorted((ROOT / "runs").glob("*/summary.json"), reverse=True)
-    if not summaries:
-        st.info("尚无批量实验记录。可以先在“证据问答”体验；正式实验需完成题集审核。")
-    else:
-        path = st.selectbox(
-            "选择已保存的运行",
-            summaries,
-            format_func=lambda p: run_label(p.parent.name),
-            key="saved_run",
-        )
-        try:
-            report = read_json(path)
-            spec = read_json(path.parent / "evaluation.json")
-            st.info("开发集探索 · 非正式测试" if spec["exploratory"] else "正式测试记录")
-            st.caption("以下来自历史运行，并非刚刚重新调用模型；AI辅助评分仍需小组复核。")
-            previous_sha = spec.get("corpus_sha256")
-            current_sha = manifest.get("sha256") if not corpus_error else None
-            if previous_sha and current_sha:
-                if previous_sha != current_sha:
-                    st.warning("资料版本不同：本记录使用历史语料，不能作为当前资料版本的实验结论。")
-                else:
-                    st.caption("资料指纹与当前版本一致；这只表示语料相同，不代表其他实验条件一致。")
-            else:
-                st.warning("无法确认本记录与当前资料的版本关系：语料指纹缺失或当前资料未就绪。")
-            cols = st.columns(3)
-            cols[0].metric("输出记录 / 预期", f"{report['rows']} / {report['expected_rows']}")
-            cols[1].metric("问答运行错误", report["errors"])
-            cols[2].metric("辅助评分错误", report["judge_errors"])
-            if report["errors"] or report["judge_errors"]:
-                st.warning(
-                    "问答运行错误表示未完成回答；辅助评分错误表示评分未完成，两者不能当作正常拒答或满分。"
-                )
-            st.header("方法效果")
-            st.dataframe(
-                pd.DataFrame(summary_rows(report["summary"])), hide_index=True, width="stretch"
-            )
-            st.caption(
-                "百分比后括号是该指标的有效题数；不同指标的分母可能不同。缺失值不按0或100%处理。"
-            )
-            with st.expander("指标解释与完整质量指标"):
-                st.write(
-                    "答案要点覆盖：答到了多少必答要点；证据召回：找到了多少必需依据；引用支持：引用是否支持对应说法。"
-                )
-                st.write(
-                    "事实有据率：回答事实是否受证据支持；引用编号有效不代表内容获支持。正确拒答只统计不应回答的题，误拒率只统计可回答题，越低越好。"
-                )
-                st.write("B0直接展示原文，没有拒答机制；不适用与未成功评分均保留缺失，不混进均值。")
-                st.dataframe(
-                    pd.DataFrame(quality_rows(report["summary"])), hide_index=True, width="stretch"
-                )
-            with st.expander("耗时明细（秒）"):
-                st.dataframe(
-                    pd.DataFrame(latency_rows(report["summary"])), hide_index=True, width="stretch"
-                )
-                st.caption("P95表示约95%的记录耗时不超过该值；准备/加载和AI评分不计入用户总响应。")
-            st.header("API用量与估算费用")
-            for item in cost_rows(report["costs"]):
-                with st.container(border=True):
-                    st.write(f"**{item['用途']}** · {item['费用估算区间']}")
-                    st.write(
-                        f"收到 {item['收到响应']} 次响应 · 输入 {item['输入token']:,} / 输出 {item['输出token']:,} token"
-                    )
-                    if item["失败请求费用未知"]:
-                        st.warning(f"另有 {item['失败请求费用未知']} 次失败请求，费用未知。")
-            st.caption("按运行时价格估算，非账户实际扣费；未知费用不能视为0。")
-            with st.expander("原始记录与追溯信息"):
-                st.write("运行编号：" + path.parent.name)
-                st.write("摘要仅作展示，逐题输出和调用日志保存在对应运行目录。")
-                st.json(report)
-        except (OSError, ValueError, KeyError, TypeError) as exc:
-            st.error("此记录不完整或格式不兼容，请选择其他记录。" + safe_error(exc))
-            st.write("可让配置项目的 Agent 检查该运行目录中的 summary.json 与 evaluation.json；不要补造缺失指标。")
+    render_history(manifest.get("sha256") if not corpus_error else None, ROOT)
 
 with sources_tab:
     if corpus_error:

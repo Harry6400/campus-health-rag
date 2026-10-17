@@ -1,0 +1,45 @@
+{
+  "recorded_at_utc": "2026-10-17T16:54:58.063691+00:00",
+  "stage": "typed searchable run history",
+  "base_commit": "81773329d91dc8c2ead6f95661376db345d7f82f",
+  "candidate_source_sha256": {
+    "README.md": "1bcb4a75712c3b903a06719bbf71ac6c66a3199ae6c234a5ccb96e4b6a294876",
+    "src/campus_health/app.py": "425d8e21af8fa49ae53d93be2a076baa3e492b81a3081445dc9264fc33ae0760",
+    "src/campus_health/history_ui.py": "16ba82722360e8c8dd6fcf3e10b14416f3cbae3ec6ff4a2a09bb69d4babb8797",
+    "src/campus_health/run_history.py": "bbe9d662b5c1dbc346165a8e700d8c0d5fc80d585513e67f99e804b62f0ae644",
+    "tests/test_ui_experience.py": "a26a409f84fe12ac3e7d2a327dd3fa7332413523eaf37cb2085d0a1683f7f1af",
+    "tests/test_run_history.py": "044e4da3cf9b26ab1e19306888e79ce207266d3a50c82045621e7709528e80ae"
+  },
+  "tests": "100 passed; isolated HEAD snapshot plus only this stage UI files",
+  "browser_checks": [
+    "Original retrieval-only record loads without evaluation.json",
+    "30 original questions, 3 configurations, 90 retrieval rows remain distinct",
+    "No-match search and keyboard clear restore the list"
+  ],
+  "historical_artifacts_unchanged": true,
+  "screenshots": [
+    {
+      "file": "01-find-retrieval.jpg",
+      "format": "JPEG",
+      "width": 682,
+      "height": 760,
+      "sha256": "91acab1efd6ac67c5f3df0dd2633f2fe686d788a7ef46407f8a7346c75c6eec8"
+    },
+    {
+      "file": "02-retrieval-summary.jpg",
+      "format": "JPEG",
+      "width": 682,
+      "height": 760,
+      "sha256": "41285ce929281b2fa059534daa0e5c2612eee1ffcb49f8f284539b85ed4e40c0"
+    },
+    {
+      "file": "03-empty-search.jpg",
+      "format": "JPEG",
+      "width": 682,
+      "height": 760,
+      "sha256": "7fdeda56181228366d901572f1a08ceceeff1abf36a48b6f64519981225fff7e"
+    }
+  ],
+  "paid_api_calls_by_this_stage": 0,
+  "windows": "not validated"
+}

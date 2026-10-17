@@ -426,7 +426,67 @@ def test_record_corruption_is_local_error(demo):
     (run / "summary.json").write_text("not json")
     app = AppTest.from_file(str(APP)).run()
     assert not app.exception
+    app.selectbox(key="history_kind").select("all").run()
     assert any("此记录不完整" in e.value for e in app.error)
+
+
+def test_history_reads_retrieval_summary_without_evaluation(demo):
+    from campus_health.run_history import RETRIEVAL_KIND
+
+    run = demo[0] / "runs/20261017T163710521764Z_candidate-dev-r3-retrieval-only-no-api"
+    write_json(run / "manifest.json", {"kind": "candidate-dev-r3-retrieval-only-no-api"})
+    write_json(run / "summary.json", {
+        "kind": RETRIEVAL_KIND, "rows": 90, "question_count": 30,
+        "api_called": False, "top_k_values": [2, 4, 6], "top_k_selected": False,
+        "corpus_sha256": FIXTURE_SHA,
+        "summary": [{
+            "method": f"R3 retrieval only k={k}", "attempted": 30, "completed": 30,
+            "failed": 0, "evidence_recall": 1, "evidence_recall_n": 24,
+            "evidence_precision": 0.5, "evidence_precision_n": 24,
+            "retrieval_seconds": {"mean": 0.01, "median": 0.01, "p95": 0.02, "n": 30},
+        } for k in [2, 4, 6]],
+    })
+    before = {p.name: p.read_bytes() for p in run.iterdir()}
+    app = AppTest.from_file(str(APP)).run()
+    assert not app.exception and not app.error
+    text = displayed_text(app)
+    assert "纯检索" in text and "未生成" in text
+    assert "未评分" in text or "未进行AI评分" in text
+    assert "top-k" in text
+    assert any(m.label == "原始问题数" and m.value == "30" for m in app.metric)
+    assert any(m.label == "检索输出条数" and m.value == "90" for m in app.metric)
+    assert not (run / "evaluation.json").exists()
+    assert before == {p.name: p.read_bytes() for p in run.iterdir()}
+    assert not demo[1] and not demo[2]
+
+
+def test_history_search_empty_and_clear_resets_selection_without_running(demo):
+    write_record(demo[0])
+    app = AppTest.from_file(str(APP)).run()
+    app.text_input(key="history_keyword").set_value("不匹配任何历史记录").run()
+    assert not app.exception
+    assert any("匹配" in m.value for m in app.info)
+    app.button(key="clear_history_filters").click().run()
+    assert not app.exception
+    assert app.text_input(key="history_keyword").value == ""
+    assert app.selectbox(key="history_kind").value == "main"
+    assert app.selectbox(key="saved_run").value
+    assert not demo[1] and not demo[2]
+
+
+def test_history_replays_old_interactive_record_without_optional_api_fields(demo):
+    run = demo[0] / "runs/20261018T010000000000Z_interactive-not-evaluation"
+    write_json(run / "manifest.json", {"kind": "interactive-not-evaluation"})
+    write_json(run / "result.json", {
+        "question": "一条合成的历史测试问题", "method": "R3", "answer": "资料不足，无法回答。",
+        "structured": {"abstained": True, "claims": []}, "evidence": [],
+        "retrieval_seconds": 0.01, "generation_seconds": 0.1, "total_seconds": 0.11,
+    })
+    app = AppTest.from_file(str(APP)).run()
+    assert not app.exception and not app.error
+    assert "一条合成的历史测试问题" in displayed_text(app)
+    assert "资料不足" in displayed_text(app)
+    assert not demo[1] and not demo[2]
 
 
 def test_missing_corpus_preserves_records_and_shows_recovery(demo, monkeypatch):
