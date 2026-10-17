@@ -34,3 +34,14 @@
 - [阶段证据与截图](../evidence/ui-progress/20261018-03-native-themes/stage.json)、[只读核对](../evidence/ui-progress/20261018-03-native-themes/read-only-verification.json)、[范围核对](../evidence/ui-progress/20261018-03-native-themes/scope-preservation.json)。报告、审核、实验材料均不进入本轮提交，也未回退其他任务的同期更新。Windows实机完整链路仍待补验。
 
 本阶段已取得并本地核验 [RFC 3161 证明](../evidence/timestamps/sha256-f71d835273b1923e-c131f8a8/README.txt)。签发时间以TSA响应为准；阶段包签发后保持不变。
+
+## 推送后复测：Windows CI 编码修复
+
+- 三个计划阶段已正常推送，保留全部提交。首轮 [CI 39052159116](https://github.com/Harry6400/campus-health-rag/actions/runs/39052159116) 显示macOS通过，Windows为18失败、83通过；不把第一次失败改写为成功。
+- Windows非中文区域下，`strftime`的格式串含中文会失败，现改为只格式化数字时间，再追加“北京时间”。部分UI测试默认用CP1252读取UTF-8日志或写中文夹具，现显式指定UTF-8；未修改运行文件格式。
+- 隔离提交快照重新通过101项测试和ruff；修复作为后续普通提交追加，不改写前三阶段历史。真实Windows CI复测以该追加提交的Actions为准，Windows实机完整链路仍待验收。
+- [真实失败摘录与修复验证](../evidence/ui-progress/20261018-04-windows-ci-followup/stage.json)。完整原始失败日志本地保留，公开摘录保留真实CI时间和失败类型；旧阶段包保持不变。
+
+本次失败与修复包已取得并本地核验 [RFC 3161 证明](../evidence/timestamps/sha256-fb4da754d3980893-cd4c8263/README.txt)。它记录实际发现问题后的追加修复，不覆盖前三阶段证据。
+
+源码与文档差异检查通过。已签名的真实失败摘录保留了原输出的行尾空白，未为消除日志空白提示而改写签名包。

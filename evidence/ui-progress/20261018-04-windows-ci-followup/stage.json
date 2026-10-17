@@ -1,0 +1,32 @@
+{
+  "recorded_at_utc": "2026-10-17T17:07:07.724820+00:00",
+  "base_commit": "6c6406c4327a568f230e37dd23524208b0c0c37f",
+  "original_ci_run": "https://github.com/Harry6400/campus-health-rag/actions/runs/39052159116",
+  "original_macos_job": "passed",
+  "original_windows_job": "18 failed, 83 passed",
+  "root_causes": [
+    "Chinese literal inside strftime format cannot be encoded by Windows non-Chinese locale",
+    "Test fixture/log I/O relied on implicit platform encoding"
+  ],
+  "changes": [
+    "Keep strftime format ASCII and append Chinese Beijing label afterward",
+    "Explicit UTF-8 for test JSONL log reading and history fixture writing"
+  ],
+  "candidate_source_sha256": {
+    "src/campus_health/history_ui.py": "e77cd40277839194403de83aa2cd1284f2c3962c57857db1a40ff9aabe316052",
+    "tests/test_api_config.py": "ef1dbe6fa96689a195449acbba811bcc54df2053d5fbc78d156182c1ea852c28",
+    "tests/test_run_history.py": "071193f0d9c874af9ea5f04a4b2ab255628a294f6401589e1499843c9b5108cb"
+  },
+  "local_verification": "101 passed; ruff passed in isolated snapshot",
+  "scope": "UI date display and UI/history/API tests only; no runtime file format, algorithm, experiment or prompt changes",
+  "windows_retest": "Requires follow-up GitHub Actions run after normal append-only push; not physical-device acceptance",
+  "full_failure_log": "Full original fetched log retained locally; public excerpt preserves real CI timestamps and failure summary.",
+  "screenshot": {
+    "file": "01-beijing-history-label.jpg",
+    "format": "JPEG",
+    "width": 682,
+    "height": 760,
+    "sha256": "941ac955d12bdb71dd17506f98624fef59c8eff675d503c68b937052e93813c6"
+  },
+  "screenshot_scope": "Real macOS UI after formatter fix; not evidence of Windows UI acceptance."
+}

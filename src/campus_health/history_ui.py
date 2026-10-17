@@ -301,7 +301,8 @@ def render_history(current_sha: str | None, root: Path):
         key="saved_run",
         format_func=lambda value: (
             (
-                by_id[value].started_at.astimezone(BEIJING).strftime("%m-%d %H:%M:%S（北京时间）")
+                by_id[value].started_at.astimezone(BEIJING).strftime("%m-%d %H:%M:%S")
+                + "（北京时间）"
                 if by_id[value].started_at
                 else "时间未记录"
             )

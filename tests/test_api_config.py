@@ -96,7 +96,7 @@ def test_custom_payload_and_echo_redaction(fake_api, tmp_path):
     assert requests[0].url.host == "custom.example"
     assert info["cost"]["cny_min"] is None
     assert value["echo"] == "[REDACTED]"
-    assert "echo-secret" not in (tmp_path / "calls.jsonl").read_text()
+    assert "echo-secret" not in (tmp_path / "calls.jsonl").read_text(encoding="utf-8")
 
 
 @pytest.mark.parametrize("status, expected", [(401, "鉴权失败"), (400, "请求不兼容")])
@@ -108,7 +108,7 @@ def test_error_does_not_leak_provider_body(fake_api, tmp_path, status, expected)
         llm.call_json([], config(), tmp_path / "calls.jsonl", "test", api=api)
     assert len(requests) == 1
     assert "echo-secret" not in str(exc.value)
-    assert "echo-secret" not in (tmp_path / "calls.jsonl").read_text()
+    assert "echo-secret" not in (tmp_path / "calls.jsonl").read_text(encoding="utf-8")
 
 
 def test_models_and_connection(fake_api, tmp_path):
@@ -191,7 +191,7 @@ def test_ui_models_selection_and_wrong_key(fake_api, monkeypatch, tmp_path):
     assert "鉴权失败" in first.error[0].value
     assert not first.success
     assert not first.exception
-    assert "echo-secret" not in (tmp_path / "calls.jsonl").read_text()
+    assert "echo-secret" not in (tmp_path / "calls.jsonl").read_text(encoding="utf-8")
 
 
 def test_cost_display_has_readable_precision_and_unknown():

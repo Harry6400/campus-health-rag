@@ -176,10 +176,10 @@ def test_early_interactive_result_needs_no_new_optional_api_fields(tmp_path):
 
 def test_corrupt_and_unknown_directories_remain_discoverable(tmp_path):
     broken = make_run(tmp_path, "20261017T163710521764Z_exploratory-dev")
-    (broken / "summary.json").write_text("not json")
+    (broken / "summary.json").write_text("not json", encoding="utf-8")
     unknown = tmp_path / "runs/unrecognized-directory"
     unknown.mkdir()
-    (unknown / "notes.txt").write_text("fixture")
+    (unknown / "notes.txt").write_text("fixture", encoding="utf-8")
     records = discover_runs(tmp_path)
     assert len(records) == 2
     assert records[0].kind == "evaluation" and records[0].status == "incomplete"
@@ -194,7 +194,7 @@ def test_corrupt_evaluation_artifacts_do_not_break_other_records(tmp_path, filen
     broken = make_run(
         tmp_path, "20261017T163710521764Z_exploratory-dev", **evaluation_payload()
     )
-    (broken / filename).write_text("{")
+    (broken / filename).write_text("{", encoding="utf-8")
     good = make_run(
         tmp_path, "20261016T132127906669Z_interactive-not-evaluation", result=interactive_payload()
     )
@@ -209,7 +209,7 @@ def test_process_payloads_show_known_errors_without_inventing_success(tmp_path):
     make_run(tmp_path, "20261016T131713645688Z_question-draft", validation={"count": 138, "errors": ["fixture"]})
     make_run(tmp_path, "20261017T164303799693Z_doctor", result={"api_key_configured": True})
     only_manifest = make_run(tmp_path, "20261017T164400000000Z_connection-check-not-evaluation")
-    (only_manifest / "calls.jsonl").write_text("not parsed as a call log")
+    (only_manifest / "calls.jsonl").write_text("not parsed as a call log", encoding="utf-8")
     records = {record.source_kind: record for record in discover_runs(tmp_path)}
     assert records["question-draft"].status == "errors"
     assert records["doctor"].status == "saved"
@@ -259,8 +259,8 @@ def test_batch_question_search_extracts_only_question_fields_without_writes(
         "answer": "not-searchable-answer",
         "evidence": [{"text": "not-searchable-evidence"}],
     }
-    (path / filename).write_text(json.dumps(line, ensure_ascii=False) + "\n")
-    (path / "calls.jsonl").write_text("private-call-log")
+    (path / filename).write_text(json.dumps(line, ensure_ascii=False) + "\n", encoding="utf-8")
+    (path / "calls.jsonl").write_text("private-call-log", encoding="utf-8")
     before = {file: file.read_bytes() for file in path.iterdir()}
     original_open = Path.open
     reads = []
@@ -287,7 +287,8 @@ def test_batch_question_search_extracts_only_question_fields_without_writes(
 def test_bad_question_jsonl_is_local_and_preserves_other_searchable_rows(tmp_path):
     path = make_run(tmp_path, "20261017T163710521764Z_exploratory-dev", **evaluation_payload())
     (path / "results.jsonl").write_text(
-        json.dumps({"question": "仍可搜索的历史问题"}, ensure_ascii=False) + "\n{\n[]\n"
+        json.dumps({"question": "仍可搜索的历史问题"}, ensure_ascii=False) + "\n{\n[]\n",
+        encoding="utf-8",
     )
     make_run(tmp_path, "20261016T132127906669Z_interactive-not-evaluation", result=interactive_payload())
     records = discover_runs(tmp_path)
@@ -332,7 +333,7 @@ def test_directory_timestamp_is_utc_fallback_for_missing_or_naive_time(tmp_path)
 def test_load_reports_artifact_corruption_after_discovery(tmp_path):
     path = make_run(tmp_path, "20261016T133932572718Z_exploratory-dev", **evaluation_payload())
     record = discover_runs(tmp_path)[0]
-    (path / "summary.json").write_text("{")
+    (path / "summary.json").write_text("{", encoding="utf-8")
     loaded = load_record(record)
     assert loaded["summary"] is None
     assert any("summary.json" in issue for issue in loaded["issues"])
@@ -340,8 +341,8 @@ def test_load_reports_artifact_corruption_after_discovery(tmp_path):
 
 def test_history_reads_no_call_logs_or_secrets_and_never_writes(tmp_path, monkeypatch):
     path = make_run(tmp_path, "20261016T132127906669Z_interactive-not-evaluation", result=interactive_payload())
-    (path / "calls.jsonl").write_text("private-call-body")
-    (path / ".env").write_text("PRIVATE=not-for-ui")
+    (path / "calls.jsonl").write_text("private-call-body", encoding="utf-8")
+    (path / ".env").write_text("PRIVATE=not-for-ui", encoding="utf-8")
     write_json(tmp_path / "runs/development-budget-20261018.json", {"spent_cny": "0.1"})
     before = {file: hashlib.sha256(file.read_bytes()).hexdigest() for file in tmp_path.rglob("*") if file.is_file()}
     original = Path.read_text
