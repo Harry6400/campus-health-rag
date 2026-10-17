@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "record_id": "32abcbca06c8473189cb7dcbf3c60f93",
+  "label": "UI stage 1: teacher-facing question and evidence workflow",
+  "hash_algorithm": "SHA-256",
+  "timestamp_service": "FreeTSA RFC 3161 TSA",
+  "files": [
+    {
+      "path": "evidence/ui-progress/20261018-01-teacher-workflow/01-home.jpg",
+      "bytes": 51241,
+      "sha256": "0ba5081a34b0372ef5183e47255296de8b71debf2ddf857ee53b4078b13321c0"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-01-teacher-workflow/02-settings.jpg",
+      "bytes": 66074,
+      "sha256": "a19e31f84b74a93baf2cbd97287146a80061711535506a33a4f363a4329f7bc0"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-01-teacher-workflow/03-home-narrow-390.jpg",
+      "bytes": 38259,
+      "sha256": "4cff7e2ff92154672fbd173ad213b6eb9fa94f537067e516bfb1a5adbe5fb05d"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-01-teacher-workflow/09-home-configured.jpg",
+      "bytes": 50451,
+      "sha256": "3f88948d77f3829a0c8d91816d407d5d5b6d4d4306fde4cb1d3d6a2f1b4eaa8e"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-01-teacher-workflow/image-metadata-correction.json",
+      "bytes": 1605,
+      "sha256": "c33f21dc8a4c59e74fb25effdc715fffb390be4d1e168a99a0d3264ee315c617"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-01-teacher-workflow/lint.log",
+      "bytes": 19,
+      "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-01-teacher-workflow/stage.json",
+      "bytes": 1203,
+      "sha256": "5cfc538673ceb4046bdd6d710f0fcaff319b8607a151bebf3d7c61bd7244e62a"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-01-teacher-workflow/tests.log",
+      "bytes": 100,
+      "sha256": "072b0dd0844c61a1ec024acd7d745851dd8b8c679c4ed037ea14d72e00f5c7ae"
+    }
+  ]
+}

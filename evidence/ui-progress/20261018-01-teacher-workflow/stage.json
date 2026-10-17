@@ -1,0 +1,17 @@
+{
+  "recorded_at_utc": "2026-10-17T16:49:25.441037+00:00",
+  "stage": "teacher-facing question and evidence workflow",
+  "base_commit": "37be8041f575424e3c8da93f53b128f587421134",
+  "candidate_source_sha256": {
+    ".streamlit/config.toml": "cf7009ab9ed9659a8ca29de2ac49b7a827c66f8b9089b452b167534a18501efe",
+    "README.md": "97a7e765900cb204a3ad27f2e78492dfb7e0452eeced3b55cf46a23f8bbdac0c",
+    "src/campus_health/app.py": "75d6d9e48ba0751acbff8f0c7c774bc8926cf45aefaf548958cdb89be1b263bc",
+    "src/campus_health/api_ui.py": "eac95916a3e25046e7b48443f86a2dd371f9468b4d18f528373ad324fea8446a",
+    "tests/test_ui_experience.py": "aa8ed9a3981ba2fd34f693a393d4859f52f9454ffa4086614ff1ff5df3cd1202"
+  },
+  "candidate_isolation": "HEAD snapshot plus only the five listed UI files; unrelated working-tree experiment/report changes excluded.",
+  "known_issue": "Retrieval-only summaries are still misclassified as batch evaluations; repair follows in stage 2.",
+  "evidence_origin": "Screenshots copied byte-for-byte from previous real UI run; this archive time does not claim past independent timestamping.",
+  "image_metadata_correction": "image-metadata-correction.json",
+  "windows": "not validated"
+}

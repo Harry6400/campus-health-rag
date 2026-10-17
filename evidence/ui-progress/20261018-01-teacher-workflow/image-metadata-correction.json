@@ -1,0 +1,43 @@
+{
+  "recorded_at_utc": "2026-10-17T16:49:03.979441+00:00",
+  "reason": "Previous screenshots were JPEG bytes saved under .png names; reading them as PNG headers yielded incorrect dimensions. Original image bytes and original verification report are retained locally unchanged.",
+  "previous_report_sha256": "d2193462819c66c7cb6341a3757505e614e52487a57c2944bff9f3bfca18a50d",
+  "images": [
+    {
+      "file": "01-home.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 720,
+      "sha256": "0ba5081a34b0372ef5183e47255296de8b71debf2ddf857ee53b4078b13321c0",
+      "local_original": "evidence/ui-teacher-20261018/01-home.png",
+      "bytes_unchanged": true
+    },
+    {
+      "file": "02-settings.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 720,
+      "sha256": "a19e31f84b74a93baf2cbd97287146a80061711535506a33a4f363a4329f7bc0",
+      "local_original": "evidence/ui-teacher-20261018/02-settings.png",
+      "bytes_unchanged": true
+    },
+    {
+      "file": "03-home-narrow-390.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "sha256": "4cff7e2ff92154672fbd173ad213b6eb9fa94f537067e516bfb1a5adbe5fb05d",
+      "local_original": "evidence/ui-teacher-20261018/03-home-narrow-390.png",
+      "bytes_unchanged": true
+    },
+    {
+      "file": "09-home-configured.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 720,
+      "sha256": "3f88948d77f3829a0c8d91816d407d5d5b6d4d4306fde4cb1d3d6a2f1b4eaa8e",
+      "local_original": "evidence/ui-teacher-20261018/09-home-configured.png",
+      "bytes_unchanged": true
+    }
+  ]
+}

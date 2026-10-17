@@ -7,23 +7,34 @@ from urllib.parse import urlsplit
 
 import streamlit as st
 
-from .api_config import DEEPSEEK_URL, page_api
+from .api_config import DEEPSEEK_URL, APIConfig, page_api
 from .llm import list_models, test_connection
 from .storage import new_run
 
 
 def clear_api_session():
     for key in list(st.session_state):
-        if key.startswith("api_") or key == "latest":
+        if key.startswith("api_") or key in {"latest", "latest_signature", "ui_failure"}:
             del st.session_state[key]
     st.session_state["api_use_local"] = False
     if "question_method" in st.session_state:
         st.session_state["question_method"] = "B0"
 
 
+def api_identity(api: APIConfig | None) -> tuple[str, str, str, str] | None:
+    """Compare a session's configuration without keeping its plaintext key in a snapshot."""
+    if api is None:
+        return None
+    return (
+        api.provider,
+        api.base_url,
+        api.model,
+        hashlib.sha256(api.api_key.encode()).hexdigest(),
+    )
+
+
 def api_controls(settings: dict):
-    with st.sidebar:
-        st.header("运行设置")
+    with st.popover("运行设置", width="stretch"):
         provider_label = st.selectbox(
             "供应商", ["DeepSeek官方", "自定义兼容接口"], key="api_provider"
         )
@@ -60,15 +71,8 @@ def api_controls(settings: dict):
             except ValueError as exc:
                 error = str(exc)
             if error:
-                st.warning(error + "；B0仍可运行。")
-            identity = None
-            if api:
-                identity = (
-                    api.provider,
-                    api.base_url,
-                    api.model,
-                    hashlib.sha256(api.api_key.encode()).hexdigest(),
-                )
+                st.warning(error + "；请修正后再试，也可以关闭设置使用B0原文检索。")
+            identity = api_identity(api)
             lookup_api = api
             if not lookup_api and not model.strip():
                 try:
@@ -77,23 +81,20 @@ def api_controls(settings: dict):
                         lookup_api = replace(lookup_api, api_key="")
                 except ValueError:
                     pass
-            lookup_identity = (
-                (
-                    lookup_api.provider,
-                    lookup_api.base_url,
-                    hashlib.sha256(lookup_api.api_key.encode()).hexdigest(),
-                )
-                if lookup_api
-                else None
-            )
+            lookup_identity = api_identity(lookup_api)
+            if lookup_identity:
+                # A selected model does not invalidate the same endpoint's model list.
+                lookup_identity = lookup_identity[:2] + lookup_identity[3:]
             if st.button("获取可用模型", disabled=not lookup_api or not lookup_api.api_key):
                 try:
-                    st.session_state["api_models"] = (
-                        lookup_identity,
-                        list_models(lookup_api, settings),
-                    )
+                    with st.spinner("正在获取模型列表……"):
+                        st.session_state["api_models"] = (
+                            lookup_identity,
+                            list_models(lookup_api, settings),
+                        )
                 except Exception as exc:
                     st.warning(str(exc))
+                    st.caption("可直接填写模型ID；请核对接口地址和密钥后重试。")
             stored = st.session_state.get("api_models")
             if stored and lookup_identity == stored[0]:
                 choices = stored[1]
@@ -111,7 +112,9 @@ def api_controls(settings: dict):
             st.write(f"当前模型：{api.model}")
             st.caption(f"请求目标：{urlsplit(api.base_url).netloc}")
             if api.api_key:
-                st.caption("密钥已配置 · 页面会话" if key else "密钥已配置 · 本机环境")
+                st.caption(
+                    "密钥已配置 · 页面会话" if key else "密钥已配置 · 本机环境"
+                )
             else:
                 st.info("尚未配置密钥，可以直接使用B0原文检索。")
         st.caption("连接测试会发送一次短请求，可能产生少量费用；不会自动测试。")
@@ -128,6 +131,7 @@ def api_controls(settings: dict):
             except Exception as exc:
                 st.session_state.pop("api_verified", None)
                 st.error(str(exc))
+                st.caption("核对密钥、接口地址与模型ID后重试；也可以关闭设置，切回B0原文检索。")
         verified = st.session_state.get("api_verified")
         if verified and verified[0] == identity:
             st.success(f"当前配置已通过连接与JSON检查；实际模型：{verified[1]}")
