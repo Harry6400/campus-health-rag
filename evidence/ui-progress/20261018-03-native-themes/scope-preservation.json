@@ -1,0 +1,20 @@
+{
+  "recorded_at_utc": "2026-10-17T17:03:14.339135+00:00",
+  "original_unrelated_file_count": 85,
+  "still_present": true,
+  "observed_changed_outside_ui": [
+    "docs/ACCEPTANCE.md",
+    "docs/EXPERIMENT_PROTOCOL.md",
+    "docs/STATUS.md",
+    "review/README.md",
+    "review/protocol.template.json",
+    "docs/EVIDENCE_GUIDE.md",
+    "docs/项目报告草稿_20261017.md",
+    "docs/项目摘要草稿_20261018.md",
+    "evidence/ai-full-review-20261018.json",
+    "review/ai-review-summary-20261018.md",
+    "review/ai-source-review-20261018.md",
+    "review/shortest-path-round-draft-20261017.md"
+  ],
+  "interpretation": "Other ongoing local work changed some files during this UI task. They were neither edited nor reverted nor staged by this UI release. Exact UI staging allowlist is checked before commit."
+}

@@ -22,3 +22,15 @@
 - [阶段证据与真实截图](../evidence/ui-progress/20261018-02-run-history/stage.json)、[只读核对](../evidence/ui-progress/20261018-02-run-history/read-only-verification.json)。Windows实机完整链路未在本阶段验收。
 
 本阶段已取得并本地核验 [RFC 3161 证明](../evidence/timestamps/sha256-f3a2b7d7246e043a-cf28a319/README.txt)。签发时间以TSA响应为准。
+
+## 阶段 3：原生深浅色主题与最终回归
+
+- 上一阶段提交：`e555b02`。按实际时间追加浅色、深色青绿色主题；右上角原生菜单提供System / Light / Dark，运行设置内注明入口。
+- 移除问答区固定白底；保留原生输入、表格、提示和焦点样式。实测发现深色主按钮对比不足，保留初始截图，并修复为随原生主题切换按钮文字。
+- 最终回归补上嵌套字段损坏的局部错误隔离，以及清除日期筛选的控件状态修复。隔离提交快照101项测试与ruff通过。
+- 真实浏览器检查两种主题的三页、设置、表格、错误、JSON、键盘焦点与390像素窄窗口。640×360检查相当于1280×720在200%下的重排；这是布局模拟，尚未验证原生浏览器200%缩放。
+- 明确点击运行了一次真实B0演示，无付费API请求。历史回放只读取已有结果；正常拒答、旧字段兼容、损坏记录等模拟分支仅作回归测试。
+- 期间实时目录另有开发文件变化，因此未宣称全目录无写入。另将4条真实记录复制到已测试的隔离快照，在浏览器回放、筛选和切换外观后，15份文件与文件列表完全一致；原始记录未被改写。
+- [阶段证据与截图](../evidence/ui-progress/20261018-03-native-themes/stage.json)、[只读核对](../evidence/ui-progress/20261018-03-native-themes/read-only-verification.json)、[范围核对](../evidence/ui-progress/20261018-03-native-themes/scope-preservation.json)。报告、审核、实验材料均不进入本轮提交，也未回退其他任务的同期更新。Windows实机完整链路仍待补验。
+
+本阶段已取得并本地核验 [RFC 3161 证明](../evidence/timestamps/sha256-f71d835273b1923e-c131f8a8/README.txt)。签发时间以TSA响应为准；阶段包签发后保持不变。

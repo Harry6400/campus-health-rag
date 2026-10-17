@@ -1,0 +1,30 @@
+{
+  "recorded_at_utc": "2026-10-17T17:00:41.779961+00:00",
+  "existing_artifact_count": 244,
+  "changed_or_missing": [
+    "runs/development-budget-20261018.json",
+    "runs/20261017T165810492583Z_exploratory-dev/results.jsonl",
+    "runs/20261017T165810492583Z_exploratory-dev/calls.jsonl",
+    "runs/20261017T165519045581Z_parameter-sweep-dev/experiments.json"
+  ],
+  "new_artifacts": [
+    "runs/20261017T165810492583Z_exploratory-dev/summary.json",
+    "runs/20261017T165810492583Z_exploratory-dev/summary.csv",
+    "runs/20261017T165519045581Z_parameter-sweep-dev/selection.json"
+  ],
+  "scope": "After the explicit one-click B0 demo; subsequent history/theme browsing only. Other local work may add runs independently.",
+  "ui_paid_api_calls": 0,
+  "isolated_real_record_browser_mirror": {
+    "before_files": 15,
+    "after_files": 15,
+    "bytes_and_file_list_unchanged": true,
+    "records": [
+      "CPU retrieval",
+      "batch evaluation with saved scoring errors",
+      "real B0 interactive",
+      "incomplete process record"
+    ],
+    "scope": "Copies of real records in the tested isolated source snapshot; browser replay, filters, theme switch and source tab only. No regeneration."
+  },
+  "live_directory_note": "Some existing development artifacts changed concurrently during this UI check. Global live-directory immutability is not claimed; the isolated mirror provides the controlled read-only verification."
+}

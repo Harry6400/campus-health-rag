@@ -35,6 +35,7 @@ def api_identity(api: APIConfig | None) -> tuple[str, str, str, str] | None:
 
 def api_controls(settings: dict):
     with st.popover("运行设置", width="stretch"):
+        st.caption("外观在页面右上角⋮菜单切换：浅色、深色或跟随系统；浏览器会记住选择。")
         provider_label = st.selectbox(
             "供应商", ["DeepSeek官方", "自定义兼容接口"], key="api_provider"
         )

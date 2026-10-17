@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "record_id": "c131f8a8ceb849199d629c45fb7a518d",
+  "label": "UI stage 3 native light and dark themes",
+  "hash_algorithm": "SHA-256",
+  "timestamp_service": "FreeTSA RFC 3161 TSA",
+  "files": [
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/00-system-dark-home.jpg",
+      "bytes": 53079,
+      "sha256": "c652a7446eac6597792464eea3cf0eb1cbf1472520363730c21b9870e60ea377"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/01-light-home.jpg",
+      "bytes": 51816,
+      "sha256": "1a7a9869851dad2f7fab48fac5127e895b5cd6a4f9ece13687a6a60ebd3e9857"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/02-light-settings.jpg",
+      "bytes": 67017,
+      "sha256": "9a68954c3077259451c703dcad926d6ce853f02aa99647eb817ed4b2183d88b6"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/03-light-b0.jpg",
+      "bytes": 56810,
+      "sha256": "3c9a16dd0632f803ad44fdd0b2988dcf9fa453052feee4b7b09ff71f4b5917c8"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/04-light-sources.jpg",
+      "bytes": 70257,
+      "sha256": "8296e2a9959df79e6e51b5f3244c9673a932011f2c178c96190a27b89e0e41bf"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/05-light-history.jpg",
+      "bytes": 60582,
+      "sha256": "94e8e7366d1cbf7a2d3ad7ff3ca300ae0837516a5df84a943cf19d906dd1147a"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/06-dark-history.jpg",
+      "bytes": 60528,
+      "sha256": "ef7eea006bd0e4af10d47ed9965a8303393014fe36ff7bea0352028ce6407bd8"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/07-dark-json.jpg",
+      "bytes": 50476,
+      "sha256": "1254d9ae6edca516b3e64ab3b456fbc93894c32fe4be3f4355c15d52de1830a5"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/08-dark-home.jpg",
+      "bytes": 53216,
+      "sha256": "fd07fe12e2544d716576bece50b069d44444008ad902c80088038ad42de74c9e"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/09-dark-settings.jpg",
+      "bytes": 68765,
+      "sha256": "b1e4e1f9613ade6d33ba874d93e46299d4c241d6f82dcb30d5293a5a96054794"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/10-dark-sources.jpg",
+      "bytes": 72818,
+      "sha256": "941fba27e2bb65a737761debc353e277f643a0d1f8df2c3284d6ccec8f7004af"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/11-dark-history-errors.jpg",
+      "bytes": 56463,
+      "sha256": "51a27cbfd4060cb18ccc76502a49c7ab8d83fe5828307ffd03b21d32218b7e46"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/12-dark-narrow.jpg",
+      "bytes": 38871,
+      "sha256": "0d731d09890e613b8833191d27db843641563d3cbbb65bdee075b8a27e7f9142"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/13-dark-narrow-settings.jpg",
+      "bytes": 33461,
+      "sha256": "2a8ab6630080f128a6841802c106c38721870496add612d7502ffebf2c7bdd99"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/14-light-narrow-focus.jpg",
+      "bytes": 39031,
+      "sha256": "2e0a58e94e3cbab3985c62c758a39d29e133ca586367e73b4c36430a5d6ea669"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/15-light-narrow-history.jpg",
+      "bytes": 30192,
+      "sha256": "ffd2e5010df12191661fe374960797d034cebc93cb06212c8bada746a1d37124"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/16-light-narrow-sources.jpg",
+      "bytes": 35427,
+      "sha256": "d6d6be1098a67e96547ed6541ecfd4a691f50143a481391013e0d72c5b7bcf9b"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/17-light-reflow200-equivalent.jpg",
+      "bytes": 21438,
+      "sha256": "1072e547c21839895ecab0e288b13b833b81929f95206b0abe4acc7b31500ffc"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/18-dark-reflow200-equivalent.jpg",
+      "bytes": 17550,
+      "sha256": "5428227d7bdf5b055f52bf441145d0f93e02bc326843783d2f80510e1f7ea318"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/19-isolated-incomplete-history.jpg",
+      "bytes": 49975,
+      "sha256": "7c1326c5dc0f74daa395a315bf917fcd33453c12f1aee6d82530190bbdd3228f"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/20-isolated-light-incomplete.jpg",
+      "bytes": 45071,
+      "sha256": "02238fa34b690c18b34c6263a5a273f950737083d500b37c95b10540037cd65b"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/21-isolated-light-json.jpg",
+      "bytes": 44991,
+      "sha256": "f2f3acc3e8197328dfc81583e256497af79fabdbd9d980012183e499f05edeeb"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/22-native-theme-menu.jpg",
+      "bytes": 51449,
+      "sha256": "37e642c7e6a3c8ec7082c53f1788e53052db00c301f4c6341c8972b4af32d07c"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/history-before.json",
+      "bytes": 32568,
+      "sha256": "558e32197a9cec1342e28c6b36ee9abe9792290f8bc821283cecde6f9a3daf82"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/lint.log",
+      "bytes": 19,
+      "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/read-only-verification.json",
+      "bytes": 1434,
+      "sha256": "f19f34a1158aceebf213a4b697b1aa4e2953fba37d0433b2148f7f049f039c53"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/scope-preservation.json",
+      "bytes": 817,
+      "sha256": "49d52b0e265060d9658ef601bbc50be02dc72c8476c9c72c528df1c47507d5d0"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/stage.json",
+      "bytes": 7630,
+      "sha256": "38e686301e3d015ec3eaa6f50531600e8da1ccad9da1f7d8be244a6576763189"
+    },
+    {
+      "path": "evidence/ui-progress/20261018-03-native-themes/tests.log",
+      "bytes": 180,
+      "sha256": "0fc0fa51f14306fe784eb319a3e2b0188c02eb547f1d3782096d9b015d760d47"
+    }
+  ]
+}

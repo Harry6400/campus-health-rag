@@ -430,6 +430,17 @@ def test_record_corruption_is_local_error(demo):
     assert any("此记录不完整" in e.value for e in app.error)
 
 
+def test_nested_record_corruption_does_not_interrupt_other_pages(demo):
+    run, report = write_record(demo[0])
+    report["costs"] = {"answer": []}
+    write_json(run / "summary.json", report)
+    app = AppTest.from_file(str(APP)).run()
+    assert not app.exception
+    assert any("不兼容的字段" in e.value for e in app.error)
+    assert app.dataframe[-1].value["主题"].tolist() == ["睡眠", "饮食"]
+    assert not demo[1] and not demo[2]
+
+
 def test_history_reads_retrieval_summary_without_evaluation(demo):
     from campus_health.run_history import RETRIEVAL_KIND
 

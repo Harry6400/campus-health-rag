@@ -35,8 +35,9 @@ h1,h2,h3 {text-wrap: balance;}
 .stApp { -webkit-font-smoothing: antialiased; }
 [data-testid="stMarkdownContainer"] p {line-height: 1.75;}
 [data-testid="stMetricValue"] {font-variant-numeric: tabular-nums; font-size: 1.5rem;}
-.st-key-question_panel {background: #FFFFFF; border-radius: 16px;}
-.st-key-answer_panel {background: #FFFFFF; border-radius: 12px;}
+.st-key-question_panel {border-radius: 16px;}
+.st-key-answer_panel {border-radius: 12px;}
+[data-testid="stBaseButton-primary"]:not(:disabled) {color: light-dark(#FFFFFF, #101C22);}
 .st-key-header_layout [data-testid="stHorizontalBlock"] {align-items: center;}
 @media(max-width: 900px) {
  .st-key-result_layout [data-testid="stHorizontalBlock"] {flex-direction: column;}

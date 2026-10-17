@@ -8,8 +8,17 @@ fileWatcherType = "none"
 
 [theme]
 base = "light"
+font = "sans serif"
+
+[theme.light]
 primaryColor = "#176B62"
 backgroundColor = "#F7F9FA"
 secondaryBackgroundColor = "#F1F5F5"
 textColor = "#1C3038"
-font = "sans serif"
+
+[theme.dark]
+primaryColor = "#72C8B8"
+backgroundColor = "#101C22"
+secondaryBackgroundColor = "#1B2C34"
+textColor = "#E7F0F2"
+borderColor = "#3A515B"

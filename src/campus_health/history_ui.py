@@ -30,9 +30,9 @@ def clear_history_filters():
         "history_kind": "main",
         "history_method": "全部",
         "history_status": "全部",
-        "history_dates": (),
     }.items():
         st.session_state[key] = value
+    st.session_state.pop("history_dates", None)
     st.session_state.pop("saved_run", None)
 
 
@@ -326,7 +326,7 @@ def render_history(current_sha: str | None, root: Path):
         else:
             st.info("准备与检查记录" if record.kind == "process" else "其他或未知记录")
             st.write("此类记录不作为问答实验成绩；可在下方核对已有文件与过程信息。")
-    except (KeyError, TypeError, ValueError, IndexError) as exc:
+    except (KeyError, TypeError, ValueError, IndexError, AttributeError) as exc:
         st.error("此记录有不兼容的字段，无法完整展示。请选择其他记录或查看技术详情。")
         issues.append(safe_error(exc))
     _record_details(record, payload, root, issues)

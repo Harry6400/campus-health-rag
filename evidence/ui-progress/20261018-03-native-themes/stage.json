@@ -1,0 +1,206 @@
+{
+  "recorded_at_utc": "2026-10-17T17:03:14.315492+00:00",
+  "stage": "native light and dark themes",
+  "base_commit": "e555b02248b6a11b58b1744cd9b5da7691742d17",
+  "candidate_source_sha256": {
+    ".streamlit/config.toml": "3ef950723dab25dc0557e9974a77e6aee9f493c50d8bd47c3c83080dc30e4a2d",
+    "src/campus_health/app.py": "4f4370e3ca49ace97e6046ee1b4eeddbea4f49befda87b69a717b93b2d9c919b",
+    "src/campus_health/api_ui.py": "b6c744e345c1045bc08bd18a6bb2774f5c99b490be67180840e62bf6a1ab3359",
+    "src/campus_health/history_ui.py": "1421bcca189b93bde8853a571b98f6fd1651924fa7de4eeab7bb397b3d3f3bb8",
+    "tests/test_ui_experience.py": "880ba8f37d7ecc39467b4219180a67678364f4511007c02a5a1c87890261bc9f",
+    "README.md": "e6da6b862852f07c029835e650df30c49f7f734a92731d4def55d399da97b9ee"
+  },
+  "verification_commands": [
+    "python -m pytest -q",
+    "ruff check src tests",
+    "git diff --check -- <changed UI source files>"
+  ],
+  "tests": "101 passed in isolated HEAD snapshot plus this stage UI files; ruff passed",
+  "browser_checks": [
+    "Native System/Light/Dark menu and explicit Dark retained after page reload",
+    "Light and dark question/history/source pages, settings popovers, tables, JSON, saved scoring errors and incomplete process errors",
+    "Theme switch preserved question, displayed B0 result, history keyword and selected method; no automatic question request",
+    "390px narrow reading and stacked filters; document scrollWidth equals viewport width",
+    "Keyboard tab focus visible; Escape closes settings and restores trigger focus",
+    "640x360 viewport equivalent to 200% reflow of 1280x720; this is layout emulation, not native browser zoom",
+    "Original retrieval-only run remains 30 questions / 3 configurations / 90 rows without evaluation.json",
+    "Controlled browser replay of four copied real runs: all 15 artifacts and file list unchanged"
+  ],
+  "found_and_fixed": [
+    "Dark primary button originally had white text on pale green (1.97:1); native color-scheme now switches enabled primary text to dark (8.81:1). 00-system-dark-home.jpg retains the initial finding; 08-dark-home.jpg shows the fix.",
+    "Nested invalid cost fields now produce a local recoverable record error, with a regression test; other tabs remain available.",
+    "Clearing the date filter resets the widget key rather than conflicting with its default."
+  ],
+  "limits": [
+    "Mocked API branches are regression tests, not evidence of real model calls",
+    "Native browser 200% zoom and Windows physical-device end-to-end checks remain unverified",
+    "Live runs directory was also receiving independent development-file changes; no global live-directory immutability claim. Controlled mirror check is separate."
+  ],
+  "ui_paid_api_calls": 0,
+  "explicit_real_b0_demo_runs": 1,
+  "screenshots": [
+    {
+      "file": "00-system-dark-home.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 800,
+      "sha256": "c652a7446eac6597792464eea3cf0eb1cbf1472520363730c21b9870e60ea377"
+    },
+    {
+      "file": "01-light-home.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 800,
+      "sha256": "1a7a9869851dad2f7fab48fac5127e895b5cd6a4f9ece13687a6a60ebd3e9857"
+    },
+    {
+      "file": "02-light-settings.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 800,
+      "sha256": "9a68954c3077259451c703dcad926d6ce853f02aa99647eb817ed4b2183d88b6"
+    },
+    {
+      "file": "03-light-b0.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 800,
+      "sha256": "3c9a16dd0632f803ad44fdd0b2988dcf9fa453052feee4b7b09ff71f4b5917c8"
+    },
+    {
+      "file": "04-light-sources.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 800,
+      "sha256": "8296e2a9959df79e6e51b5f3244c9673a932011f2c178c96190a27b89e0e41bf"
+    },
+    {
+      "file": "05-light-history.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 800,
+      "sha256": "94e8e7366d1cbf7a2d3ad7ff3ca300ae0837516a5df84a943cf19d906dd1147a"
+    },
+    {
+      "file": "06-dark-history.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 800,
+      "sha256": "ef7eea006bd0e4af10d47ed9965a8303393014fe36ff7bea0352028ce6407bd8"
+    },
+    {
+      "file": "07-dark-json.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 800,
+      "sha256": "1254d9ae6edca516b3e64ab3b456fbc93894c32fe4be3f4355c15d52de1830a5"
+    },
+    {
+      "file": "08-dark-home.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 800,
+      "sha256": "fd07fe12e2544d716576bece50b069d44444008ad902c80088038ad42de74c9e"
+    },
+    {
+      "file": "09-dark-settings.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 800,
+      "sha256": "b1e4e1f9613ade6d33ba874d93e46299d4c241d6f82dcb30d5293a5a96054794"
+    },
+    {
+      "file": "10-dark-sources.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 800,
+      "sha256": "941fba27e2bb65a737761debc353e277f643a0d1f8df2c3284d6ccec8f7004af"
+    },
+    {
+      "file": "11-dark-history-errors.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 800,
+      "sha256": "51a27cbfd4060cb18ccc76502a49c7ab8d83fe5828307ffd03b21d32218b7e46"
+    },
+    {
+      "file": "12-dark-narrow.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "sha256": "0d731d09890e613b8833191d27db843641563d3cbbb65bdee075b8a27e7f9142"
+    },
+    {
+      "file": "13-dark-narrow-settings.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "sha256": "2a8ab6630080f128a6841802c106c38721870496add612d7502ffebf2c7bdd99"
+    },
+    {
+      "file": "14-light-narrow-focus.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "sha256": "2e0a58e94e3cbab3985c62c758a39d29e133ca586367e73b4c36430a5d6ea669"
+    },
+    {
+      "file": "15-light-narrow-history.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "sha256": "ffd2e5010df12191661fe374960797d034cebc93cb06212c8bada746a1d37124"
+    },
+    {
+      "file": "16-light-narrow-sources.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "sha256": "d6d6be1098a67e96547ed6541ecfd4a691f50143a481391013e0d72c5b7bcf9b"
+    },
+    {
+      "file": "17-light-reflow200-equivalent.jpg",
+      "format": "JPEG",
+      "width": 640,
+      "height": 360,
+      "sha256": "1072e547c21839895ecab0e288b13b833b81929f95206b0abe4acc7b31500ffc"
+    },
+    {
+      "file": "18-dark-reflow200-equivalent.jpg",
+      "format": "JPEG",
+      "width": 640,
+      "height": 360,
+      "sha256": "5428227d7bdf5b055f52bf441145d0f93e02bc326843783d2f80510e1f7ea318"
+    },
+    {
+      "file": "19-isolated-incomplete-history.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 800,
+      "sha256": "7c1326c5dc0f74daa395a315bf917fcd33453c12f1aee6d82530190bbdd3228f"
+    },
+    {
+      "file": "20-isolated-light-incomplete.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 800,
+      "sha256": "02238fa34b690c18b34c6263a5a273f950737083d500b37c95b10540037cd65b"
+    },
+    {
+      "file": "21-isolated-light-json.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 800,
+      "sha256": "f2f3acc3e8197328dfc81583e256497af79fabdbd9d980012183e499f05edeeb"
+    },
+    {
+      "file": "22-native-theme-menu.jpg",
+      "format": "JPEG",
+      "width": 682,
+      "height": 760,
+      "sha256": "37e642c7e6a3c8ec7082c53f1788e53052db00c301f4c6341c8972b4af32d07c"
+    }
+  ],
+  "windows": "not validated",
+  "official_theme_reference": "https://docs.streamlit.io/develop/concepts/configuration/theming"
+}
